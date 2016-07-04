@@ -1,0 +1,96 @@
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="tel"],
+input[type="url"] {
+    width: 100%;
+    margin: 0;
+    padding: 7px 13px 6px;
+    border: 1px solid $r-gray;
+    border-radius: 0;
+    font: normal 16px/19px 'Roboto', sans-serif;
+    -webkit-appearance: none;
+}
+
+.search {
+    position: relative;
+
+    .yellowButton {
+        position: absolute;
+        right: 0;
+        transform: none;
+    }
+}
+
+.search__input[type="text"] {
+    position: relative;
+    width: calc(100% - 15px);
+    padding-right: 80px;
+    padding-left: 35px;
+    color: $r-black;
+    background: $r-white;
+}
+
+.yellowButton {
+    position: relative;
+    margin-right: 10px;
+    padding: 10px 8px 9px 18px;
+    font: bold 12px 'Roboto Slab', serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $r-black;
+    background: $r-orange;
+    transition: all 0.18s;
+
+    &:hover,
+    &:hover .corner {
+        background: $r-shadow-orange;
+        color: $r-carrot;
+        cursor: pointer;
+    }
+
+    .corner {
+        position: absolute;
+        bottom: 0;
+        right: -10px;
+        display: block;
+        width: 11px;
+        height: 23px;
+        background: $r-orange;
+        transition: all 0.18s;
+
+        &:before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: -10px;
+            display: block;
+            border: 5px solid transparent;
+            border-bottom-color: $r-black;
+            border-left-color: $r-black;
+            box-shadow: -1px 0 0 0 $r-orange;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: block;
+            border: 5px solid transparent;
+            border-top-color: rgba(0,0,0,.1);
+            border-right-color: rgba(0,0,0,.1);
+        }
+    }
+
+    &.view_big {
+        font-size: 13px;
+        display: inline-block;
+        transform: translateY(-1px);
+
+        .corner {
+            height: 24px;
+        }
+    }
+}

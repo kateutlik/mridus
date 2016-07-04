@@ -1,0 +1,33 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#" prefix="ya: https://webmaster.yandex.ru/vocabularies/">
+<head>
+
+    @@include('./../layout/_head.html')
+    <link href="./../../styles/pages/errorpages.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="page_authors" itemscope itemtype="http://schema.org/WebPage">
+
+<section class="wrapper contentBackground_white paddings_side padding_top errorPages">
+
+    <div class="errorPages__pageStatus">
+        <p class="error__code">404</p>
+        <p class="errorPages__linkWrapper">
+            <a href="#" title="">Перейти на главную</a>
+        </p>
+    </div>
+
+    <div class="errorPages__textWrapper">
+        <h1 class="errorText">
+            Такой страницы <b>не существует</b>.<br>
+            Попробуйте воспользоваться поиском.
+        </h1>
+        @@include('./../components/_search-form.html')
+    </div>
+
+</section>
+
+@@include('./../layout/_footer.html')
+
+</body>
+</html>
