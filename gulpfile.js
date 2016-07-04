@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-	sass = require('gulp-ruby-sass'),
+	sass = require('gulp-sass'),
 	autoprefixer = require('gulp-autoprefixer'),
 	csscomb = require('gulp-csscomb'),
 	cssnano = require('gulp-cssnano'),
@@ -24,7 +24,8 @@ gulp.task('fileinclude', function() {
 
 // Styles
 gulp.task('styles', function() {
-	return sass('www/styles/**/*.scss', { style: 'expanded' })
+	return gulp.src('www/styles/**/*.scss')
+		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer('Android 2.3',
 			'Android >= 4',
 			'Chrome >= 20',
