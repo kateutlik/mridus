@@ -1,11 +1,15 @@
 language: node_js
 node_js: 5
 before_script:
-  - npm install
-  - npm install -g gulp
-  - gulp
+- npm install
+- npm install -g gulp
+- gulp
 script:
-  - bash ./deploy.sh
+- bash ./deploy.sh
 cache:
   directories:
   - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: aO0GRbNrBWPcqaEIf5vOELVKrKnRlDIzYG8XMl9YwgXmInpQtsG9TYIyb9cEtM6KuEEEu91wjrp9YwlhxQ3uQdPhFQfnkQ5x9tZT2jP0glVNzxSCwBMVQSXs1vDg2LykAEb5CB7J8HNWiCQBrE2/r2qwAZCjKhxna26cjUnsDva7D9ZjqPFEgE99W6rmahTZj4f+g3MS9H4BtPjQXU7I8q0mOMfVH7IcPDMnNPIgrf+eRuvyPyylO3+g+/5MJSK/TXXTpNzHC6x3p03VBSZQX+sQWzWdUe6hE5G5ETqamkNTMRPXZNsZlQHhWc6d1O+W5JH2Ir3t+tjzH+yhakKiKsoYlzjKcR8V7+nAazK1vYGRQ87a8YBqhVrKIclLO73dXua6IYAXw71k8aVF7T9A3UgPzvnWuirhLYmV9U1Hs6aiMBN5t3+0q6T+cw7sWBaDbs8Fb8GUnBbSPWibL0Eb1OcbuXXTxTxgcob7PZm69p4+alKypwolXCTh7sA0BntCjpLS0USjAwvvvihTQb3QCvesuC5IPtAtu8p9VwzmaCkjPDQktdtAvV/XkK9IQR+z4isKyjniSNvUtmFU09ZS3ZiCd1aIuDUFVFWiqD/cCSGE2Hc5ez4SaV1yVbsiaXbvQZNxXSlCfTYOA9hGoaRp0OK5i+NXdnxL7t2Klgwv1EU=
