@@ -15,6 +15,7 @@ var gulp = require('gulp'),
 	path        = require('path'),
 	gutil       = require('gulp-util'),
 	tinylr      = require('tiny-lr'),
+	process     = require('process'),
 	app = express(),
 	server      = tinylr();
 
@@ -89,8 +90,10 @@ gulp.task('clean', function() {
 });
 
 gulp.task('express', function() {
+	var port = process.env.PORT || 3000;
+
 	app.use(express.static(path.resolve('./dist')));
-	app.listen(1337);
+	app.listen(port);
 	gutil.log('Listening on port: 1337');
 });
 
