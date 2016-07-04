@@ -10,16 +10,22 @@ var gulp = require('gulp'),
 	cache = require('gulp-cache'),
 	livereload = require('gulp-livereload'),
 	del = require('del'),
-    fileinclude = require('gulp-file-include');
+    fileinclude = require('gulp-file-include'),
+	express     = require('express'),
+	path        = require('path'),
+	gutil       = require('gulp-util'),
+	tinylr      = require('tiny-lr'),
+	app = express(),
+	server      = tinylr();
 
 // Html
 gulp.task('fileinclude', function() {
-	gulp.src(['./www/html/**/*.html'])
+	gulp.src(['./www/**/*.html'])
 		.pipe(fileinclude({
 			prefix: '@@',
 			basepath: '@file'
 		}))
-		.pipe(gulp.dest('dist/html'));
+		.pipe(gulp.dest('dist'));
 });
 
 // Styles
@@ -35,10 +41,10 @@ gulp.task('styles', function() {
 			'Opera >= 12',
 			'Safari >= 6'))
 		.pipe(csscomb())
-		.pipe(gulp.dest('dist/styles'))
+		.pipe( gulp.dest('dist/styles') )
 		.pipe(rename({suffix: '.min'}))
 		.pipe(cssnano())
-		.pipe(gulp.dest('dist/styles'));
+		.pipe( livereload( server ));
 });
 
 gulp.task('sprite', function() {
@@ -66,7 +72,8 @@ gulp.task('scripts', function() {
 		.pipe(gulp.dest('dist/scripts'))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(uglify())
-		.pipe(gulp.dest('dist/scripts'));
+		.pipe(gulp.dest('dist/scripts'))
+		.pipe( livereload( server ));
 });
 
 // Images
@@ -78,29 +85,27 @@ gulp.task('images', function() {
 
 // Clean
 gulp.task('clean', function() {
-	return del(['dist/styles', 'dist/scripts', 'dist/images', 'dist/html']);
+	return del(['dist/styles', 'dist/scripts', 'dist/images', 'dist/html', 'dist/index.html']);
 });
 
-// Default task
-gulp.task('default', ['clean'], function() {
-	gulp.start('styles', 'scripts', 'images', 'fileinclude');
+gulp.task('express', function() {
+	app.use(express.static(path.resolve('./dist')));
+	app.listen(1337);
+	gutil.log('Listening on port: 1337');
 });
 
-// Watch
-gulp.task('watch', function() {
-	// Watch .scss files
-	gulp.watch('www/_styles/**/*.scss', ['styles']);
+gulp.task('watch', function () {
+	server.listen(35729, function (err) {
+		if (err) {
+			return console.log(err);
+		}
 
-	// Watch .js files
-	gulp.watch('www/_scripts/**/*.js', ['scripts']);
-
-	// Watch image files
-	gulp.watch('www/_images/**/*', ['images']);
-
-
-	// Create LiveReload server
-	livereload.listen();
-
-	// Watch any files in dist/, reload on change
-	gulp.watch(['dist/**']).on('change', livereload.changed);
+		gulp.watch('www/styles/**/*.sccs', ['styles']);
+		gulp.watch('www/scripts/*.js', ['scripts']);
+		gulp.watch('www/**/*.html', ['fileinclude']);
+		gulp.watch('www/images/*', ['images']);
+	});
 });
+
+gulp.task('default', ['clean', 'scripts', 'styles', 'fileinclude', 'express', 'images', 'watch']);
+gulp.task('build', ['clean', 'scripts', 'styles', 'fileinclude', 'images']);
