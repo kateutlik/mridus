@@ -4,7 +4,7 @@
   "description": "Mobile app for Ridus - agency of citizen journalism",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "npm install && gulp heroku"
   },
   "author": "Katsiaryna Utlik (katherinautlik@gmail.com)",
   "license": "ISC",
