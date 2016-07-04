@@ -11,6 +11,8 @@ fi
 rm -rf dist || exit 0;
 
 # run our compile script
+npm install
+npm install -g gulp
 gulp
 
 # go to the dist directory and create a *new* Git repo
