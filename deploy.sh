@@ -24,6 +24,7 @@ echo "<?php include_once(\"dist\html\pages\pages.html\"); ?>" > index.php
 touch composer.json
 echo "{}" > composer.json
 
+git add .
 
 #git init
 
