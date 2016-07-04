@@ -4,7 +4,6 @@
   "description": "Mobile app for Ridus - agency of citizen journalism",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp"
   },
   "author": "Katsiaryna Utlik (katherinautlik@gmail.com)",
