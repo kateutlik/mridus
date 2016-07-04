@@ -94,6 +94,11 @@ gulp.task('express', function() {
 	gutil.log('Listening on port: 1337');
 });
 
+gulp.task('expressheroku', function() {
+	app.use(express.static(path.resolve('./dist')));
+	app.listen('http://mridus.herokuapp.com/');
+});
+
 gulp.task('watch', function () {
 	server.listen(35729, function (err) {
 		if (err) {
@@ -109,3 +114,4 @@ gulp.task('watch', function () {
 
 gulp.task('default', ['clean', 'scripts', 'styles', 'fileinclude', 'express', 'images', 'watch']);
 gulp.task('build', ['clean', 'scripts', 'styles', 'fileinclude', 'images']);
+gulp.task('heroku', ['clean', 'scripts', 'styles', 'fileinclude', 'expressheroku', 'images']);
