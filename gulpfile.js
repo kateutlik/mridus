@@ -15,6 +15,7 @@ var gulp = require('gulp'),
 	path        = require('path'),
 	gutil       = require('gulp-util'),
 	tinylr      = require('tiny-lr'),
+    process = require('process'),
 	app = express(),
 	server      = tinylr();
 
@@ -89,14 +90,11 @@ gulp.task('clean', function() {
 });
 
 gulp.task('express', function() {
-	app.use(express.static(path.resolve('./dist')));
-	app.listen(3000);
-	gutil.log('Listening on port: 1337');
-});
+    var port = process.env.PORT || 3000;
 
-gulp.task('expressheroku', function() {
 	app.use(express.static(path.resolve('./dist')));
-	app.listen('http://mridus.herokuapp.com/');
+	app.listen(port);
+	gutil.log('Listening on port:' + port);
 });
 
 gulp.task('watch', function () {
@@ -112,6 +110,6 @@ gulp.task('watch', function () {
 	});
 });
 
-gulp.task('default', ['clean', 'scripts', 'styles', 'fileinclude', 'express', 'images', 'watch']);
+gulp.task('default', ['scripts', 'styles', 'fileinclude', 'express', 'images', 'watch']);
 gulp.task('build', ['clean', 'scripts', 'styles', 'fileinclude', 'images']);
-gulp.task('heroku', ['scripts', 'styles', 'fileinclude']);
+gulp.task('heroku', ['scripts', 'styles', 'fileinclude', 'images']);
