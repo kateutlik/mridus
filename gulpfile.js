@@ -15,7 +15,6 @@ var gulp = require('gulp'),
 	path        = require('path'),
 	gutil       = require('gulp-util'),
 	tinylr      = require('tiny-lr'),
-    process = require('process'),
 	app = express(),
 	server      = tinylr();
 

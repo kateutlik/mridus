@@ -6,7 +6,7 @@
   "scripts": {
     "start": "gulp express",
     "postinstall": "gulp heroku",
-    "test": "echo \"no tests\" && exit 1"
+    "test": "echo \"no tests\""
   },
   "author": "Katsiaryna Utlik (katherinautlik@gmail.com)",
   "license": "ISC",
