@@ -15,6 +15,7 @@ var gulp = require('gulp'),
 	path        = require('path'),
 	gutil       = require('gulp-util'),
 	tinylr      = require('tiny-lr'),
+    spritesmith = require('gulp.spritesmith'),
 	app = express(),
 	server      = tinylr();
 
@@ -109,6 +110,17 @@ gulp.task('watch', function () {
 	});
 });
 
-gulp.task('default', ['scripts', 'styles', 'fileinclude', 'express', 'images', 'watch']);
-gulp.task('build', ['clean', 'scripts', 'styles', 'fileinclude', 'images']);
-gulp.task('heroku', ['scripts', 'styles', 'fileinclude', 'images']);
+gulp.task('sprite', function() {
+    var spriteData = gulp.src('./www/sprite/*.png').pipe(spritesmith({
+                retinaSrcFilter: './www/sprite/*_2x.png',
+                imgName: 'sprite.png',
+                retinaImgName: 'sprite-2x.png',
+                cssName: 'sprite.css'
+            }));
+
+    spriteData.pipe(gulp.dest('./dist/sprite/'));
+});
+
+gulp.task('default', ['scripts', 'styles', 'fileinclude', 'express', 'images', 'sprite', 'watch']);
+gulp.task('build', ['clean', 'scripts', 'styles', 'fileinclude', 'images', 'sprite']);
+gulp.task('heroku', ['scripts', 'styles', 'fileinclude', 'images', 'sprite']);
