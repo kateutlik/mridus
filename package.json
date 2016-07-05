@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "gulp express",
-    "postinstall": "npm install && gulp heroku",
+    "postinstall": "gulp heroku",
     "test": "echo \"no tests\""
   },
   "author": "Katsiaryna Utlik (katherinautlik@gmail.com)",
