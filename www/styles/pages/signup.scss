@@ -20,5 +20,11 @@
       font: normal 32px 'Roboto Regular', serif;
       color: #747474;
     }
+    .yellowButton {
+      padding: 25px 140px;
+      .corner {
+        height: 74px;
+      }
+    }
   }
 }
