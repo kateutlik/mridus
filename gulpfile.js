@@ -114,4 +114,4 @@ gulp.task('watch', function () {
 
 gulp.task('default', ['clean', 'scripts', 'styles', 'fileinclude', 'express', 'images', 'watch']);
 gulp.task('build', ['clean', 'scripts', 'styles', 'fileinclude', 'images']);
-gulp.task('heroku', ['clean', 'scripts', 'styles', 'fileinclude', 'expressheroku', 'images']);
+gulp.task('heroku', ['scripts', 'styles', 'fileinclude']);
