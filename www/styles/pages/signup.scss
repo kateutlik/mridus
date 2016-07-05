@@ -1,0 +1,24 @@
+.signup {
+  background: #FFF;
+  &__form {
+    padding: 40px 30px 120px 30px;
+    &-title {
+      font: bold 42px 'Roboto Slab', serif;
+    }
+    &-question {
+      margin-top: 60px;
+      label {
+        display: block;
+        margin-bottom: 20px;
+        font: normal 32px 'Roboto Regular', serif;
+        color: #747474;
+      }
+    }
+    &-subscribe {
+      display: block;
+      margin: 40px 0;
+      font: normal 32px 'Roboto Regular', serif;
+      color: #747474;
+    }
+  }
+}
