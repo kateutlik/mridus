@@ -9,23 +9,13 @@ input[type="url"] {
     padding: 7px 13px 6px;
     border: 1px solid $r-gray;
     border-radius: 0;
-    font: normal 16px/19px 'Roboto', sans-serif;
+    font: normal 33px/19px 'RobotoLight', sans-serif;
     -webkit-appearance: none;
-}
-
-.search {
-    position: relative;
-
-    .yellowButton {
-        position: absolute;
-        right: 0;
-        transform: none;
-    }
 }
 
 .search__input[type="text"] {
     position: relative;
-    width: calc(100% - 15px);
+    width: calc(100% - 132px);
     padding-right: 80px;
     padding-left: 35px;
     color: $r-black;
@@ -85,12 +75,22 @@ input[type="url"] {
     }
 
     &.view_big {
-        font-size: 13px;
+        font-size: 26px;
         display: inline-block;
         transform: translateY(-1px);
 
         .corner {
-            height: 24px;
+            height: 43px;
         }
     }
+}
+
+.search {
+  position: relative;
+
+  .yellowButton {
+    position: absolute;
+    right: 0;
+    transform: none;
+  }
 }

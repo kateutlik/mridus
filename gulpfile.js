@@ -86,7 +86,7 @@ gulp.task('images', function() {
 
 // Clean
 gulp.task('clean', function() {
-	return del(['dist/styles', 'dist/scripts', 'dist/images', 'dist/html', 'dist/index.html']);
+	return del(['dist/styles', 'dist/scripts', 'dist/images', 'dist/html', 'dist/index.html', 'dist/sprite']);
 });
 
 gulp.task('express', function() {
@@ -103,7 +103,7 @@ gulp.task('watch', function () {
 			return console.log(err);
 		}
 
-		gulp.watch('www/styles/**/*.sccs', ['styles']);
+		gulp.watch('www/styles/**/*.scss', ['styles']);
 		gulp.watch('www/scripts/*.js', ['scripts']);
 		gulp.watch('www/**/*.html', ['fileinclude']);
 		gulp.watch('www/images/*', ['images']);
@@ -112,7 +112,7 @@ gulp.task('watch', function () {
 
 gulp.task('sprite', function() {
     var spriteData = gulp.src('./www/sprite/*.png').pipe(spritesmith({
-                retinaSrcFilter: './www/sprite/*_2x.png',
+                retinaSrcFilter: './www/sprite/*-2x.png',
                 imgName: 'sprite.png',
                 retinaImgName: 'sprite-2x.png',
                 cssName: 'sprite.css'
