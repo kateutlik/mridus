@@ -1,0 +1,169 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$icon-age-limit-name: 'icon-age-limit';
+$icon-age-limit-x: 0px;
+$icon-age-limit-y: 79px;
+$icon-age-limit-offset-x: 0px;
+$icon-age-limit-offset-y: -79px;
+$icon-age-limit-width: 44px;
+$icon-age-limit-height: 44px;
+$icon-age-limit-total-width: 205px;
+$icon-age-limit-total-height: 123px;
+$icon-age-limit-image: '../images/sprite.png';
+$icon-age-limit: (0px, 79px, 0px, -79px, 44px, 44px, 205px, 123px, '../images/sprite.png', 'icon-age-limit', );
+$icon-count-comment-name: 'icon-count-comment';
+$icon-count-comment-x: 100px;
+$icon-count-comment-y: 79px;
+$icon-count-comment-offset-x: -100px;
+$icon-count-comment-offset-y: -79px;
+$icon-count-comment-width: 24px;
+$icon-count-comment-height: 24px;
+$icon-count-comment-total-width: 205px;
+$icon-count-comment-total-height: 123px;
+$icon-count-comment-image: '../images/sprite.png';
+$icon-count-comment: (100px, 79px, -100px, -79px, 24px, 24px, 205px, 123px, '../images/sprite.png', 'icon-count-comment', );
+$icon-count-like-name: 'icon-count-like';
+$icon-count-like-x: 80px;
+$icon-count-like-y: 79px;
+$icon-count-like-offset-x: -80px;
+$icon-count-like-offset-y: -79px;
+$icon-count-like-width: 20px;
+$icon-count-like-height: 31px;
+$icon-count-like-total-width: 205px;
+$icon-count-like-total-height: 123px;
+$icon-count-like-image: '../images/sprite.png';
+$icon-count-like: (80px, 79px, -80px, -79px, 20px, 31px, 205px, 123px, '../images/sprite.png', 'icon-count-like', );
+$icon-count-show-name: 'icon-count-show';
+$icon-count-show-x: 124px;
+$icon-count-show-y: 79px;
+$icon-count-show-offset-x: -124px;
+$icon-count-show-offset-y: -79px;
+$icon-count-show-width: 23px;
+$icon-count-show-height: 16px;
+$icon-count-show-total-width: 205px;
+$icon-count-show-total-height: 123px;
+$icon-count-show-image: '../images/sprite.png';
+$icon-count-show: (124px, 79px, -124px, -79px, 23px, 16px, 205px, 123px, '../images/sprite.png', 'icon-count-show', );
+$icon-logo-white-name: 'icon-logo-white';
+$icon-logo-white-x: 0px;
+$icon-logo-white-y: 0px;
+$icon-logo-white-offset-x: 0px;
+$icon-logo-white-offset-y: 0px;
+$icon-logo-white-width: 205px;
+$icon-logo-white-height: 79px;
+$icon-logo-white-total-width: 205px;
+$icon-logo-white-total-height: 123px;
+$icon-logo-white-image: '../images/sprite.png';
+$icon-logo-white: (0px, 0px, 0px, 0px, 205px, 79px, 205px, 123px, '../images/sprite.png', 'icon-logo-white', );
+$icon-lupa-name: 'icon-lupa';
+$icon-lupa-x: 44px;
+$icon-lupa-y: 79px;
+$icon-lupa-offset-x: -44px;
+$icon-lupa-offset-y: -79px;
+$icon-lupa-width: 36px;
+$icon-lupa-height: 35px;
+$icon-lupa-total-width: 205px;
+$icon-lupa-total-height: 123px;
+$icon-lupa-image: '../images/sprite.png';
+$icon-lupa: (44px, 79px, -44px, -79px, 36px, 35px, 205px, 123px, '../images/sprite.png', 'icon-lupa', );
+$spritesheet-width: 205px;
+$spritesheet-height: 123px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($icon-age-limit, $icon-count-comment, $icon-count-like, $icon-count-show, $icon-logo-white, $icon-lupa, );
+$spritesheet: (205px, 123px, '../images/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  background-repeat: no-repeat;
+}
+
+@mixin sprite-box($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+@mixin sprite-pseudo-box($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+  content: '';
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

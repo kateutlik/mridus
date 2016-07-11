@@ -1,3 +1,5 @@
+/* ----- footer.scss ----- */
+
 footer {
     padding-top: 25px;
     background: $r-medium-gray;
@@ -27,7 +29,7 @@ footer {
             margin-bottom: 3px;
             vertical-align: middle;
             border-radius: 50%;
-            background: $r-graphite url(../_images/icons_sprite.png) no-repeat;
+            background: $r-graphite url(../images/sprite.png) no-repeat;
             background-size: 211px 375px;
             transition: background .2s ease-in-out;
         }

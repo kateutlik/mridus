@@ -2,11 +2,16 @@
 @import "helpers/variables";
 @import "helpers/mixins";
 
+@import 'sprite';   // imports sprite.scss
+// $spritesheet-sprites is an array of all sprite image names
+@include sprites($spritesheet-sprites);
+
 /* Import reset */
 @import "base/reset";
 
 /* Import vendors */
-@import "vendors/font-awesome.min.css";
+@import "vendors/font-awesome.min";
+@import "vendors/swiper";
 
 /* Import base */
 @import "base/common";
@@ -18,5 +23,7 @@
 
 /* Import components */
 @import "components/bricks";
+@import "components/slider";
+@import "components/counter-block";
 
 /* Do not write styles here. This is file for build. */

@@ -1,14 +1,11 @@
 var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	autoprefixer = require('gulp-autoprefixer'),
-	csscomb = require('gulp-csscomb'),
 	cssnano = require('gulp-cssnano'),
 	uglify = require('gulp-uglify'),
 	imagemin = require('gulp-imagemin'),
 	rename = require('gulp-rename'),
 	concat = require('gulp-concat'),
-	cache = require('gulp-cache'),
-	livereload = require('gulp-livereload'),
 	del = require('del'),
     fileinclude = require('gulp-file-include'),
 	express     = require('express'),
@@ -41,40 +38,24 @@ gulp.task('styles', function() {
 			'iOS >= 6',
 			'Opera >= 12',
 			'Safari >= 6'))
-		.pipe(csscomb())
 		.pipe( gulp.dest('dist/styles') )
 		.pipe(rename({suffix: '.min'}))
-		.pipe(cssnano())
-		.pipe( livereload( server ));
-});
-
-gulp.task('sprite', function() {
-	var spriteData =
-		gulp.src('www/images/sprite/*.*') // путь, откуда берем картинки для спрайта
-			.pipe(spritesmith({
-				imgName: 'sprite.png',
-				cssName: 'sprite.scss',
-				cssFormat: 'scss',
-				algorithm: 'binary-tree',
-				cssTemplate: 'scss.template.mustache',
-				cssVarMap: function(sprite) {
-					sprite.name = 's-' + sprite.name
-				}
-			}));
-
-	spriteData.img.pipe(gulp.dest('dist/images/')); // путь, куда сохраняем картинку
-	spriteData.css.pipe(gulp.dest('dist/styles/')); // путь, куда сохраняем стили
+		.pipe(cssnano());
 });
 
 // Scripts
 gulp.task('scripts', function() {
-	return gulp.src('www/scripts/**/*.js')
+	return gulp.src(['www/scripts/**/*.js', '!www/scripts/vendors/*.js'])
 		.pipe(concat('main.js'))
 		.pipe(gulp.dest('dist/scripts'))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(uglify())
-		.pipe(gulp.dest('dist/scripts'))
-		.pipe( livereload( server ));
+		.pipe(gulp.dest('dist/scripts'));
+});
+
+gulp.task('vendors', function() {
+    return gulp.src('www/scripts/vendors/*.js')
+        .pipe(gulp.dest('dist/scripts'));
 });
 
 // Images
@@ -104,7 +85,7 @@ gulp.task('watch', function () {
 		}
 
 		gulp.watch('www/styles/**/*.scss', ['styles']);
-		gulp.watch('www/scripts/*.js', ['scripts']);
+		gulp.watch('www/scripts/**/*.js', ['scripts']);
 		gulp.watch('www/**/*.html', ['fileinclude']);
 		gulp.watch('www/images/*', ['images']);
 	});
@@ -113,14 +94,20 @@ gulp.task('watch', function () {
 gulp.task('sprite', function() {
     var spriteData = gulp.src('./www/sprite/*.png').pipe(spritesmith({
                 retinaSrcFilter: './www/sprite/*-2x.png',
-                imgName: 'sprite.png',
+                imgName: '../images/sprite.png',
                 retinaImgName: 'sprite-2x.png',
-                cssName: 'sprite.css'
+                cssName: 'sprite.scss',
+                algorithm: 'binary-tree',
+                cssTemplate: './scss.template.handlebars',
+                cssVarMap: function(sprite) {
+                    sprite.name = 'icon-' + sprite.name
+                }
             }));
 
-    spriteData.pipe(gulp.dest('./dist/sprite/'));
+    spriteData.img.pipe(gulp.dest('./dist/images/'));
+    spriteData.css.pipe(gulp.dest('./www/styles/'));
 });
 
-gulp.task('default', ['scripts', 'styles', 'fileinclude', 'express', 'images', 'sprite', 'watch']);
-gulp.task('build', ['clean', 'scripts', 'styles', 'fileinclude', 'images', 'sprite']);
-gulp.task('heroku', ['scripts', 'styles', 'fileinclude', 'images', 'sprite']);
+gulp.task('default', ['vendors', 'scripts', 'images', 'sprite', 'styles', 'fileinclude', 'express', 'watch']);
+gulp.task('build', ['clean', 'vendors', 'scripts', 'styles', 'fileinclude', 'images', 'sprite']);
+gulp.task('heroku', ['vendors', 'scripts', 'styles', 'fileinclude', 'images', 'sprite']);

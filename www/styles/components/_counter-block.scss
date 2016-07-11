@@ -1,0 +1,31 @@
+/* ----- counter-block.scss ----- */
+
+.countersBlock {
+  display: flex;
+  align-items: center;
+  font: bold 22px 'Roboto', sans-serif;
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    color: #c1c1c1;
+
+    &:after {
+      margin-left: 10px;
+    }
+
+    &-like:after {
+      @include sprite-pseudo-box($icon-count-like);
+    }
+
+    &-comment:after {
+      @include sprite-pseudo-box($icon-count-comment);
+    }
+
+    &-show:after {
+      @include sprite-pseudo-box($icon-count-show);
+    }
+  }
+}
