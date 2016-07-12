@@ -13,14 +13,6 @@ $(function() {
                 observeParents: true,
                 observer: true
             });
-
-            // по наведению - остановим
-            $(this).mouseover(function(){
-                imagesSlider.stopAutoplay();
-            });
-            $(this).mouseout(function(){
-                imagesSlider.startAutoplay();
-            });
         });
     });
 });

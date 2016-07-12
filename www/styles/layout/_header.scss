@@ -1,8 +1,38 @@
 .header {
-  padding: 15px 0 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0 7px 30px;
   background: #FFF;
-  border-bottom: 2px solid #f5f5f5;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+
+  &.transparent {
+    background: transparent;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+
+    .menuButton li {
+      background: $r-white;
+    }
+  }
+
   &__mainLogo {
     display: block;
+  }
+
+  .menuButton {
+    display: block;
+    width: 78px;
+    padding: 17px 0;
+
+    li {
+      width: 8px;
+      height: 8px;
+      margin: 5px auto;
+      background: $r-black;
+    }
   }
 }

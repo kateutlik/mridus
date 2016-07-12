@@ -7,7 +7,47 @@
 
 </head>
 <body class="signup" itemscope itemtype="http://schema.org/WebPage">
+    @@include('./../layout/_header.html', {
+        "headerClass": "transparent"
+    })
+
     @@include('./../components/_slider.html')
+
+    <div class="row padding-lr padding-tb">
+        <div class="col-6">
+            <div class="brick">
+                @@include('./../bricks/news-simple.html', {
+                    "image": 2,
+                    "data": 3,
+                    "label": 22,
+                    "counters": true,
+                    "like": 120,
+                    "comment": 35,
+                    "show": 3812
+                })
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="brick">
+                @@include('./../bricks/news-simple.html', {
+                "image": 1,
+                "data": 2,
+                "label": 31,
+                "counters": true,
+                "like": 154,
+                "comment": 26,
+                "show": 2789
+                })
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="brick">
+            @@include('./../bricks/main-for-today.html')
+        </div>
+    </div>
+
     @@include('./../layout/_footer.html')
 </body>
 </html>

@@ -28,7 +28,7 @@ h5 {
     font-size: 15px; /* in use */
 }
 h4 {
-    font-size: 18px; /* in use */
+    font-size: 32px; /* in use */
     font-family: 'Roboto Slab', serif;
 }
 h3 {
@@ -72,6 +72,11 @@ h1 {
     padding-right: 30px;
 }
 
+.padding-tb {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .clickable {
   position: absolute;
   top: 0;
@@ -79,4 +84,26 @@ h1 {
   left: 0;
   right: 0;
   z-index: 12;
+}
+
+/* retina */
+/* пример
+<img src="_images/logo.png" class="x1" width="154" height="60" alt="РИДУС">
+<img src="_images/logo_2x.png" class="x2" width="154" height="60" alt="РИДУС">
+рекомендую все фото сделать так же
+так на НЕретине не будет съедаться лишний траффик,
+а на ретине будет хорошая четкость */
+.x2 {
+  display: none;
+}
+.x1 {
+  display: inline-block;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+  .x2 {
+    display: inline-block;
+  }
+  .x1 {
+    display: none;
+  }
 }

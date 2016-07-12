@@ -1,57 +1,176 @@
-.brick__header {
-    z-index: 11;
+.brick {
+  padding-bottom: 20px;
+
+  &__image {
     position: relative;
-    display: block;
+    height: 215px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__content {
+    h4,
+    h4 a {
+      text-decoration: none;
+      color: $r-black;
+    }
+
+    h5,
+    h5 a {
+      line-height: 1.1;
+      color: $r-black;
+      text-decoration: none;
+      margin-bottom: 9px;
+    }
+  }
+
+  &__mainLinkWrapper {
+    margin-bottom: 5px;
+  }
+
+  &__mainLink {
+    font: bold 32px/36px 'Roboto Slab', serif;
+    color: $r-black;
+    text-decoration: none;
+  }
+  &:hover &__mainLink {
+    color: $r-carrot;
+  }
+
+  &__text {
+    margin-bottom: 8px;
+    color: $r-black;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  &__mainLinkDate {
+    margin-top: 5px;
+    font: 300 18px 'Roboto', sans-serif;
+    color: $r-dark-gray;
+    text-transform: uppercase;
+  }
+
+
+  &__dateLabel {
+    z-index: 20;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    padding: 1px 6px 2px;
+    color: $r-white;
+    font-weight: bold;
+    background: $r-black;
+  }
+
+  &__typeLabel {
+    position: absolute;
+    left: 0;
+    top: 11px;
+    padding: 7px 10px 6px;
+    font: 700 16px 'Roboto', sans-serif;
+    text-transform: uppercase;
+    background: $r-orange;
+
+    &:after,
+    &:before {
+      content: "";
+      position: absolute;
+      right: -6px;
+      border-left: 3px solid $r-orange;
+      border-right: 3px solid transparent;
+    }
+    &:before {
+      top: 0;
+      border-bottom: 8px solid transparent;
+      border-top: 8px solid $r-orange;
+    }
+    &:after {
+      bottom: 0;
+      border-bottom: 8px solid $r-orange;
+      border-top: 8px solid transparent;
+    }
+  }
+
+
+  &__videoIcon {
+    z-index: 20;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 32px;
+    height: 32px;
+    background: $r-light-orange;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 8px;
+      border: 8px solid transparent;
+      border-left: 13px solid $r-black;
+    }
+  }
+
+  .countersBlock {
+    font-size: 22px;
+  }
+  .countersBlock__item {
+    margin-right: 10px;
+
+    &-like:after {
+      @include sprite-pseudo-box($icon-brick-count-like);
+    }
+
+    &-comment:after {
+      @include sprite-pseudo-box($icon-brick-count-comment);
+    }
+
+    &-show:after {
+      @include sprite-pseudo-box($icon-brick-count-show);
+    }
+  }
+
+  &__label-position {
+    z-index: 20;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    line-height: 0;
+  }
+  &__label {
+    display: inline-block;
+    margin-bottom: 2px;
+    padding: 3px 5px 1px;
+    font: bold 18px/1.2 'Roboto', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: rgba(102,119,135,.7);
+    transition: background .15s ease;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:hover {
+      color: #fff !important;
+      background: rgba(102,119,135,1);
+    }
+  }
+
+
+  &__header {
+    background: $r-orange;
     box-sizing: border-box;
-    padding: 9px 18px 10px;
     font-weight: bold;
     text-decoration: none;
     font-family: 'Roboto Slab', serif;
     text-transform: uppercase;
-    color: $r-black;
-    background: $r-orange;
-}
+    color: #000;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
 
-.todayMainNewsList {
-    display: flex;
-    width: 100%;
-    height: calc(93% - 48px);
-    margin-top: 6%;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.todayMainNewsList__item {
-    position: relative;
-    padding: 0 18px 0 54px;
-
-    &:before {
-        content: "";
-        position: absolute;
-        top: 6px;
-        left: 18px;
-        display: block;
-        width: 14px;
-        height: 12px;
-        background: $r-orange;
-    }
-
-    &:after {
-        content: "";
-        position: absolute;
-        top: 6px;
-        left: 18px;
-        display: block;
-        border: 6px solid transparent;
-        border-left: 3px solid $r-white;
-    }
-}
-
-.todayMainNewsList__link {
-    font-family: 'Roboto Slab', serif;
-    font-size: 18px;
-    font-weight: bold;
-    color: $r-black;
-    text-decoration: none;
-    line-height: 1.3;
 }

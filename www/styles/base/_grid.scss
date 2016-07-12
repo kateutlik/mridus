@@ -1,0 +1,12 @@
+/* ----- grid.scss ----- */
+.row {
+  display: flex;
+  background: $r-white;
+}
+.col-6 {
+  width: 50%;
+  margin-left: 20px;
+}
+.col-6:first-child {
+  margin-left: 0;
+}
