@@ -96,7 +96,7 @@ gulp.task('sprite', function() {
                 retinaSrcFilter: './www/sprite/*-2x.png',
                 imgName: '../images/sprite.png',
                 retinaImgName: 'sprite-2x.png',
-                cssName: 'sprite.scss',
+                cssName: '_sprite.scss',
                 algorithm: 'binary-tree',
                 cssTemplate: './scss.template.handlebars',
                 cssVarMap: function(sprite) {

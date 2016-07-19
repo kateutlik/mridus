@@ -1,4 +1,5 @@
 .brick {
+  position: relative;
   padding-bottom: 20px;
 
   &__image {
@@ -122,14 +123,15 @@
 
     &-like:after {
       @include sprite-pseudo-box($icon-brick-count-like);
+
     }
 
     &-comment:after {
-      @include sprite-pseudo-box($icon-brick-count-comment);
+      @include sprite-pseudo-box($icon-count-comment);
     }
 
     &-show:after {
-      @include sprite-pseudo-box($icon-brick-count-show);
+      @include sprite-pseudo-box($icon-count-show);
     }
   }
 
