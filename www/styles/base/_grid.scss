@@ -5,6 +5,12 @@
 }
 .col-12 {
   width: 100%;
+  .brick__image {
+    height: 445px;
+  }
+  .brick__label-position {
+    bottom: 20px;
+  }
 }
 .col-6 {
   width: 50%;

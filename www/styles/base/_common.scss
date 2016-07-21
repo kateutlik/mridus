@@ -107,3 +107,16 @@ h1 {
     display: none;
   }
 }
+
+.menuButton {
+  display: block;
+  width: 78px;
+  padding: 17px 0;
+
+  li {
+    width: 8px;
+    height: 8px;
+    margin: 5px auto;
+    background: $r-white;
+  }
+}
