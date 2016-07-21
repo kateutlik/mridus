@@ -35,9 +35,6 @@
     color: $r-black;
     text-decoration: none;
   }
-  &:hover &__mainLink {
-    color: $r-carrot;
-  }
 
   &__text {
     margin-bottom: 8px;
@@ -127,11 +124,11 @@
     }
 
     &-comment:after {
-      @include sprite-pseudo-box($icon-count-comment);
+      @include sprite-pseudo-box($icon-brick-count-comment);
     }
 
     &-show:after {
-      @include sprite-pseudo-box($icon-count-show);
+      @include sprite-pseudo-box($icon-brick-count-show);
     }
   }
 
@@ -174,9 +171,17 @@
     padding-top: 27px;
     padding-bottom: 27px;
   }
+}
 
+.view_centred {
+  text-align: center;
 }
 
 .border_yellow {
   border: 3px solid $r-orange;
+}
+
+.view_opinion {
+  background: $r-lll;
+  overflow: hidden;
 }
