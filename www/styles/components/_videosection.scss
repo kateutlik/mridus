@@ -1,0 +1,64 @@
+.videosection {
+  padding: 110px 25px 20px 25px;
+  background: $r-orange;
+  &__description {
+    margin-bottom: 20px;
+    color: #667787;
+    font-size: 24px;
+  }
+
+  .countersBlock {
+    font-size: 22px;
+  }
+  .countersBlock__item {
+    margin-right: 30px;
+    color: $r-black;
+
+    &-like:after {
+      @include sprite-pseudo-box($icon-black-count-like);
+
+    }
+
+    &-comment:after {
+      @include sprite-pseudo-box($icon-black-count-comment);
+    }
+
+    &-show:after {
+      @include sprite-pseudo-box($icon-black-count-show);
+    }
+  }
+  .label {
+    position: absolute;
+    background: #000;
+    color: #fff;
+    top: 0;
+    left: -16px;
+    font-size: 32px;
+    padding: 21px 97px 21px 40px;;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    &:before {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 0;
+      height: 0;
+      border: 8px solid transparent;
+      border-top: 8px solid #cb6f25;
+      border-right: 8px solid #cb6f25;
+    }
+    &:after {
+      display: block;
+      content: "";
+      position: absolute;
+      right: 20px;
+      top: 26px;
+      width: 50px;
+      height: 50px;
+      @include sprite-pseudo-box($icon-white-right-arrow);
+    }
+  }
+}
