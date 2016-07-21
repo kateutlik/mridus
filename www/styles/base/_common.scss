@@ -33,8 +33,8 @@ h4 {
 }
 h3 {
     font-family: 'Roboto Slab', serif;
-    font-size: 20px;
-    margin-bottom: 12px;
+    font-size: 42px;
+    margin-bottom: 30px;
 }
 h2 {
     font-family: 'Roboto Slab', serif;
@@ -119,4 +119,10 @@ h1 {
     margin: 5px auto;
     background: $r-white;
   }
+}
+
+.iscroll {
+  position: relative;
+  overflow: hidden;
+  width: 100.1%;
 }
