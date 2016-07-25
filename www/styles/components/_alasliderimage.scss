@@ -1,0 +1,21 @@
+.alasliderimage {
+  position: relative;
+  &__image {
+    width: 100%;
+    display: block;
+    height: 425px;
+    overflow: hidden;
+  }
+  &__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 30px 30px;
+    p {
+      margin-bottom: 10px;
+      font: bold 52px 'Roboto Slab', serif;
+      color: $r-white;
+    }
+  }
+}

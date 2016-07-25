@@ -126,3 +126,31 @@ h1 {
   overflow: hidden;
   width: 100.1%;
 }
+
+.useful {
+  background: $r-white;
+}
+
+.health {
+  position: relative;
+  background: $r-252525;
+
+  .block-name {
+    color: $r-white;
+  }
+  .brick__label {
+    background: $r-health;
+  }
+  &__logo {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+  }
+}
+
+.block-name {
+  padding: 31px 0;
+  font: bold 36px 'Roboto Slab', serif;
+  text-align: center;
+  text-transform: uppercase;
+}
