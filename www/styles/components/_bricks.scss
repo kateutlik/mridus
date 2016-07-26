@@ -66,9 +66,9 @@
   &__typeLabel {
     position: absolute;
     left: 0;
-    top: 11px;
-    padding: 7px 10px 6px;
-    font: 700 16px 'Roboto', sans-serif;
+    top: 0;
+    padding: 11px 15px 10px;
+    font: 700 24px 'Roboto', sans-serif;
     text-transform: uppercase;
     background: $r-orange;
 
@@ -76,19 +76,19 @@
     &:before {
       content: "";
       position: absolute;
-      right: -6px;
-      border-left: 3px solid $r-orange;
-      border-right: 3px solid transparent;
+      right: -10px;
+      border-left: 5px solid $r-orange;
+      border-right: 5px solid transparent;
     }
     &:before {
       top: 0;
-      border-bottom: 8px solid transparent;
-      border-top: 8px solid $r-orange;
+      border-bottom: 12px solid transparent;
+      border-top: 12px solid $r-orange;
     }
     &:after {
       bottom: 0;
-      border-bottom: 8px solid $r-orange;
-      border-top: 8px solid transparent;
+      border-bottom: 12px solid $r-orange;
+      border-top: 12px solid transparent;
     }
   }
 
