@@ -2,7 +2,7 @@
 
 .slider {
   position: relative;
-  height: 430px;
+  height: 215px;
   width: 100%;
   overflow: hidden;
 
@@ -27,15 +27,15 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 0 30px 40px;
+    padding: 0 15px 20px;
     z-index: 15;
     box-sizing: border-box;
 
     h1 {
       line-height: 1.08;
       text-transform: none;
-      font-size: 52px;
-      margin-bottom: 14px;
+      font-size: 26px;
+      margin-bottom: 7px;
 
       a {
         color: #fff;

@@ -1,7 +1,7 @@
 .opinion {
   &__sliderInfo {
     font-weight: normal;
-    font-size: 24px;
+    font-size: 12px;
     font-family: 'Roboto', sans-serif;
     display: inline-block;
     transform: translateY(-1px);
@@ -10,28 +10,28 @@
   &__image {
     position: relative;
     display: block;
-    margin-bottom: 10px;
-    height: 480px;
+    margin-bottom: 5px;
+    height: 240px;
     background-size: cover;
     background-position: center;
   }
   &__content {
-    padding: 35px 25px;
+    padding: 18px 13px;
     box-sizing: border-box;
     overflow: hidden;
     font-family: 'Myriad Pro', serif;
     color: $r-white;
     &-name {
       text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
-      padding-bottom: 15px;
-      font-size: 32px;
+      padding-bottom: 7px;
+      font-size: 16px;
     }
     &-about {
-      font-size: 26px;
+      font-size: 13px;
     }
   }
   &__info {
-    padding-top: 30px;
+    padding-top: 15px;
     position: absolute;
     color: $r-white;
     left: 0;
@@ -42,9 +42,9 @@
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 100%);
   }
   &__mainLinkWrapper {
-    margin-bottom: 25px;
+    margin-bottom: 13px;
   }
   .brick__mainLink {
-    font-size: 42px;
+    font-size: 21px;
   }
 }

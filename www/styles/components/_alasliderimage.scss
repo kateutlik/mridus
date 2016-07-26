@@ -3,7 +3,7 @@
   &__image {
     width: 100%;
     display: block;
-    height: 425px;
+    height: 213px;
     overflow: hidden;
   }
   &__text {
@@ -11,10 +11,10 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 0 30px 30px;
+    padding: 0 15px 15px;
     p {
-      margin-bottom: 10px;
-      font: bold 52px 'Roboto Slab', serif;
+      margin-bottom: 5px;
+      font: bold 26px 'Roboto Slab', serif;
       color: $r-white;
     }
   }

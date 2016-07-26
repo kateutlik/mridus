@@ -1,29 +1,29 @@
 .signup {
   background: #FFF;
   &__form {
-    padding: 40px 30px 120px 30px;
+    padding: 20px 15px 60px 15px;
     &-title {
-      font: bold 42px 'Roboto Slab', serif;
+      font: bold 21px 'Roboto Slab', serif;
     }
     &-question {
-      margin-top: 60px;
+      margin-top: 30px;
       label {
         display: block;
-        margin-bottom: 20px;
-        font: normal 32px 'Roboto Regular', serif;
+        margin-bottom: 10px;
+        font: normal 16px 'Roboto Regular', serif;
         color: #747474;
       }
     }
     &-subscribe {
       display: block;
-      margin: 40px 0;
-      font: normal 32px 'Roboto Regular', serif;
+      margin: 20px 0;
+      font: normal 16px 'Roboto Regular', serif;
       color: #747474;
     }
     .yellowButton {
-      padding: 25px 140px;
+      padding: 12px 79px;
       .corner {
-        height: 74px;
+        height: 37px;
       }
     }
   }

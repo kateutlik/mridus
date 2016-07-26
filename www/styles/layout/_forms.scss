@@ -6,27 +6,27 @@ input[type="tel"],
 input[type="url"] {
     width: 100%;
     margin: 0;
-    padding: 7px 13px 6px;
+    padding: 3px 7px 3px;
     border: 1px solid $r-gray;
     border-radius: 0;
-    font: normal 33px/19px 'RobotoLight', sans-serif;
+    font: normal 17px/10px 'RobotoLight', sans-serif;
     -webkit-appearance: none;
 }
 
 .search__input[type="text"] {
     position: relative;
-    width: calc(100% - 132px);
-    padding-right: 80px;
-    padding-left: 35px;
+    width: calc(100% - 66px);
+    padding-right: 40px;
+    padding-left: 18px;
     color: $r-black;
     background: $r-white;
 }
 
 .yellowButton {
     position: relative;
-    margin-right: 10px;
-    padding: 10px 8px 9px 18px;
-    font: bold 12px 'Roboto Slab', serif;
+    margin-right: 5px;
+    padding: 5px 4px 5px 9px;
+    font: bold 6px 'Roboto Slab', serif;
     text-decoration: none;
     text-transform: uppercase;
     color: $r-black;
@@ -43,10 +43,10 @@ input[type="url"] {
     .corner {
         position: absolute;
         bottom: 0;
-        right: -10px;
+        right: -5px;
         display: block;
-        width: 11px;
-        height: 23px;
+        width: 6px;
+        height: 12px;
         background: $r-orange;
         transition: all 0.18s;
 
@@ -54,9 +54,9 @@ input[type="url"] {
             content: "";
             position: absolute;
             right: 0;
-            top: -10px;
+            top: -5px;
             display: block;
-            border: 5px solid transparent;
+            border: 2px solid transparent;
             border-bottom-color: $r-black;
             border-left-color: $r-black;
             box-shadow: -1px 0 0 0 $r-orange;
@@ -68,19 +68,19 @@ input[type="url"] {
             right: 0;
             top: 0;
             display: block;
-            border: 5px solid transparent;
+            border: 2px solid transparent;
             border-top-color: rgba(0,0,0,.1);
             border-right-color: rgba(0,0,0,.1);
         }
     }
 
     &.view_big {
-        font-size: 26px;
+        font-size: 13px;
         display: inline-block;
         transform: translateY(-1px);
 
         .corner {
-            height: 43px;
+            height: 22px;
         }
     }
 }
