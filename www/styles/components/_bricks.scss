@@ -67,8 +67,8 @@
     position: absolute;
     left: 0;
     top: 0;
-    padding: 7px 10px 6px;
-    font: 700 16px 'Roboto', sans-serif;
+    padding: 6px 10px 5px;
+    font: 700 12px 'Roboto', sans-serif;
     text-transform: uppercase;
     background: $r-orange;
 
@@ -98,17 +98,17 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 16px;
-    height: 16px;
+    width: 23px;
+    height: 23px;
     background: $r-light-orange;
 
     &:after {
       content: "";
       position: absolute;
-      left: 5px;
-      top: 4px;
-      border: 4px solid transparent;
-      border-left: 7px solid $r-black;
+      left: 8px;
+      top: 6px;
+      border: 6px solid transparent;
+      border-left: 10px solid $r-black;
     }
   }
 

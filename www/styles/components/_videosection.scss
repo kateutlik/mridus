@@ -1,6 +1,10 @@
 .videosection {
   padding: 55px 12px 10px 12px;
   background: $r-orange;
+  .brick__mainLink {
+    display: block;
+    margin-bottom: 10px;
+  }
   &__description {
     margin-bottom: 10px;
     color: #667787;

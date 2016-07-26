@@ -139,8 +139,14 @@ h1 {
   position: relative;
   background: $r-252525;
 
-  .block-name {
+  .block-name,
+  .brick__mainLink,
+  .brick__text,
+  .brick__mainLinkDate {
     color: $r-white;
+  }
+  .countersBlock__item {
+    color: #7c7c7c;
   }
   .brick__label {
     background: $r-health;
