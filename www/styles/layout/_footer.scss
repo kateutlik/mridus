@@ -61,7 +61,7 @@ footer {
         position: relative;
 
         .footerSubscribe__input {
-            width: calc(100% - 130px);
+            width: calc(100% - 119px);
             height: 28px;
             padding: 4px 50px 4px 5px;
             border: 1px solid $r-orange;
@@ -83,7 +83,7 @@ footer {
             position: absolute;
             right: 0;
             top: 0;
-            font-size: 15px;
+            font-size: 13px;
 
             .corner {
                 height: 23px;
@@ -109,6 +109,7 @@ footer {
         position: absolute;
         right: 15px;
         top: 13px;
+        @include sprite-pseudo-box($icon-age-limit);
       }
     }
 }
