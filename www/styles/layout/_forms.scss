@@ -13,6 +13,27 @@ input[type="url"] {
     -webkit-appearance: none;
 }
 
+input::-webkit-input-placeholder {
+    color: $r-placeholder;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+input::-moz-placeholder {
+    color: $r-placeholder;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+input:-moz-placeholder {
+    color: $r-placeholder;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+input:-ms-input-placeholder {
+    color: $r-placeholder;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
 .search__input[type="text"] {
     position: relative;
     width: calc(100% - 66px);

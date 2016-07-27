@@ -32,9 +32,18 @@ footer {
             color: $r-white;
             background: transparent;
 
-            &::-webkit-input-placeholder,
-            &::-moz-placeholder,
-            &:-moz-placeholder,
+            &::-webkit-input-placeholder {
+                color: $r-white;
+                font-weight: 200;
+            }
+            &::-moz-placeholder {
+                color: $r-white;
+                font-weight: 200;
+            }
+            &:-moz-placeholder {
+                color: $r-white;
+                font-weight: 200;
+            }
             &:-ms-input-placeholder {
                 color: $r-white;
                 font-weight: 200;
