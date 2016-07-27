@@ -46,7 +46,7 @@
 
   &__mainLinkDate {
     margin-top: 3px;
-    font: 300 9px 'Roboto', sans-serif;
+    font: 300 12px 'Roboto', sans-serif;
     color: $r-dark-gray;
     text-transform: uppercase;
   }
@@ -116,8 +116,6 @@
     font-size: 11px;
   }
   .countersBlock__item {
-    margin-right: 5px;
-
     &-like:after {
       @include sprite-pseudo-box($icon-brick-count-like);
 
@@ -187,4 +185,9 @@
 .view_opinion {
   background: $r-lll;
   overflow: hidden;
+}
+
+.bricksContainer .yellowButton {
+  margin-bottom: 15px;
+  display: inline-block;
 }

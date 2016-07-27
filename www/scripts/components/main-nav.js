@@ -4,7 +4,7 @@ $(function() {
 	$(document).ready(function() {
 		var header = $('#header');
 
-		header.find('.menuButton').click(function(){
+		header.find('.burgerButton').click(function(){
 			header.toggleClass('state_open')
 		});
 	});

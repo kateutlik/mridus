@@ -85,6 +85,10 @@ hr {
   padding-bottom: 10px;
 }
 
+.d-flex {
+    display: flex;
+}
+
 .clickable {
   position: absolute;
   top: 0;
@@ -129,9 +133,47 @@ hr {
 .contentBackground_blue {
   background: $r-blue;
 }
-
 .contentBackground_deepblue {
-  background: $r-deep-blue;
+    background: $r-deep-blue;
+}
+
+.contentBackground_deepblue,
+.contentBackground_red,
+.contentBackground_gunmetal,
+.health {
+
+    .brick {
+        .countersBlock__item {
+            color: rgba(255,255,255,0.6);
+
+            &-like:after {
+                @include sprite-pseudo-box($icon-count-like);
+
+            }
+
+            &-comment:after {
+                @include sprite-pseudo-box($icon-count-comment);
+            }
+
+            &-show:after {
+                @include sprite-pseudo-box($icon-count-show);
+            }
+        }
+    }
+    .block-name {
+        color: $r-white;
+    }
+    .brick__text {
+        color: $r-d3d3d3;
+    }
+    .brick__mainLink,
+    .brick__mainLinkDate {
+        color: $r-e1e4e7;
+    }
+}
+
+.contentBackground_blue .countersBlock__item {
+    color: #929fa9;
 }
 
 .contentBackground_red {
@@ -142,7 +184,7 @@ hr {
   background: $r-gunmetall;
 }
 
-.technologies,
+//todo refactor colors
 .health {
   .block-name {
     color: $r-white;
@@ -178,4 +220,17 @@ hr {
   font: bold 18px 'Roboto Slab', serif;
   text-align: center;
   text-transform: uppercase;
+}
+.block-name.d-flex {
+    align-items: center;
+
+    p {
+        margin-left: auto;
+        padding-left: 40px;
+    }
+
+    .burgerButton {
+        padding: 0;
+        margin-left: auto;
+    }
 }

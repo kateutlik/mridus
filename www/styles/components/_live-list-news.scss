@@ -2,14 +2,15 @@
   &__news {
     padding: 18px 18px 0 18px;
     font-size: 13px;
+
     &-title {
-      font-family: 'Myriad Pro', serif;
+      font-weight: 700;
+      font-family: 'Roboto Slab', serif;
       font-size: 21px;
       margin-bottom: 15px;
     }
   }
   &__items {
-    padding-bottom: 20px;
     list-style-type: decimal;
     list-style-position: inside;
   }
@@ -33,7 +34,7 @@
     }
     &:after {
       left: 45px;
-      top: 4px;
+      top: 7px;
       content: "";
       position: absolute;
       border: 3px solid transparent;

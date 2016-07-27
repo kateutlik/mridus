@@ -6,9 +6,9 @@ $(document).ready(function() {
 
     $('.accordion-section-title').click(function(e) {
         // Grab current anchor value
-        var currentAttrValue = $(this).attr('href');
+        var currentAttrValue = $(this).data('content');
 
-        if($(e.target).is('.active')) {
+        if($(this).is('.active')) {
             close_accordion_section();
         }else {
             close_accordion_section();

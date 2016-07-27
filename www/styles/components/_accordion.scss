@@ -1,14 +1,15 @@
 .accordion {
   &-section {
     &-title {
-      display: block;
+      display: flex;
       padding: 16px 0 16px 15px;
       font: bold 18px 'Roboto Slab', serif;
       text-transform: uppercase;
-      text-decoration: none;
       color: $r-white;
+
       &__flip {
         position: relative;
+
         &:before {
           position: absolute;
           content: "";
@@ -20,6 +21,11 @@
           top: 3px;
           transform: rotate(-135deg);
         }
+      }
+
+      .burgerButton {
+        padding: 0;
+        margin-left: auto;
       }
     }
     &-content {
