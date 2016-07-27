@@ -47,6 +47,14 @@ h1 {
     margin-bottom: 20px;
 }
 
+
+hr {
+    height: 1px;
+    margin: 15px 0;
+    border: 0;
+    background: $r-hr-color;
+}
+
 .section-details  {
     position: relative;
     display: block;
@@ -97,27 +105,14 @@ h1 {
   display: none;
 }
 .x1 {
-  display: inline-block;
+  display: block;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
   .x2 {
-    display: inline-block;
+    display: block;
   }
   .x1 {
     display: none;
-  }
-}
-
-.menuButton {
-  display: block;
-  width: 39px;
-  padding: 8px 0;
-
-  li {
-    width: 4px;
-    height: 4px;
-    margin: 2px auto;
-    background: $r-white;
   }
 }
 

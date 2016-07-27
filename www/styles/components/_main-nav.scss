@@ -1,0 +1,207 @@
+.menuButton {
+	z-index: 1;
+	display: block;
+	width: 40px;
+	padding: 8px 0;
+
+	li {
+		width: 4px;
+		height: 4px;
+		margin: 3px auto;
+		background: rgba(255,255,255,1);
+		transition: .25s ease-in-out;
+
+		&:nth-child(2) {
+			position: relative;
+		}
+
+		&:nth-child(2):before,
+		&:nth-child(2):after {
+			content: '';
+			position: absolute;
+			left: -50%;
+			display: block;
+			width: 20px;
+			height: 2px;
+			margin: 1px 0 0 -6px;
+			transform: rotate(45deg);
+			background: rgba(255,255,255,0);
+			transition: .25s ease-in-out;
+		}
+
+		&:nth-child(2):after {
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+.nav-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: $r-black;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 100ms ease-out;
+}
+.nav {
+	z-index: 2;
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	left: -100%;
+	width: 250px;
+	height: 100%;
+	padding: 15px;
+	background: $r-main-nav-bg;
+	transition: all 200ms ease-out;
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 15px;
+
+		.header__readLater {
+			display: block;
+			font-size: 0;
+			color: $r-white;
+			text-decoration: none;
+
+			.circle {
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				margin: 0 5px 0 0;
+				background-color: $r-carrot;
+				border-radius: 50%;
+				vertical-align: middle;
+
+				&:before {
+					transform: translate(-50%, -51%);
+					margin-top: 50%;
+					margin-left: 50%;
+
+					@include sprite-pseudo-box($icon-read-later);
+				}
+			}
+
+			.number {
+				font-size: 14px;
+				vertical-align: middle;
+			}
+		}
+
+		.header__logo {
+			display: block;
+			margin: 0 5px 0 0;
+		}
+
+		.header__loginButton {
+			display: block;
+			text-decoration: none;
+
+			&:before {
+				@include sprite-pseudo-box($icon-login);
+			}
+		}
+	}
+
+	&__link {
+		position: relative;
+		display: block;
+		padding: 0 0 0 30px;
+		margin-bottom: 20px;
+		font: 600 21px 'Roboto', sans-serif;
+		color: $r-white;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: all 200ms ease-out;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			display: block;
+			width: 12px;
+			height: 10px;
+			margin-top: -5px;
+			background: $r-orange;
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			display: block;
+			margin-top: -5px;
+			border: 5px solid transparent;
+			border-left: 2px solid $r-main-nav-bg
+		}
+	}
+
+	.tagList {
+		&__link {
+			display: block;
+			margin-bottom: 20px;
+			font: 600 14px 'Roboto', sans-serif;
+			color: $r-white;
+			text-decoration: none;
+			text-transform: uppercase;
+			transition: all 200ms ease-out;
+		}
+	}
+
+	.navSearch {
+		display: flex;
+		margin: 0 -15px 30px;
+		background: rgba(255,255,255,0.2);
+
+		&__input {
+			background: none;
+			border: none;
+			font-size: 25px;
+		}
+
+		&__button {
+			width: 44px;
+			height: 44px;
+			background-color: transparent;
+			cursor: pointer;
+
+			&:before {
+				@include sprite-pseudo-box($icon-loupe-white);
+				transition: 0.25s ease-out;
+			}
+		}
+	}
+
+	.socials {
+		margin-bottom: 30px;
+	}
+}
+
+.state_open {
+	.nav-overlay {
+		visibility: visible;
+		opacity: 0.8;
+	}
+	.nav {
+		left: 0;
+	}
+
+	.menuButton {
+		li {
+			background: rgba(255,255,255,0);
+
+			&:nth-child(2):before,
+			&:nth-child(2):after {
+				background: rgba(255,255,255,1);
+			}
+		}
+	}
+}

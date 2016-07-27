@@ -43,6 +43,11 @@ gulp.task('styles', function() {
 		.pipe(cssnano());
 });
 
+gulp.task('fonts', function() {
+	return gulp.src('www/fonts/*')
+		.pipe(gulp.dest('dist/fonts'));
+});
+
 // Scripts
 gulp.task('scripts', function() {
 	return gulp.src(['www/scripts/**/*.js', '!www/scripts/vendors/*.js'])
@@ -108,6 +113,6 @@ gulp.task('sprite', function() {
     spriteData.css.pipe(gulp.dest('./www/styles/'));
 });
 
-gulp.task('default', ['vendors', 'scripts', 'images', 'sprite', 'styles', 'fileinclude', 'express', 'watch']);
-gulp.task('build', ['clean', 'vendors', 'scripts', 'styles', 'fileinclude', 'images', 'sprite']);
-gulp.task('heroku', ['vendors', 'scripts', 'styles', 'fileinclude', 'images', 'sprite']);
+gulp.task('default', ['vendors', 'scripts', 'images', 'fonts', 'sprite', 'styles', 'fileinclude', 'express', 'watch']);
+gulp.task('build', ['clean', 'vendors', 'scripts', 'styles', 'fileinclude', 'images', 'fonts', 'sprite']);
+gulp.task('heroku', ['vendors', 'scripts', 'styles', 'fileinclude', 'images', 'fonts', 'sprite']);
