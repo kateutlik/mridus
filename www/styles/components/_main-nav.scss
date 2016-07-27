@@ -1,13 +1,13 @@
 .menuButton {
 	z-index: 1;
 	display: block;
-	width: 78px;
-	padding: 17px 0;
+	width: 40px;
+	padding: 8px 0;
 
 	li {
-		width: 8px;
-		height: 8px;
-		margin: 5px auto;
+		width: 4px;
+		height: 4px;
+		margin: 3px auto;
 		background: rgba(255,255,255,1);
 		transition: .25s ease-in-out;
 
@@ -21,9 +21,9 @@
 			position: absolute;
 			left: -50%;
 			display: block;
-			width: 40px;
-			height: 4px;
-			margin: 2px 0 0 -12px;
+			width: 20px;
+			height: 2px;
+			margin: 1px 0 0 -6px;
 			transform: rotate(45deg);
 			background: rgba(255,255,255,0);
 			transition: .25s ease-in-out;
@@ -52,11 +52,62 @@
 	position: fixed;
 	top: 0;
 	left: -100%;
-	width: 280px;
+	width: 250px;
 	height: 100%;
 	padding: 15px;
 	background: $r-main-nav-bg;
 	transition: all 200ms ease-out;
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 15px;
+
+		.header__readLater {
+			display: block;
+			font-size: 0;
+			color: $r-white;
+			text-decoration: none;
+
+			.circle {
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				margin: 0 5px 0 0;
+				background-color: $r-carrot;
+				border-radius: 50%;
+				vertical-align: middle;
+
+				&:before {
+					transform: translate(-50%, -51%);
+					margin-top: 50%;
+					margin-left: 50%;
+
+					@include sprite-pseudo-box($icon-read-later);
+				}
+			}
+
+			.number {
+				font-size: 14px;
+				vertical-align: middle;
+			}
+		}
+
+		.header__logo {
+			display: block;
+			margin: 0 5px 0 0;
+		}
+
+		.header__loginButton {
+			display: block;
+			text-decoration: none;
+
+			&:before {
+				@include sprite-pseudo-box($icon-login);
+			}
+		}
+	}
 
 	&__link {
 		position: relative;
@@ -67,6 +118,7 @@
 		color: $r-white;
 		text-decoration: none;
 		text-transform: uppercase;
+		transition: all 200ms ease-out;
 
 		&:before {
 			content: "";
@@ -100,12 +152,13 @@
 			color: $r-white;
 			text-decoration: none;
 			text-transform: uppercase;
+			transition: all 200ms ease-out;
 		}
 	}
 
 	.navSearch {
 		display: flex;
-		margin: 0 -15px;
+		margin: 0 -15px 30px;
 		background: rgba(255,255,255,0.2);
 
 		&__input {
@@ -117,8 +170,18 @@
 		&__button {
 			width: 44px;
 			height: 44px;
-			background: none;
+			background-color: transparent;
+			cursor: pointer;
+
+			&:before {
+				@include sprite-pseudo-box($icon-loupe-white);
+				transition: 0.25s ease-out;
+			}
 		}
+	}
+
+	.socials {
+		margin-bottom: 30px;
 	}
 }
 
