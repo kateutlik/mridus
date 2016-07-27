@@ -2,8 +2,8 @@
 
   &__item {
     position: relative;
-    padding: 0 0 0 60px;
-    border-top: 2px solid $r-light-gray;
+    padding: 0 0 0 30px;
+    border-top: 1px solid $r-light-gray;
 
     &:first-child {
       border-top: none;
@@ -12,29 +12,29 @@
     &:before {
       content: "";
       position: absolute;
-      top: 38px;
+      top: 19px;
       left: 0px;
       display: block;
-      width: 24px;
-      height: 20px;
+      width: 12px;
+      height: 10px;
       background: $r-orange;
     }
 
     &:after {
       content: "";
       position: absolute;
-      top: 38px;
+      top: 19px;
       left: 0px;
       display: block;
-      border: 10px solid transparent;
-      border-left: 5px solid $r-white;
+      border: 5px solid transparent;
+      border-left: 2px solid $r-white;
     }
   }
 
   &__link {
     display: block;
-    padding: 25px 0;
-    font: normal 32px/46px 'Roboto Slab', serif;
+    padding: 16px 0;
+    font: normal 16px/1.2 'Roboto Slab', serif;
     color: $r-black;
     text-decoration: none;
 

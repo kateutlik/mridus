@@ -1,10 +1,10 @@
 .newsList {
-  padding: 0 30px;
+  padding: 0 15px;
   ul {
-    margin: 15px 0;
+    margin: 7px 0;
   }
   &__item {
-    padding: 25px 0;
+    padding: 13px 0;
     border-bottom: 1px solid #eeeeee;
     &:last-child {
       border-bottom: none;
@@ -12,24 +12,24 @@
     &-date {
       display: block;
       float: left;
-      padding-top: 3px;
-      width: 57px;
-      font-size: 18px;
+      padding-top: 2px;
+      width: 28px;
+      font-size: 9px;
       color: #7e7e7e;
     }
     &-link {
       display: block;
-      margin-left: 57px;
-      font-size: 26px;
+      margin-left: 29px;
+      font-size: 13px;
       color: #343434;
       text-decoration: none;
     }
   }
   &__all {
     display: block;
-    padding: 30px 0;
+    padding: 15px 0;
     border: 1px solid #667787;
-    font-size: 22px;
+    font-size: 11px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;

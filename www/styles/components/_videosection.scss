@@ -1,17 +1,21 @@
 .videosection {
-  padding: 110px 25px 20px 25px;
+  padding: 55px 12px 10px 12px;
   background: $r-orange;
+  .brick__mainLink {
+    display: block;
+    margin-bottom: 10px;
+  }
   &__description {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #667787;
-    font-size: 24px;
+    font-size: 12px;
   }
 
   .countersBlock {
-    font-size: 22px;
+    font-size: 11px;
   }
   .countersBlock__item {
-    margin-right: 30px;
+    margin-right: 15px;
     color: $r-black;
 
     &-like:after {
@@ -32,9 +36,9 @@
     background: #000;
     color: #fff;
     top: 0;
-    left: -16px;
-    font-size: 32px;
-    padding: 21px 97px 21px 40px;;
+    left: -8px;
+    font-size: 16px;
+      padding: 10px 48px 10px 20px;;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Roboto Slab', serif;
@@ -46,18 +50,18 @@
       top: 100%;
       width: 0;
       height: 0;
-      border: 8px solid transparent;
-      border-top: 8px solid #cb6f25;
-      border-right: 8px solid #cb6f25;
+      border: 4px solid transparent;
+      border-top: 4px solid #cb6f25;
+      border-right: 4px solid #cb6f25;
     }
     &:after {
       display: block;
       content: "";
       position: absolute;
-      right: 20px;
-      top: 26px;
-      width: 50px;
-      height: 50px;
+      right: 10px;
+      top: 13px;
+      width: 25px;
+      height: 25px;
       @include sprite-pseudo-box($icon-white-right-arrow);
     }
   }

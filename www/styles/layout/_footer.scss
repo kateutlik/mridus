@@ -1,72 +1,72 @@
 /* ----- footer.scss ----- */
 
 footer {
-    padding-top: 25px;
+    padding-top: 13px;
     background: $r-medium-gray;
 
     p {
-        margin-bottom: 20px;
-        font: bold 32px 'Roboto Slab', serif;
+        margin-bottom: 10px;
+        font: bold 16px 'Roboto Slab', serif;
         color: $r-white;
     }
 
     .footerLinks {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 
     .socialNetwork__item {
         display: inline-block;
-        margin-right: 15px;
+        margin-right: 7px;
     }
 
     .socialNetwork__link {
         &:before {
             content: "";
             display: inline-block;
-            height: 75px;
-            width: 75px;
-            margin-right: 3px;
-            margin-bottom: 3px;
+            height: 37px;
+            width: 37px;
+            margin-right: 2px;
+            margin-bottom: 2px;
             vertical-align: middle;
             border-radius: 50%;
             background: $r-graphite url(../images/sprite.png) no-repeat;
-            background-size: 211px 375px;
+            background-size: 105px 187px;
             transition: background .2s ease-in-out;
         }
 
         &.view_iconFacebook:before {
-            background-position: -6px -109px;
+            background-position: -3px -55px;
         }
 
         &.view_iconvKontakte:before {
-            background-position: -41px -108px;
+            background-position: -20px -54px;
         }
         &.view_iconGoogle:before {
-            background-position: -111px -108px;
+            background-position: -55px -54px;
         }
         &.view_iconTwitter:before {
-            background-position: -76px -108px;
+            background-position: -38px -54px;
         }
         &.view_iconRSS:before {
-            background-position: -181px -109px;
+            background-position: -90px -55px;
         }
     }
 
 
     .footerSubscribe {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 
     .footerSubscribe__form {
         position: relative;
 
         .footerSubscribe__input {
-            width: calc(100% - 260px);
-            height: 57px;
-            padding: 8px 100px 8px 10px;
-            border: 2px solid $r-orange;
-            font-size: 32px;
-            line-height: 14px;
+            width: calc(100% - 119px);
+            height: 28px;
+            padding: 4px 50px 4px 5px;
+            border: 1px solid $r-orange;
+            font-size: 16px;
+            line-height: 7px;
             color: $r-white;
             background: transparent;
 
@@ -83,23 +83,23 @@ footer {
             position: absolute;
             right: 0;
             top: 0;
-            font-size: 29px;
+            font-size: 13px;
 
             .corner {
-                height: 47px;
+                height: 23px;
             }
         }
     }
 
     .footerCopy {
       position: relative;
-        padding: 33px 30px;
+        padding: 16px 15px;
         background: $r-black;
-        font-size: 24px;
+        font-size: 12px;
 
         &__text {
             margin: 0;
-            font-size: 24px;
+            font-size: 12px;
             font-weight: normal;
             color: #8a8a8a;
         }
@@ -107,8 +107,9 @@ footer {
       &__18plus {
         display: block;
         position: absolute;
-        right: 30px;
-        top: 26px;
+        right: 15px;
+        top: 13px;
+        @include sprite-pseudo-box($icon-age-limit);
       }
     }
 }

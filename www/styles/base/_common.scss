@@ -28,18 +28,18 @@ h5 {
     font-size: 15px; /* in use */
 }
 h4 {
-    font-size: 32px; /* in use */
+    font-size: 18px; /* in use */
     font-family: 'Roboto Slab', serif;
 }
 h3 {
     font-family: 'Roboto Slab', serif;
-    font-size: 42px;
+    font-size: 20px;
     margin-bottom: 30px;
 }
 h2 {
     font-family: 'Roboto Slab', serif;
     font-size: 32px; /* in use */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 h1 {
     font-family: 'Roboto Slab', serif;
@@ -76,13 +76,13 @@ hr {
 }
 
 .padding-lr {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .padding-tb {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .clickable {
@@ -134,22 +134,28 @@ hr {
   position: relative;
   background: $r-252525;
 
-  .block-name {
+  .block-name,
+  .brick__mainLink,
+  .brick__text,
+  .brick__mainLinkDate {
     color: $r-white;
+  }
+  .countersBlock__item {
+    color: #7c7c7c;
   }
   .brick__label {
     background: $r-health;
   }
   &__logo {
     position: absolute;
-    top: 15px;
-    left: 30px;
+    top: 7px;
+    left: 15px;
   }
 }
 
 .block-name {
-  padding: 31px 0;
-  font: bold 36px 'Roboto Slab', serif;
+  padding: 16px 0;
+  font: bold 18px 'Roboto Slab', serif;
   text-align: center;
   text-transform: uppercase;
 }

@@ -3,17 +3,17 @@
 .countersBlock {
   display: flex;
   align-items: center;
-  font: bold 22px 'Roboto', sans-serif;
+  font: bold 11px 'Roboto', sans-serif;
 
   &__item {
     position: relative;
     display: flex;
     align-items: center;
-    margin-right: 30px;
+    margin-right: 15px;
     color: #c1c1c1;
 
     &:after {
-      margin-left: 10px;
+      margin-left: 5px;
     }
 
     &-like:after {
