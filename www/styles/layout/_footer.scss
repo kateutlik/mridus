@@ -14,44 +14,6 @@ footer {
         margin-bottom: 15px;
     }
 
-    .socialNetwork__item {
-        display: inline-block;
-        margin-right: 7px;
-    }
-
-    .socialNetwork__link {
-        &:before {
-            content: "";
-            display: inline-block;
-            height: 37px;
-            width: 37px;
-            margin-right: 2px;
-            margin-bottom: 2px;
-            vertical-align: middle;
-            border-radius: 50%;
-            background: $r-graphite url(../images/sprite.png) no-repeat;
-            background-size: 105px 187px;
-            transition: background .2s ease-in-out;
-        }
-
-        &.view_iconFacebook:before {
-            background-position: -3px -55px;
-        }
-
-        &.view_iconvKontakte:before {
-            background-position: -20px -54px;
-        }
-        &.view_iconGoogle:before {
-            background-position: -55px -54px;
-        }
-        &.view_iconTwitter:before {
-            background-position: -38px -54px;
-        }
-        &.view_iconRSS:before {
-            background-position: -90px -55px;
-        }
-    }
-
 
     .footerSubscribe {
         margin-bottom: 15px;
