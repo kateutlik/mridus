@@ -1,0 +1,35 @@
+.accordion {
+  &-section {
+    &-title {
+      display: block;
+      padding: 16px 0 16px 15px;
+      font: bold 18px 'Roboto Slab', serif;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $r-white;
+      &__flip {
+        position: relative;
+        &:before {
+          position: absolute;
+          content: "";
+          width: 10px;
+          height: 10px;
+          border-top: 2px solid #fff;
+          border-left: 2px solid #fff;
+          left: 15px;
+          top: 3px;
+          transform: rotate(-135deg);
+        }
+      }
+    }
+    &-content {
+      display: none;
+    }
+  }
+  .active {
+    .accordion-section-title__flip:before {
+      top: 10px;
+      transform: rotate(45deg);
+    }
+  }
+}

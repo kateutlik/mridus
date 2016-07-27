@@ -25,8 +25,8 @@ input[type="url"] {
 .yellowButton {
     position: relative;
     margin-right: 5px;
-    padding: 5px 4px 5px 9px;
-    font: bold 6px 'Roboto Slab', serif;
+    padding: 6px 6px 5px 10px;
+    font: bold 8px 'Roboto Slab', serif;
     text-decoration: none;
     text-transform: uppercase;
     color: $r-black;
@@ -43,10 +43,10 @@ input[type="url"] {
     .corner {
         position: absolute;
         bottom: 0;
-        right: -5px;
+        right: -4px;
         display: block;
         width: 6px;
-        height: 12px;
+        height: 16px;
         background: $r-orange;
         transition: all 0.18s;
 

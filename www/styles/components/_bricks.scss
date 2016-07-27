@@ -170,6 +170,9 @@
     color: #000;
     padding-top: 13px;
     padding-bottom: 13px;
+    &-gray {
+      background: $r-light-gray;
+    }
   }
 }
 

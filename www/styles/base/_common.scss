@@ -135,16 +135,36 @@ h1 {
   background: $r-blue;
 }
 
+.contentBackground_deepblue {
+  background: $r-deep-blue;
+}
+
+.contentBackground_red {
+  background: $r-red;
+}
+
+.contentBackground_gunmetal {
+  background: $r-gunmetall;
+}
+
+.technologies,
+.health {
+  .block-name {
+    color: $r-white;
+  }
+  .brick__text {
+    color: $r-d3d3d3;
+  }
+  .brick__mainLink,
+  .brick__mainLinkDate {
+    color: $r-e1e4e7;
+  }
+}
+
 .health {
   position: relative;
   background: $r-252525;
 
-  .block-name,
-  .brick__mainLink,
-  .brick__text,
-  .brick__mainLinkDate {
-    color: $r-white;
-  }
   .countersBlock__item {
     color: #7c7c7c;
   }
