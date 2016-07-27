@@ -1,0 +1,33 @@
+.socials {
+	display: flex;
+	justify-content: center;
+
+	.socialNetwork__item {
+		display: inline-block;
+		margin-right: 6px;
+	}
+
+	.socialNetwork__link {
+		display: inline-block;
+		height: 36px;
+		width: 36px;
+		margin-right: 3px;
+		margin-bottom: 3px;
+		vertical-align: middle;
+		border-radius: 50%;
+		background: $r-graphite;
+		transition: color .2s ease-in-out;
+		color: $r-white;
+		text-decoration: none;
+		text-align: center;
+		
+		&:before {
+			font-size: 20px;
+			line-height: 36px;
+		}
+
+		&:hover {
+			color: $r-shadow-orange;
+		}
+	}
+}

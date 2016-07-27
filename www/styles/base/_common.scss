@@ -47,6 +47,14 @@ h1 {
     margin-bottom: 20px;
 }
 
+
+hr {
+    height: 1px;
+    margin: 15px 0;
+    border: 0;
+    background: $r-hr-color;
+}
+
 .section-details  {
     position: relative;
     display: block;
@@ -105,19 +113,6 @@ h1 {
   }
   .x1 {
     display: none;
-  }
-}
-
-.menuButton {
-  display: block;
-  width: 78px;
-  padding: 17px 0;
-
-  li {
-    width: 8px;
-    height: 8px;
-    margin: 5px auto;
-    background: $r-white;
   }
 }
 
