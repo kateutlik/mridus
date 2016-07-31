@@ -174,6 +174,11 @@
   }
 }
 
+.col-6 .brick .brick__mainLinkDate,
+.col-6 .brick .brick__text {
+  display: none;
+}
+
 .view_centred {
   text-align: center;
 }
