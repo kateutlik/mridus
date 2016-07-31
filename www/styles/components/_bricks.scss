@@ -172,6 +172,20 @@
       background: $r-light-gray;
     }
   }
+
+  &__delete {
+    margin-top: 10px;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: $r-606873;
+    background: $r-light-gray;
+    &__icon {
+      margin-left: 5px;
+      @include sprite-pseudo-box($icon-close);
+    }
+  }
 }
 
 .view_centred {
