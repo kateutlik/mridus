@@ -1,0 +1,155 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#" prefix="ya: https://webmaster.yandex.ru/vocabularies/">
+<head>
+
+    @@include('./../layout/_head.html')
+    <link href="./../../styles/pages/my-articles.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="my-articles" itemscope itemtype="http://schema.org/WebPage">
+
+<header itemscope itemtype="http://schema.org/WPHeader">
+    @@include('./../layout/_header.html')
+</header>
+
+<section class="wrapper contentBackground_white paddings_side padding_top padding-lr">
+    <h3>Личный кабинет</h3>
+
+    <div class="my-articles__header">
+        <ul class="my-articles__header__items">
+            <li class="my-articles__header__items__item">
+                <a href="#" class="my-articles__header__items__item__link" title="">мой профиль</a>
+            </li>
+            <li class="my-articles__header__items__item my-articles__header__items__item-active">
+                <a href="#" class="my-articles__header__items__item__link" title="">мои статьи (<span>15</span>)</a>
+            </li>
+            <li class="my-articles__header__items__item">
+                <a href="#" class="my-articles__header__items__item__link" title="">мои комментарии (<span>133</span>)</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="my-saved-articles__bricks">
+        <div class="row padding-tb">
+            <div class="col-6">
+                <div class="brick">
+                    @@include('./../bricks/news-simple.html', {
+                    "image": 2,
+                    "data": 6,
+                    "label": 22,
+                    "counters": true,
+                    "like": 0,
+                    "comment": 2,
+                    "show": 408
+                    })
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="brick">
+                    @@include('./../bricks/news-simple.html', {
+                    "image": 1,
+                    "data": 1,
+                    "label": 31,
+                    "counters": true,
+                    "like": 0,
+                    "comment": 2,
+                    "show": 408
+                    })
+                </div>
+            </div>
+        </div>
+
+        <div class="row padding-tb">
+            <div class="col-6">
+                <div class="brick">
+                    @@include('./../bricks/news-simple.html', {
+                    "image": 2,
+                    "data": 6,
+                    "label": 22,
+                    "counters": true,
+                    "like": 0,
+                    "comment": 2,
+                    "show": 408
+                    })
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="brick">
+                    @@include('./../bricks/news-simple.html', {
+                    "image": 1,
+                    "data": 1,
+                    "label": 31,
+                    "counters": true,
+                    "like": 0,
+                    "comment": 2,
+                    "show": 408
+                    })
+                </div>
+            </div>
+        </div>
+
+        <div class="row padding-tb">
+            <div class="col-6">
+                <div class="brick">
+                    @@include('./../bricks/news-simple.html', {
+                    "image": 2,
+                    "data": 6,
+                    "label": 22,
+                    "counters": true,
+                    "like": 0,
+                    "comment": 2,
+                    "show": 408
+                    })
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="brick">
+                    @@include('./../bricks/news-simple.html', {
+                    "image": 1,
+                    "data": 1,
+                    "label": 31,
+                    "counters": true,
+                    "like": 0,
+                    "comment": 2,
+                    "show": 408
+                    })
+                </div>
+            </div>
+        </div>
+
+        <div class="row padding-tb">
+            <div class="col-6">
+                <div class="brick">
+                    @@include('./../bricks/news-simple.html', {
+                    "image": 2,
+                    "data": 6,
+                    "label": 22,
+                    "counters": true,
+                    "like": 0,
+                    "comment": 2,
+                    "show": 408
+                    })
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="brick">
+                    @@include('./../bricks/news-simple.html', {
+                    "image": 1,
+                    "data": 1,
+                    "label": 31,
+                    "counters": true,
+                    "like": 0,
+                    "comment": 2,
+                    "show": 408
+                    })
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+@@include('./../layout/_footer.html')
+
+</body>
+</html>

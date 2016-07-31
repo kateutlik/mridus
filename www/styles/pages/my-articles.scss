@@ -1,0 +1,63 @@
+@import "../helpers/variables";
+.my-articles {
+  h3 {
+    margin: 0;
+    padding: 15px 0;
+  }
+  &__header {
+    position: relative;
+    border-color: $r-placeholder;
+    border-width: 4px 0 2px;
+    border-style: solid;
+    margin-bottom: 20px;
+    padding: 20px 4px 0px;
+    &__items {
+      margin-bottom: 22px;
+      text-transform: uppercase;
+      color: #000;
+      text-decoration: none;
+      &__item {
+        margin-bottom: 15px;
+        font-weight: 700;
+        &:before {
+          display: inline-block;
+          content: "";
+          margin-right: 9px;
+          border: 7px solid transparent;
+          border-left: 7px solid $r-orange;
+        }
+        &-active {
+          margin-left: 27px;
+          &:before {
+            display: none;
+          }
+          a {
+            color: $r-black;
+          }
+        }
+        &__link {
+          color: $r-a3a3a3;
+          text-decoration: none;
+        }
+      }
+    }
+    &:after {
+      position: absolute;
+      left: 50%;
+      margin-left: -20px;
+      content: "";
+      border: 20px solid transparent;
+      border-top: 10px solid $r-white;
+      bottom: -29px;
+    }
+    &:before {
+      position: absolute;
+      left: 50%;
+      margin-left: -20px;
+      content: "";
+      border: 20px solid transparent;
+      border-top: 10px solid $r-placeholder;
+      bottom: -31px;
+    }
+  }
+}
