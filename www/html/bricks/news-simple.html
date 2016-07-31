@@ -191,31 +191,30 @@
         <span class="countersBlock__item countersBlock__item-show view_count3">
             @@show
         </span>
-
-        @@if (context.action === "read"){
-        <a href="#" class="countersBlock__item readLater">
-            <span>читать позже</span>
-            <span class="state_hidderHidden">читаю позже</span>
-            <i class="icon"><!-- icon --></i>
-        </a>
-        }
-        @@if (context.action === "delete"){
-        <a href="#" class="countersBlock__item delete">
-            <span>Удалить</span>
-            <i class="icon"></i>
-        </a>
-        }
-        @@if (context.action === "save"){
-        <a href="#" class="countersBlock__item readLater view_saved only_icon">
-            <i class="icon"><!-- icon --></i>
-        </a>
-        <a href="#" class="countersBlock__item save">
-            <span>Сохранить</span>
-        </a>
-        }
     </div>
 }
 
+@@if (context.action === "read"){
+<a href="#" class="readLater">
+    <span>читать позже</span>
+    <span class="state_hidderHidden">читаю позже</span>
+    <i class="icon"><!-- icon --></i>
+</a>
+}
+@@if (context.action === "delete"){
+<div class="brick__delete">
+    <p>Удалить
+        <i class="brick__delete__icon"></i>
+    </p>
+</div>
+}
+@@if (context.action === "save"){
+<div class="brick__save">
+    <p><i class="brick__save__icon"></i>
+        Сохранить
+    </p>
+</div>
+}
 
 
 @@if (context.videolabel === true){

@@ -1,0 +1,27 @@
+.my-saved-articles {
+  &__menu {
+    font: bold 21px 'Roboto Slab', serif;
+    padding-top: 20px;
+    &__item {
+      &:first-child {
+        margin-bottom: 5px;
+      }
+      text-transform: uppercase;
+      &:before {
+        display: inline-block;
+        content: "";
+        width: .286em;
+        height: .286em;
+        margin-right: .6em;
+        margin-bottom: .24em;
+        background: #ffd051;
+      }
+      &-active {
+        color: #a3a3a3;
+      }
+    }
+  }
+  &__bricks {
+    margin-top: 12px;
+  }
+}

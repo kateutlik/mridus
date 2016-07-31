@@ -1,0 +1,107 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#" prefix="ya: https://webmaster.yandex.ru/vocabularies/">
+<head>
+
+    @@include('./../layout/_head.html')
+    <link href="./../../styles/pages/my-saved-articles.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="my-saved-articles" itemscope itemtype="http://schema.org/WebPage">
+
+<header itemscope itemtype="http://schema.org/WPHeader">
+    @@include('./../layout/_header.html')
+</header>
+
+<section class="wrapper contentBackground_white paddings_side padding_top">
+
+    <ul class="my-saved-articles__menu clearfix padding-lr">
+        <li class="my-saved-articles__menu__item">Отложенные</li>
+        <li class="my-saved-articles__menu__item"><a href="#" class="my-saved-articles__menu__item-active" title="">Сохраненные</a></li>
+    </ul>
+
+    <div class="my-saved-articles__bricks">
+        <div class="row padding-lr padding-tb">
+            <div class="col-6">
+                <div class="brick">
+                    @@include('./../bricks/news-simple.html', {
+                    "image": 2,
+                    "data": 6,
+                    "label": 12,
+                    "counters": true,
+                    "like": 0,
+                    "comment": 2,
+                    "show": 408,
+                    "action": "save"
+                    })
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="brick">
+                    @@include('./../bricks/news-simple.html', {
+                    "image": 1,
+                    "data": 1,
+                    "label": 11,
+                    "counters": true,
+                    "like": 0,
+                    "comment": 2,
+                    "show": 408,
+                    "action": "save"
+                    })
+                </div>
+            </div>
+        </div>
+
+        <div class="row padding-lr padding-tb">
+            <div class="col-6">
+                <div class="brick">
+                    @@include('./../bricks/news-simple.html', {
+                    "image": 2,
+                    "data": 6,
+                    "label": 13,
+                    "counters": true,
+                    "like": 0,
+                    "comment": 2,
+                    "show": 408,
+                    "action": "save"
+                    })
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="brick">
+                    @@include('./../bricks/news-simple.html', {
+                    "image": 1,
+                    "data": 1,
+                    "label": 11,
+                    "counters": true,
+                    "like": 0,
+                    "comment": 2,
+                    "show": 408,
+                    "action": "save"
+                    })
+                </div>
+            </div>
+        </div>
+
+        <div class="row padding-lr padding-tb">
+            <div class="col-6">
+                <div class="brick">
+                    @@include('./../bricks/news-simple.html', {
+                    "image": 2,
+                    "data": 6,
+                    "label": 11,
+                    "counters": true,
+                    "like": 0,
+                    "comment": 2,
+                    "show": 408,
+                    "action": "save"
+                    })
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@@include('./../layout/_footer.html')
+
+</body>
+</html>
