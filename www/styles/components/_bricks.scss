@@ -186,6 +186,19 @@
       @include sprite-pseudo-box($icon-close);
     }
   }
+
+  &__save {
+    margin-top: 10px;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: $r-606873;
+    background: $r-light-gray;
+    &__icon {
+      @include sprite-pseudo-box($icon-glasses);
+    }
+  }
 }
 
 .view_centred {
