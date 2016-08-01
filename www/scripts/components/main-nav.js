@@ -2,10 +2,12 @@
 
 $(function() {
 	$(document).ready(function() {
-		var header = $('#header');
+		var header = $('#header'),
+			burgerButton = $('.burgerButton');
 
-		header.find('.burgerButton').click(function(){
+		burgerButton.click(function(){
 			header.toggleClass('state_open')
+			burgerButton.toggleClass('state_open')
 		});
 	});
 });

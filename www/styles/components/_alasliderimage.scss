@@ -1,10 +1,19 @@
 .alasliderimage {
   position: relative;
   &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    display: block;
     height: 213px;
     overflow: hidden;
+
+    img {
+
+      flex-shrink: 0;
+      min-height: 100%;
+      min-width: 100%;
+    }
   }
   &__text {
     position: absolute;

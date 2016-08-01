@@ -2,7 +2,7 @@
   &-section {
     &-title {
       display: flex;
-      padding: 16px 0 16px 15px;
+      padding: 10px 0 10px 15px;
       font: bold 18px 'Roboto Slab', serif;
       text-transform: uppercase;
       color: $r-white;
@@ -21,11 +21,6 @@
           top: 3px;
           transform: rotate(-135deg);
         }
-      }
-
-      .burgerButton {
-        padding: 0;
-        margin-left: auto;
       }
     }
     &-content {

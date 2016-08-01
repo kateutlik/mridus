@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 555;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,8 +10,7 @@
 
   &.transparent {
     background: transparent;
-    position: fixed;
-    z-index: 100;
+    position: absolute;
     width: 100%;
     box-sizing: border-box;
     box-shadow: none;

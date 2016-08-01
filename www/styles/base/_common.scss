@@ -85,10 +85,6 @@ hr {
   padding-bottom: 10px;
 }
 
-.d-flex {
-    display: flex;
-}
-
 .clickable {
   position: absolute;
   top: 0;
@@ -126,20 +122,26 @@ hr {
   width: 100.1%;
 }
 
-.contentBackground_white {
+.bgColor_white,
+.bgColor_white .block-name,
+.bgColor_white .accordion-section-title {
   background: $r-white;
 }
 
-.contentBackground_blue {
+.bgColor_blue,
+.bgColor_blue .block-name,
+.bgColor_blue .accordion-section-title {
   background: $r-blue;
 }
-.contentBackground_deepblue {
+.bgColor_deepblue,
+.bgColor_deepblue .block-name,
+.bgColor_deepblue .accordion-section-title {
     background: $r-deep-blue;
 }
 
-.contentBackground_deepblue,
-.contentBackground_red,
-.contentBackground_gunmetal,
+.bgColor_deepblue,
+.bgColor_red,
+.bgColor_gunmetal,
 .health {
 
     .brick {
@@ -172,15 +174,19 @@ hr {
     }
 }
 
-.contentBackground_blue .countersBlock__item {
+.bgColor_blue .countersBlock__item {
     color: #929fa9;
 }
 
-.contentBackground_red {
+.bgColor_red,
+.bgColor_red .block-name,
+.bgColor_red .accordion-section-title {
   background: $r-red;
 }
 
-.contentBackground_gunmetal {
+.bgColor_gunmetal,
+.bgColor_gunmetal .block-name,
+.bgColor_gunmetal .accordion-section-title {
   background: $r-gunmetall;
 }
 
@@ -202,6 +208,11 @@ hr {
   position: relative;
   background: $r-252525;
 
+    .block-name {
+
+        background: $r-252525;
+    }
+
   .countersBlock__item {
     color: #7c7c7c;
   }
@@ -216,21 +227,21 @@ hr {
 }
 
 .block-name {
-  padding: 16px 0;
+  padding: 10px 0;
   font: bold 18px 'Roboto Slab', serif;
   text-align: center;
   text-transform: uppercase;
 }
-.block-name.d-flex {
-    align-items: center;
 
-    p {
-        margin-left: auto;
-        padding-left: 40px;
-    }
+.sticky {
+    z-index: 111;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
 
-    .burgerButton {
-        padding: 0;
-        margin-left: auto;
-    }
+.sticky:before,
+.sticky:after {
+    content: '';
+    display: table;
 }
