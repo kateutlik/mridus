@@ -1,0 +1,51 @@
+/* Background color modifiers */
+
+.bgColor_white,
+.bgColor_white .section-title {
+	background: $r-white;
+	color: #000;
+}
+
+.bgColor_blue,
+.bgColor_blue .section-title {
+	background: $r-blue;
+}
+
+.bgColor_deepblue,
+.bgColor_deepblue .section-title {
+	background: $r-deep-blue;
+}
+
+.bgColor_red,
+.bgColor_red .section-title {
+	background: $r-red;
+}
+
+.bgColor_gunmetal,
+.bgColor_gunmetal .section-title {
+	background: $r-gunmetall;
+}
+
+.bgColor_dark,
+.bgColor_dark .section-title {
+	background: $r-dark;
+}
+
+.bgColor_dark {
+	.brick__label {
+		background: $r-turquoise;
+	}
+}
+
+.bgColor_deepblue,
+.bgColor_red,
+.bgColor_gunmetal,
+.bgColor_dark {
+	.brick__text {
+		color: $r-dark-brick-text;
+	}
+	.brick__mainLink,
+	.brick__mainLinkDate {
+		color: $r-dark-brick-link;
+	}
+}

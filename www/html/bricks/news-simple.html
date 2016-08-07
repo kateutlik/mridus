@@ -181,17 +181,7 @@
 </div>
 
 @@if (context.counters === true){
-    <div class="countersBlock">
-        <span class="countersBlock__item countersBlock__item-like view_count1">
-            @@like
-        </span>
-        <span class="countersBlock__item countersBlock__item-comment view_count2">
-            @@comment
-        </span>
-        <span class="countersBlock__item countersBlock__item-show view_count3">
-            @@show
-        </span>
-    </div>
+    @@include('./../components/_counter-block.html', {"like": @@like, "comment": @@comment, "show": @@show, "colorClass": "black"})
 }
 
 @@if (context.action === "read"){
