@@ -1,0 +1,94 @@
+@import "../helpers/variables";
+@import './../sprite';   // imports sprite.scss
+
+.article-live {
+  .buttons {
+    .save__button {
+      float: right;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 300;
+    color: $r-black;
+    p {
+      padding: 0 15px;
+      margin-top: 20px;
+    }
+    &__item {
+      position: relative;
+      margin-top: 60px !important;
+      &:before {
+        content: attr(data-time);
+        width: 95px;
+        position: absolute;
+        left: 15px;
+        top: -42px;
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+        font-size: 13px;
+        line-height: 22px;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        left: 57px;
+        top: -20px;
+        border: 5px solid transparent;
+        border-top: 5px solid #000;
+      }
+    }
+    &__blockquote {
+      position: relative;
+      background: $r-blockquote;
+      font-weight: 300;
+      font-style: italic;
+      padding: 25px 15px !important;
+      b {
+        display: block;
+        text-align: right;
+        font-style: normal;
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 23px;
+        color: $r-black;
+        font-weight: 700;
+      }
+      &:before {
+        content: "\201C";
+        left: 12px;
+        top: 44px;
+        position: absolute;
+        width: 28px;
+        height: 0px;
+        text-align: center;
+        font-size: 78px;
+        font-style: normal;
+        font-weight: bold;
+        color: #b7b7b7;
+      }
+    }
+    iframe {
+      margin-top: 15px;
+    }
+  }
+  &__show {
+    display: block;
+    background: $r-f7f7f7;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px 0;
+    margin-top: 25px;
+    a {
+      border-bottom: 1px dotted $r-969696;
+    }
+    &:before {
+      @include sprite-pseudo-box($icon-load-messages);
+      background-image: url('./../../../images/sprite.png');
+    }
+  }
+}
