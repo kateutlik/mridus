@@ -1,0 +1,48 @@
+.comments {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  &__expand {
+    display: inline-block;
+    margin-left: 10px;
+    transform: translateY(3px);
+    background: $r-orange;
+    width: 35px;
+    height: 20px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      margin-left: -5px;
+      top: 44%;
+      display: inline-block;
+      border: 5px solid transparent;
+      border-top: 5px solid #000;
+    }
+    &__open {
+      &:after {
+        top: 19%;
+        border: 5px solid transparent;
+        border-bottom: 5px solid #000;
+      }
+    }
+  }
+  &__content {
+    display: none;
+    margin-top: 25px;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: none;
+    &__open {
+      display: block;
+    }
+    .socials {
+      margin-top: 20px;
+      justify-content: flex-start;
+      .socialNetwork__link {
+        background: $r-socials;
+      }
+    }
+  }
+}
