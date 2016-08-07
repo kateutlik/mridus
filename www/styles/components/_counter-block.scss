@@ -10,22 +10,43 @@
     display: flex;
     align-items: center;
     margin-right: 15px;
-    color: #c1c1c1;
+    color: $r-black;
+    opacity: 0.3;
 
     &:after {
       margin-left: 5px;
     }
 
     &-like:after {
-      @include sprite-pseudo-box($icon-count-like);
+      @include sprite-pseudo-box($icon-black-count-like);
     }
 
     &-comment:after {
-      @include sprite-pseudo-box($icon-count-comment);
+      @include sprite-pseudo-box($icon-black-count-comment);
     }
 
     &-show:after {
-      @include sprite-pseudo-box($icon-count-show);
+      @include sprite-pseudo-box($icon-black-count-show);
+    }
+  }
+}
+
+.countersBlock.white,
+.counters-white {
+  .countersBlock__item {
+    color: $r-white;
+    opacity: 0.5;
+
+    &-like:after {
+      @include sprite-pseudo-box($icon-white-count-like);
+    }
+
+    &-comment:after {
+      @include sprite-pseudo-box($icon-white-count-comment);
+    }
+
+    &-show:after {
+      @include sprite-pseudo-box($icon-white-count-show);
     }
   }
 }

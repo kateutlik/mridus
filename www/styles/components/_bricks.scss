@@ -1,3 +1,5 @@
+/* ----- brick.scss ----- */
+
 .brick {
   position: relative;
   padding-bottom: 10px;
@@ -112,24 +114,6 @@
     }
   }
 
-  .countersBlock {
-    font-size: 11px;
-  }
-  .countersBlock__item {
-    &-like:after {
-      @include sprite-pseudo-box($icon-brick-count-like);
-
-    }
-
-    &-comment:after {
-      @include sprite-pseudo-box($icon-brick-count-comment);
-    }
-
-    &-show:after {
-      @include sprite-pseudo-box($icon-brick-count-show);
-    }
-  }
-
   &__label-position {
     z-index: 20;
     position: absolute;
@@ -179,7 +163,7 @@
     text-align: center;
     font-size: 10px;
     font-weight: 700;
-    color: $r-606873;
+    color: $r-text-gray;
     background: $r-light-gray;
     &__icon {
       margin-left: 5px;
@@ -193,7 +177,7 @@
     text-align: center;
     font-size: 10px;
     font-weight: 700;
-    color: $r-606873;
+    color: $r-text-gray;
     background: $r-light-gray;
     &__icon {
       @include sprite-pseudo-box($icon-glasses);
@@ -212,11 +196,6 @@
 
 .border_yellow {
   border: 2px solid $r-orange;
-}
-
-.view_opinion {
-  background: $r-lll;
-  overflow: hidden;
 }
 
 .bricksContainer .yellowButton {

@@ -3,245 +3,122 @@
 html {
 	font-size: 62.5%; /* =10px */
 	width: 100%;
-    height: 99.9%;
-    position: relative;
+	height: 99.9%;
+	position: relative;
 }
+
 body {
 	line-height: 1.2;
 	font-size: 1.6rem; /* 1.6*10px = 16px */
 	font-family: 'Roboto', sans-serif;
 	width: 100%;
-    height: 99.9%;
+	height: 99.9%;
 	background: $r-light-gray;
 	zoom: 1;
 	overflow: auto;
-    overflow-x: hidden;
+	overflow-x: hidden;
+	color: $r-text-dark;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-}
-h6 {
-    font-size: 14px; /* in use */
-}
-h5 {
-    font-size: 15px; /* in use */
-}
-h4 {
-    font-size: 18px; /* in use */
-    font-family: 'Roboto Slab', serif;
-}
-h3 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 21px;
-    margin-bottom: 30px;
-}
-h2 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 32px; /* in use */
-    margin-bottom: 10px;
-}
-h1 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 28px; /* in use */
-    margin-bottom: 20px;
+	font-weight: bold;
 }
 
+h6 {
+	font-size: 14px; /* in use */
+}
+
+h5 {
+	font-size: 15px; /* in use */
+}
+
+h4 {
+	font-size: 18px; /* in use */
+	font-family: 'Roboto Slab', serif;
+}
+
+h3 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 21px;
+	margin-bottom: 30px;
+}
+
+h2 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 32px; /* in use */
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 28px; /* in use */
+	margin-bottom: 20px;
+}
 
 hr {
-    height: 1px;
-    margin: 15px 0;
-    border: 0;
-    background: $r-hr-color;
-}
-
-.section-details  {
-    position: relative;
-    display: block;
-    width: 10px;
-}
-.section-details i,
-.section-details:before,
-.section-details:after {
-    position: absolute;
-    top: 17px;
-    display: block;
-    font-size: 0;
-    content: "";
-    width: 10px;
-    height: 4px;
-    background: $r-white;
-    transform: rotate(0deg);
-    transition: .15s ease-in-out;
-}
-
-.padding-lr {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.padding-tb {
-  padding-top: 10px;
-  padding-bottom: 10px;
+	height: 1px;
+	margin: 15px 0;
+	border: 0;
+	background: $r-hr-color;
 }
 
 .clickable {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 12;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 12;
 }
 
-/* retina */
-/* пример
+/* Retina */
+
+/* Example:
 <img src="_images/logo.png" class="x1" width="154" height="60" alt="РИДУС">
 <img src="_images/logo_2x.png" class="x2" width="154" height="60" alt="РИДУС">
-рекомендую все фото сделать так же
-так на НЕретине не будет съедаться лишний траффик,
-а на ретине будет хорошая четкость */
+I would recommend to follow this way for all pictures,
+because on non retina sites users will not spend extra traffic and
+on retina will be good resolution */
 .x2 {
-  display: none;
+	display: none;
 }
+
 .x1 {
-  display: block;
+	display: block;
 }
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
-  .x2 {
-    display: block;
-  }
-  .x1 {
-    display: none;
-  }
+	.x2 {
+		display: block;
+	}
+	.x1 {
+		display: none;
+	}
 }
 
 .iscroll {
-  position: relative;
-  overflow: hidden;
-  width: 100.1%;
+	position: relative;
+	overflow: hidden;
+	width: 100.1%;
 }
 
-.bgColor_white,
-.bgColor_white .block-name,
-.bgColor_white .accordion-section-title {
-  background: $r-white;
-}
-
-.bgColor_blue,
-.bgColor_blue .block-name,
-.bgColor_blue .accordion-section-title {
-  background: $r-blue;
-}
-.bgColor_deepblue,
-.bgColor_deepblue .block-name,
-.bgColor_deepblue .accordion-section-title {
-    background: $r-deep-blue;
-}
-
-.bgColor_deepblue,
-.bgColor_red,
-.bgColor_gunmetal,
-.health {
-
-    .brick {
-        .countersBlock__item {
-            color: rgba(255,255,255,0.6);
-
-            &-like:after {
-                @include sprite-pseudo-box($icon-count-like);
-
-            }
-
-            &-comment:after {
-                @include sprite-pseudo-box($icon-count-comment);
-            }
-
-            &-show:after {
-                @include sprite-pseudo-box($icon-count-show);
-            }
-        }
-    }
-    .block-name {
-        color: $r-white;
-    }
-    .brick__text {
-        color: $r-d3d3d3;
-    }
-    .brick__mainLink,
-    .brick__mainLinkDate {
-        color: $r-e1e4e7;
-    }
-}
-
-.bgColor_blue .countersBlock__item {
-    color: #929fa9;
-}
-
-.bgColor_red,
-.bgColor_red .block-name,
-.bgColor_red .accordion-section-title {
-  background: $r-red;
-}
-
-.bgColor_gunmetal,
-.bgColor_gunmetal .block-name,
-.bgColor_gunmetal .accordion-section-title {
-  background: $r-gunmetall;
-}
-
-//todo refactor colors
-.health {
-  .block-name {
-    color: $r-white;
-  }
-  .brick__text {
-    color: $r-d3d3d3;
-  }
-  .brick__mainLink,
-  .brick__mainLinkDate {
-    color: $r-e1e4e7;
-  }
-}
-
-.health {
-  position: relative;
-  background: $r-252525;
-
-    .block-name {
-
-        background: $r-252525;
-    }
-
-  .countersBlock__item {
-    color: #7c7c7c;
-  }
-  .brick__label {
-    background: $r-health;
-  }
-  &__logo {
-    position: absolute;
-    top: 7px;
-    left: 15px;
-  }
-}
-
-.block-name {
-  padding: 10px 0;
-  font: bold 18px 'Roboto Slab', serif;
-  text-align: center;
-  text-transform: uppercase;
+.section-title {
+	padding: 10px 0;
+	font: bold 18px 'Roboto Slab', serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: $r-white;
 }
 
 .sticky {
-    z-index: 111;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+	z-index: 111;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 }
 
 .sticky:before,
 .sticky:after {
-    content: '';
-    display: table;
+	content: '';
+	display: table;
 }
