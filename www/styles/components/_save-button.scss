@@ -1,0 +1,28 @@
+.save__button {
+  float: left;
+  height: 34px;
+  background: $r-light-gray;
+  color: $r-likes-button-link;
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Roboto Slab', serif;
+  padding: 12px 15px 0 35px;
+  box-sizing: border-box;
+  position: relative;
+  transition: background .2s ease, opacity .2s ease;
+  &:before {
+    @include sprite-pseudo-box($icon-gray-glasses);
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    content: "";
+  }
+  &-hidden {
+    display: none;
+  }
+  &-saved {
+    background: #c64a1b;
+    color: $r-white;
+  }
+}

@@ -1,0 +1,30 @@
+.tabs {
+  &-inline {
+    &__item {
+      display: inline-block;
+      text-transform: uppercase;
+      margin-left: .46em;
+      font-size: 12px;
+      font-weight: 700;
+      &:before {
+        display: inline-block;
+        content: "";
+        width: .286em;
+        height: .286em;
+        margin-right: .6em;
+        margin-bottom: .24em;
+        background: $r-orange;
+      }
+      &__link {
+        color: $r-a3a3a3;
+        text-decoration: none;
+      }
+      &:first-child {
+        margin-left: 0;
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}
