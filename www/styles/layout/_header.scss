@@ -1,16 +1,15 @@
 .header {
-  position: relative;
+  position: fixed;
   z-index: 555;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3px 0 3px 15px;
+  padding: 2px 0 2px 15px;
   background: #FFF;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
 
   &.transparent {
     background: transparent;
-    position: absolute;
     width: 100%;
     box-sizing: border-box;
     box-shadow: none;
@@ -18,5 +17,52 @@
 
   &__mainLogo {
     display: block;
+    transition: opacity 300ms ease-out;
   }
+}
+
+.header.state_scroll {
+  .header__mainLogo {
+    opacity: 0;
+  }
+  .burgerButton {
+    opacity: 0;
+  }
+}
+
+.slowDown {
+  position: relative;
+  margin-top: -46px;
+
+  .slider {
+    height: 261px;
+  }
+
+  &__overlay {
+    z-index: 11;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $r-black;
+    opacity: 0;
+  }
+}
+
+
+.section-title.transparent {
+  //position: fixed;
+  //height: 0;
+  //padding: 0;
+  //box-sizing: border-box;
+  opacity: 0;
+  background: rgba(0,0,0,0);
+}
+
+.sectionLogo {
+  left: 15px;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
 }

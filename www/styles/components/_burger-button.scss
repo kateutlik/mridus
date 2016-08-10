@@ -50,3 +50,34 @@
 		}
 	}
 }
+
+.bgColor_white {
+	.burgerButton li {
+		background: rgba(0,0,0,1);
+
+		&:nth-child(2):before,
+		&:nth-child(2):after {
+			background: rgba(0,0,0,0);
+		}
+	}
+
+	.state_open {
+		&.burgerButton {
+			li {
+				background: rgba(0,0,0,0);
+
+				&:nth-child(2):before,
+				&:nth-child(2):after {
+					background: rgba(0,0,0,1);
+				}
+			}
+		}
+	}
+
+}
+
+.section-title .burgerButton {
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+}

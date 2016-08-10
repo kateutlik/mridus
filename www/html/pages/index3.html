@@ -11,9 +11,17 @@
         "headerClass": "transparent"
     })
 
-    <section class="bgColor_white">
+    <section class="bgColor_black">
+        <div class="section-title sticky transparent">
+            @@include('../components/_section-logo.html')
+            Картина дня
+            @@include('../components/_burger-button.html')
+        </div>
 
-        @@include('./../components/_slider.html')
+        <div class="slowDown">
+            @@include('./../components/_slider.html')
+            <div class="slowDown__overlay"></div>
+        </div>
 
         <div class="row padding-lr padding-tb">
             <div class="col-6">
@@ -155,8 +163,10 @@
 
         <section class="bgColor_deepblue technologies">
             <div class="accordion-section-title section-title sticky" data-content="#accordion-1">
+                @@include('../components/_section-logo.html')
                 Технологии
                 <i class="accordion-section-title__flip"></i>
+                @@include('../components/_burger-button.html')
             </div>
 
             <div class="accordion-section-content" id="accordion-1">
@@ -245,8 +255,10 @@
 
         <section class="bgColor_red technologies">
             <div class="accordion-section-title section-title sticky" data-content="#accordion-2">
+                @@include('../components/_section-logo.html')
                 Украинский кризис
                 <i class="accordion-section-title__flip"></i>
+                @@include('../components/_burger-button.html')
             </div>
 
             <div class="accordion-section-content" id="accordion-2">
@@ -335,8 +347,10 @@
 
         <section class="bgColor_gunmetal">
             <div class="accordion-section-title section-title sticky" data-content="#accordion-3">
+                @@include('../components/_section-logo.html')
                 Операция в сирии
                 <i class="accordion-section-title__flip"></i>
+                @@include('../components/_burger-button.html')
             </div>
 
             <div class="accordion-section-content" id="accordion-3">
@@ -425,7 +439,11 @@
     </section>
 
     <section class="bgColor_white">
-        <p class="section-title sticky">Гражданская <br> журналистика</p>
+        <div class="section-title sticky">
+            @@include('../components/_section-logo.html')
+            Гражданская <br> журналистика
+            @@include('../components/_burger-button.html')
+        </div>
 
         <div class="row">
             <div class="col-12">
@@ -521,7 +539,9 @@
 
     <section class="bgColor_blue">
         <div class="section-title sticky">
+            @@include('../components/_section-logo.html')
             <p>Интересное</p>
+            @@include('../components/_burger-button.html')
         </div>
 
         <div class="row">
@@ -606,7 +626,11 @@
     </section>
 
     <section class="bgColor_white">
-        <p class="section-title sticky">Полезное</p>
+        <div class="section-title sticky">
+            @@include('../components/_section-logo.html')
+            Полезное
+            @@include('../components/_burger-button.html')
+        </div>
 
         <div class="row">
             <div class="col-12">
@@ -693,7 +717,9 @@
     <section class="bgColor_dark bricksContainer">
         <!--<img src="./../../images/med.png" class="health__logo">-->
         <div class="section-title sticky">
+            @@include('../components/_section-logo.html')
             <p>Здоровье</p>
+            @@include('../components/_burger-button.html')
         </div>
         <div class="view_centred">
             <a class="yellowButton" href="" title="">
@@ -786,7 +812,11 @@
     </section>
 
     <section class="bgColor_white">
-        <p class="section-title sticky">Развлечения</p>
+        <div class="section-title sticky">
+            @@include('../components/_section-logo.html')
+            Развлечения
+            @@include('../components/_burger-button.html')
+        </div>
 
         <div class="row">
             <div class="col-12">

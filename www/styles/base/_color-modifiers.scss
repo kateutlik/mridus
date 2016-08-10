@@ -3,7 +3,16 @@
 .bgColor_white,
 .bgColor_white .section-title {
 	background: $r-white;
-	color: #000;
+	color: $r-black;
+}
+
+.bgColor_black {
+	background: $r-white;
+	color: $r-black;
+}
+.bgColor_black .section-title {
+	background: $r-black;
+	color: $r-white;
 }
 
 .bgColor_blue,
