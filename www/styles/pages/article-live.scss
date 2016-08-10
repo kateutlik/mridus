@@ -46,15 +46,20 @@
       font-weight: 300;
       font-style: italic;
       padding: 25px 15px !important;
-      b {
-        display: block;
-        text-align: right;
-        font-style: normal;
-        margin-top: 20px;
-        font-size: 14px;
-        line-height: 23px;
-        color: $r-black;
-        font-weight: 700;
+      p {
+        margin-top: 0;
+        padding: 0;
+        text-indent: 43px;
+        b {
+          display: block;
+          text-align: right;
+          font-style: normal;
+          margin-top: 20px;
+          font-size: 14px;
+          line-height: 23px;
+          color: $r-black;
+          font-weight: 700;
+        }
       }
       &:before {
         content: "\201C";
@@ -91,4 +96,13 @@
       background-image: url('./../../../images/sprite.png');
     }
   }
+  .show-updates,
+  .article-tags,
+  .comments {
+    margin-top: 30px;
+  }
+  .comments {
+    margin-bottom: 30px;
+  }
+
 }
