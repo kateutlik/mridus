@@ -10,17 +10,17 @@ $(document).ready(function() {
 		scrollVar = $(window).scrollTop();
 
 		if (scrollVar < 215) {
-			header.addClass('state_scroll');
 			var opacity = (scrollVar * 2) / 100;
 			sectionTitleTransparent.css({'opacity': opacity, 'background': 'rgba(0,0,0,0)'});
 			window.requestAnimationFrame(animateIntro);
 		} else {
-			header.addClass('state_scroll');
 			sectionTitleTransparent.css({'opacity': 1, 'background': 'rgba(0,0,0,1)'});
 		}
 
 		if (scrollVar === 0) {
 			header.removeClass('state_scroll');
+		} else {
+			header.addClass('state_scroll');
 		}
 	});
 
