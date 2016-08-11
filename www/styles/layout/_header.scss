@@ -18,12 +18,18 @@
   &__mainLogo {
     display: block;
     transition: opacity 300ms ease-out;
+
+    img {
+      transition: all 200ms ease-out;
+    }
   }
 }
 
 .header.state_scroll {
-  .header__mainLogo {
-    opacity: 0;
+  .header__mainLogo img {
+    width: 51px;
+    height: 20px;
+    margin-top: 10px;
   }
   .burgerButton {
     opacity: 0;
