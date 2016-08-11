@@ -30,14 +30,10 @@ gulp.task('fileinclude', function() {
 gulp.task('styles', function() {
 	return gulp.src('www/styles/**/*.scss')
 		.pipe(sass().on('error', sass.logError))
-		.pipe(autoprefixer('Android 2.3',
-			'Android >= 4',
-			'Chrome >= 20',
-			'Firefox >= 24',
-			'Explorer >= 8',
-			'iOS >= 6',
-			'Opera >= 12',
-			'Safari >= 6'))
+		.pipe(autoprefixer({
+			browsers: ['last 2 versions'],
+			remove: false
+		}))
 		.pipe( gulp.dest('dist/styles') )
 		.pipe(rename({suffix: '.min'}))
 		.pipe(cssnano());
