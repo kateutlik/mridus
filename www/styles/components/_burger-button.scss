@@ -40,6 +40,8 @@
 
 .state_open {
 	&.burgerButton {
+		opacity: 1;
+
 		li {
 			background: rgba(255,255,255,0);
 
@@ -52,7 +54,8 @@
 }
 
 .bgColor_white,
-.bgColor_blue {
+.bgColor_blue,
+header {
 	.burgerButton li {
 		background: rgba(0,0,0,1);
 
@@ -67,10 +70,10 @@
 			li {
 				background: rgba(0,0,0,0);
 
-				&:nth-child(2):before,
-				&:nth-child(2):after {
-					background: rgba(0,0,0,1);
-				}
+				//&:nth-child(2):before,
+				//&:nth-child(2):after {
+				//	background: rgba(0,0,0,1);
+				//}
 			}
 		}
 	}
@@ -81,4 +84,8 @@
 	position: absolute;
 	top: 50%;
 	margin-top: -20px;
+
+	&.state_open {
+		opacity: 0;
+	}
 }

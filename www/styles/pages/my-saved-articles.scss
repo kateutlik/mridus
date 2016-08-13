@@ -1,7 +1,9 @@
 .my-saved-articles {
   &__menu {
     font: bold 21px 'Roboto Slab', serif;
-    padding-top: 20px;
+    padding-top: 15px;
+    margin-bottom: 25px;
+
     &__item {
       &:first-child {
         margin-bottom: 5px;
@@ -20,8 +22,5 @@
         color: #a3a3a3;
       }
     }
-  }
-  &__bricks {
-    margin-top: 12px;
   }
 }

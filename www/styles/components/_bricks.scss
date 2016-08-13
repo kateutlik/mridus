@@ -202,3 +202,11 @@
   margin-bottom: 15px;
   display: inline-block;
 }
+
+.bricksWrapper {
+  padding-bottom: 1px;
+
+  .row {
+    margin-bottom: 5px;
+  }
+}

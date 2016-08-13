@@ -2,6 +2,7 @@
   position: fixed;
   z-index: 555;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 2px 0 2px 15px;
@@ -10,7 +11,6 @@
 
   &.transparent {
     background: transparent;
-    width: 100%;
     box-sizing: border-box;
     box-shadow: none;
   }
@@ -25,7 +25,11 @@
   }
 }
 
-.header.state_scroll {
+.header:not(.transparent) + section {
+  padding-top: 46px;
+}
+
+.header.transparent.state_scroll {
   .header__mainLogo img {
     width: 51px;
     height: 20px;
@@ -33,6 +37,10 @@
   }
   .burgerButton {
     opacity: 0;
+  }
+
+  &.state_open .burgerButton {
+    opacity: 1;
   }
 }
 
@@ -59,10 +67,6 @@
 
 
 .section-title.transparent {
-  //position: fixed;
-  //height: 0;
-  //padding: 0;
-  //box-sizing: border-box;
   opacity: 0;
   background: rgba(0,0,0,0);
 }

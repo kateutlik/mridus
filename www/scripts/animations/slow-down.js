@@ -26,11 +26,9 @@ $(document).ready(function() {
 
 
 	function animateIntro() {
-		//var introSection = $('.slider__image img');
 		var scaleValue = 1 - (scrollVar / 261).toFixed(5) * 0.4,
 			opacity = 1 - (scrollVar / 200);
 
-		//if( $(window).scrollTop() < 261) {
 		introSection.css({
 			'-moz-transform': 'scale(' + scaleValue + ') translateZ(0)',
 			'-webkit-transform': 'scale(' + scaleValue + ') translateZ(0)',
@@ -39,7 +37,7 @@ $(document).ready(function() {
 			'transform': 'scale(' + scaleValue + ') translateZ(0)'
 
 		});
+
 		slider.css({'opacity': opacity});
-		//}
 	}
 });

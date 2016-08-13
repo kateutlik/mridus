@@ -6,7 +6,7 @@ input[type="tel"],
 input[type="url"] {
     width: 100%;
     margin: 0;
-    padding: 3px 7px 3px;
+    padding: 7px 7px 6px;
     border: 1px solid $r-gray;
     border-radius: 0;
     font: normal 17px/10px 'RobotoLight', sans-serif;
@@ -46,28 +46,21 @@ input:-ms-input-placeholder {
 .yellowButton {
     position: relative;
     margin-right: 5px;
-    padding: 6px 6px 5px 10px;
-    font: bold 8px 'Roboto Slab', serif;
+    padding: 9px 6px 8px 10px;
+    font: bold 13px 'Roboto Slab', serif;
     text-decoration: none;
     text-transform: uppercase;
     color: $r-black;
     background: $r-orange;
     transition: all 0.18s;
 
-    &:hover,
-    &:hover .corner {
-        background: $r-shadow-orange;
-        color: $r-carrot;
-        cursor: pointer;
-    }
-
     .corner {
         position: absolute;
         bottom: 0;
-        right: -4px;
+        right: -10px;
         display: block;
-        width: 6px;
-        height: 16px;
+        width: 10px;
+        height: 25px;
         background: $r-orange;
         transition: all 0.18s;
 
@@ -75,12 +68,11 @@ input:-ms-input-placeholder {
             content: "";
             position: absolute;
             right: 0;
-            top: -5px;
+            top: -10px;
             display: block;
-            border: 2px solid transparent;
+            border: 5px solid transparent;
             border-bottom-color: $r-black;
             border-left-color: $r-black;
-            box-shadow: -1px 0 0 0 $r-orange;
         }
 
         &:after {
@@ -89,9 +81,9 @@ input:-ms-input-placeholder {
             right: 0;
             top: 0;
             display: block;
-            border: 2px solid transparent;
-            border-top-color: rgba(0,0,0,.1);
-            border-right-color: rgba(0,0,0,.1);
+            border: 5px solid transparent;
+            border-top-color: rgba(0, 0, 0, 0.1);
+            border-right-color: rgba(0, 0, 0, 0.1);
         }
     }
 
@@ -101,7 +93,7 @@ input:-ms-input-placeholder {
         transform: translateY(-1px);
 
         .corner {
-            height: 22px;
+            height: 25px;
         }
     }
 }
