@@ -3,17 +3,20 @@
 .show-updates {
   background: $r-orange;
   padding: 12px 0;
+  margin-bottom: 30px;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+
   &__expand {
     display: inline-block;
-    margin-bottom: -4px;
+    margin-bottom: -3px;
     margin-left: 10px;
     border: 5px solid transparent;
     border-top: 5px solid #000;
   }
+
   &__open {
     &__expand {
       margin-bottom: 2px;

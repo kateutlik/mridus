@@ -38,21 +38,6 @@
 	}
 }
 
-.state_open {
-	&.burgerButton {
-		opacity: 1;
-
-		li {
-			background: rgba(255,255,255,0);
-
-			&:nth-child(2):before,
-			&:nth-child(2):after {
-				background: rgba(255,255,255,1);
-			}
-		}
-	}
-}
-
 .bgColor_white,
 .bgColor_blue,
 .header {
@@ -87,5 +72,20 @@
 
 	&.state_open {
 		opacity: 0;
+	}
+}
+
+.state_open {
+	&.burgerButton {
+		opacity: 1;
+
+		li {
+			background: rgba(255,255,255,0);
+
+			&:nth-child(2):before,
+			&:nth-child(2):after {
+				background: rgba(255,255,255,1);
+			}
+		}
 	}
 }

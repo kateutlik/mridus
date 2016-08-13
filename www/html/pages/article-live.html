@@ -20,27 +20,19 @@
 
     <div class="row">
         <div class="col-12">
-            @@include('./../bricks/alasliderimage.html', {"image": 7})
+            @@include('./../bricks/alasliderimage.html', {"image": 7, "typelabel": 1})
         </div>
     </div>
 
     <div class="row padding-lr padding-tb">
         <div class="col-12">
-            <div class="avatar-container clearfix">
-                <a class="avatar-container__avatar" href="" title="">
-                    <img src="http://www.ridus.ru/images/avatars/141718/large_b7147dcd85.jpg" alt=""/>
-                </a>
-                <ul class="avatar-container__info">
-                    <li>21 августа, 12:29<a href="" title="">Екатерина Трофимова,</a></li>
-                    <li>журналист-эксперт в международной сфере, лауреат столичной премии</li>
-                </ul>
-            </div>
+            @@include('./../components/_author-container.html')
         </div>
     </div>
 
     <div class="row">
         <div class="col-12">
-            @@include('./../components/_socials-article.html')
+            @@include('./../components/_socials-article.html', {"class": "small-size"})
         </div>
     </div>
     <div class="row padding-lr buttons">
@@ -49,7 +41,7 @@
             @@include('./../components/_save-button.html')
         </div>
     </div>
-    <div class="row article-live__text">
+    <div class="row article-live__text padding-lr">
         <div class="col-12">
             <p>
                 «Ридус» ведет онлайн-трансляцию события.
@@ -71,7 +63,7 @@
             <p class="article-live__text__item" data-time="16:08">
                Представитель Белого дома назвал доклад голландской комиссии «важной вехой в процессе установления и наказания виновных».
             </p>
-            <div class="article-live__text__blockquote">
+            <div class="quote-block">
                 <p>
                     США полностью поддерживают все попытки привести к ответственности виновных в трагедии. Наше мнение остается неизменным: MH17 был сбит ракетой земля-воздух, выпущенной с территории, контролируемой сепаратистами, <b>— Нед Прайс, представитель Совета по национальной безопасности</b>
                 </p>
@@ -85,14 +77,18 @@
             <p class="article-live__text__item" data-time="15:00">
                 Комиссия опубликовала видеореконструкцию катастрофы.
             </p>
-            <iframe width="320" height="187" src="https://www.youtube.com/embed/xLfZeMlf7Ok" frameborder="0" allowfullscreen></iframe>
+            <div class="full-width">
+                <iframe width="320" height="187" src="https://www.youtube.com/embed/xLfZeMlf7Ok" frameborder="0" allowfullscreen></iframe>
+            </div>
             <p class="article-live__text__item" data-time="14:44">
                 «Никто не должен был там летать, ни единый самолет, так как это было слишком опасно. Мы все видели это по ТВ, я не верила своим ушам, когда услышала, что они летели в том районе» — заявила БиБиСи Селена Фредрикз, мать погибшего на борту MH17 Брайса Фредрикза.
             </p>
             <p class="article-live__text__item" data-time="14:20">
                 «Результаты расследования СБ Нидерландов крушения MH17 носили предвзятый характер», — заявил заместитель министра иностранных дел России Сергей Рябков.
             </p>
-            <blockquote class="twitter-tweet" lang="ru"><p lang="en" dir="ltr">Last night, The <a href="https://twitter.com/libertines">@Libertines</a> at <a href="https://twitter.com/BSTHydePark">@BSTHydePark</a>: <a href="http://t.co/IwcxwjZmnw">pic.twitter.com/IwcxwjZmnw</a></p>&mdash; Carolina Faruolo (@cfaruolo) <a href="https://twitter.com/cfaruolo/status/485819617664065537">6 июля 2014</a></blockquote>
+            <div class="full-width_twitter">
+                <blockquote class="twitter-tweet" lang="ru"><p lang="en" dir="ltr">Last night, The <a href="https://twitter.com/libertines">@Libertines</a> at <a href="https://twitter.com/BSTHydePark">@BSTHydePark</a>: <a href="http://t.co/IwcxwjZmnw">pic.twitter.com/IwcxwjZmnw</a></p>&mdash; Carolina Faruolo (@cfaruolo) <a href="https://twitter.com/cfaruolo/status/485819617664065537">6 июля 2014</a></blockquote>
+            </div>
             <p class="article-live__text__item" data-time="14:44">
                 «Никто не должен был там летать, ни единый самолет, так как это было слишком опасно. Мы все видели это по ТВ, я не верила своим ушам, когда услышала, что они летели в том районе» — заявила БиБиСи Селена Фредрикз, мать погибшего на борту MH17 Брайса Фредрикза.
             </p>
@@ -104,9 +100,7 @@
     </div>
     <div class="row">
         <div class="col-12 padding-lr">
-            <div class="article-live__show">
-                <a>Показать ранние сообщения</a>
-            </div>
+            @@include('./../components/_show-more-button.html')
         </div>
     </div>
 
@@ -140,421 +134,9 @@
         </div>
     </div>
 
-    <section class="bgColor_white">
-        <p class="block-name sticky">Картина дня</p>
-
-        @@include('./../components/_slider.html')
-
-        <div class="row padding-lr padding-tb">
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 2,
-                    "data": 3,
-                    "label": 22,
-                    "counters": true,
-                    "like": 120,
-                    "comment": 35,
-                    "show": 3812
-                    })
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 1,
-                    "data": 2,
-                    "label": 31,
-                    "counters": true,
-                    "like": 154,
-                    "comment": 26,
-                    "show": 2789
-                    })
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <div class="brick">
-                    @@include('./../bricks/main-for-today.html')
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <div class="brick">
-                    @@include('./../bricks/news-list.html')
-                </div>
-            </div>
-        </div>
-
-        <div class="row padding-lr padding-tb">
-            <div class="col-12">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 1,
-                    "data": 4,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-        </div>
-
-        <div class="row padding-lr padding-tb">
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 2,
-                    "data": 2,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 1,
-                    "data": 1,
-                    "label": 31,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-        </div>
-
-        <div class="row padding-lr padding-tb">
-            <div class="col-12">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 2,
-                    "data": 5,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-        </div>
-
-        <div class="row padding-lr padding-tb">
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 2,
-                    "data": 6,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 1,
-                    "data": 1,
-                    "label": 31,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="accordion">
-
-    <section class="bgColor_deepblue technologies">
-        <div class="accordion-section-title sticky" data-content="#accordion-1">
-            Технологии
-            <i class="accordion-section-title__flip"></i>
-        </div>
-
-        <div class="accordion-section-content" id="accordion-1">
-            <div class="row">
-                <div class="col-12">
-                    @@include('./../bricks/alasliderimage.html', {"image": 6})
-                </div>
-            </div>
-
-            <div class="row padding-lr padding-tb">
-                <div class="col-6">
-                    <div class="brick">
-                        @@include('./../bricks/news-simple.html', {
-                        "image": 2,
-                        "data": 6,
-                        "label": 22,
-                        "counters": true,
-                        "like": 0,
-                        "comment": 2,
-                        "show": 408
-                        })
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="brick">
-                        @@include('./../bricks/news-simple.html', {
-                        "image": 1,
-                        "data": 1,
-                        "label": 31,
-                        "counters": true,
-                        "like": 0,
-                        "comment": 2,
-                        "show": 408
-                        })
-                    </div>
-                </div>
-            </div>
-
-            <div class="row padding-lr padding-tb">
-                <div class="col-12">
-                    <div class="brick">
-                        @@include('./../bricks/news-simple.html', {
-                        "image": 2,
-                        "data": 5,
-                        "label": 22,
-                        "counters": true,
-                        "like": 0,
-                        "comment": 2,
-                        "show": 408
-                        })
-                    </div>
-                </div>
-            </div>
-
-            <div class="row padding-lr padding-tb">
-                <div class="col-6">
-                    <div class="brick">
-                        @@include('./../bricks/news-simple.html', {
-                        "image": 2,
-                        "data": 6,
-                        "label": 22,
-                        "counters": true,
-                        "like": 0,
-                        "comment": 2,
-                        "show": 408
-                        })
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="brick">
-                        @@include('./../bricks/news-simple.html', {
-                        "image": 1,
-                        "data": 1,
-                        "label": 31,
-                        "counters": true,
-                        "like": 0,
-                        "comment": 2,
-                        "show": 408
-                        })
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="bgColor_red technologies">
-        <div class="accordion-section-title sticky" data-content="#accordion-2">
-            Украинский кризис
-            <i class="accordion-section-title__flip"></i>
-        </div>
-
-        <div class="accordion-section-content" id="accordion-2">
-            <div class="row">
-                <div class="col-12">
-                    @@include('./../bricks/alasliderimage.html', {"image": 6})
-                </div>
-            </div>
-
-            <div class="row padding-lr padding-tb">
-                <div class="col-6">
-                    <div class="brick">
-                        @@include('./../bricks/news-simple.html', {
-                        "image": 2,
-                        "data": 6,
-                        "label": 22,
-                        "counters": true,
-                        "like": 0,
-                        "comment": 2,
-                        "show": 408
-                        })
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="brick">
-                        @@include('./../bricks/news-simple.html', {
-                        "image": 1,
-                        "data": 1,
-                        "label": 31,
-                        "counters": true,
-                        "like": 0,
-                        "comment": 2,
-                        "show": 408
-                        })
-                    </div>
-                </div>
-            </div>
-
-            <div class="row padding-lr padding-tb">
-                <div class="col-12">
-                    <div class="brick">
-                        @@include('./../bricks/news-simple.html', {
-                        "image": 2,
-                        "data": 5,
-                        "label": 22,
-                        "counters": true,
-                        "like": 0,
-                        "comment": 2,
-                        "show": 408
-                        })
-                    </div>
-                </div>
-            </div>
-
-            <div class="row padding-lr padding-tb">
-                <div class="col-6">
-                    <div class="brick">
-                        @@include('./../bricks/news-simple.html', {
-                        "image": 2,
-                        "data": 6,
-                        "label": 22,
-                        "counters": true,
-                        "like": 0,
-                        "comment": 2,
-                        "show": 408
-                        })
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="brick">
-                        @@include('./../bricks/news-simple.html', {
-                        "image": 1,
-                        "data": 1,
-                        "label": 31,
-                        "counters": true,
-                        "like": 0,
-                        "comment": 2,
-                        "show": 408
-                        })
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="bgColor_gunmetal">
-        <div class="accordion-section-title sticky" data-content="#accordion-3">
-            Операция в сирии
-            <i class="accordion-section-title__flip"></i>
-        </div>
-
-        <div class="accordion-section-content" id="accordion-3">
-            <div class="row">
-                <div class="col-12">
-                    @@include('./../bricks/alasliderimage.html', {"image": 6})
-                </div>
-            </div>
-
-            <div class="row padding-lr padding-tb">
-                <div class="col-6">
-                    <div class="brick">
-                        @@include('./../bricks/news-simple.html', {
-                        "image": 2,
-                        "data": 6,
-                        "label": 22,
-                        "counters": true,
-                        "like": 0,
-                        "comment": 2,
-                        "show": 408
-                        })
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="brick">
-                        @@include('./../bricks/news-simple.html', {
-                        "image": 1,
-                        "data": 1,
-                        "label": 31,
-                        "counters": true,
-                        "like": 0,
-                        "comment": 2,
-                        "show": 408
-                        })
-                    </div>
-                </div>
-            </div>
-
-            <div class="row padding-lr padding-tb">
-                <div class="col-12">
-                    <div class="brick">
-                        @@include('./../bricks/news-simple.html', {
-                        "image": 2,
-                        "data": 5,
-                        "label": 22,
-                        "counters": true,
-                        "like": 0,
-                        "comment": 2,
-                        "show": 408
-                        })
-                    </div>
-                </div>
-            </div>
-
-            <div class="row padding-lr padding-tb">
-                <div class="col-6">
-                    <div class="brick">
-                        @@include('./../bricks/news-simple.html', {
-                        "image": 2,
-                        "data": 6,
-                        "label": 22,
-                        "counters": true,
-                        "like": 0,
-                        "comment": 2,
-                        "show": 408
-                        })
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="brick">
-                        @@include('./../bricks/news-simple.html', {
-                        "image": 1,
-                        "data": 1,
-                        "label": 31,
-                        "counters": true,
-                        "like": 0,
-                        "comment": 2,
-                        "show": 408
-                        })
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    </section>
-
 </section>
+
+@@include('./../layout/_news-include.html')
 
 @@include('./../layout/_footer.html')
 

@@ -1,0 +1,31 @@
+.quote-block {
+	position: relative;
+	background: $r-blockquote;
+	font-weight: 300;
+	font-style: italic;
+	padding: 10px 15px 5px;
+
+	b {
+		display: block;
+		text-align: right;
+		font-style: normal;
+		margin-top: 15px;
+		font-size: 14px;
+		line-height: 23px;
+		color: $r-black;
+		font-weight: 700;
+	}
+
+	p:before {
+		content: "\201C";
+		position: relative;
+		top: 40px;
+		display: inline-block;
+		text-align: center;
+		font-size: 78px;
+		line-height: 0;
+		font-style: normal;
+		font-weight: bold;
+		color: #b7b7b7;
+	}
+}

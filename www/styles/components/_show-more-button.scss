@@ -1,0 +1,21 @@
+.show-more-button {
+	display: block;
+	padding: 9px 0;
+	margin: 5px 0 25px;
+	font: 700 11px/19px 'Roboto', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	background: $r-dark-white;
+
+	a {
+		vertical-align: middle;
+		border-bottom: 1px dotted $r-border-gray;
+	}
+
+	&:before {
+		vertical-align: middle;
+
+		@include sprite-pseudo-box($icon-load-messages);
+		background-image: url('./../../../images/sprite.png');
+	}
+}

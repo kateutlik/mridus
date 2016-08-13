@@ -1,7 +1,8 @@
 .likes__button {
   display: inline-block;
-  height: 32px;
   border: 1px solid $r-light-gray;
+  margin-bottom: 30px;
+
   &__link {
     display: inline-block;
     height: 32px;
@@ -14,14 +15,16 @@
     line-height: 34px;
     text-decoration: none;
   }
+
   span {
-    color: $r-likes-button-text;
     display: inline-block;
-    padding-right: 5px;
-    vertical-align: top;
     height: 32px;
+    padding-right: 5px;
+    color: $r-likes-button-text;
+    vertical-align: top;
     line-height: 34px;
     font-size: 13px;
+
     &:before {
       @include sprite-pseudo-box($icon-likes-button);
       margin-right: 5px;

@@ -1,7 +1,9 @@
-.avatar-container {
+.author-container {
   position: relative;
   display: flex;
+  margin-bottom: 15px;
   align-items: center;
+
   &__avatar {
     float: left;
     width: 56px;
@@ -9,18 +11,22 @@
     padding-right: 10px;
     margin-right: 10px;
     border-right: 1px solid $r-avatar-border;
+
     img {
       width: 100%;
       margin-top: 5px;
       border-radius: 50%;
     }
   }
+
   &__info {
     font-size: 12px;
     color: $r-text-avatar-info;
+
     a {
       text-decoration: underline;
       color: inherit;
+
       &:before {
         display: inline-block;
         content: "";
