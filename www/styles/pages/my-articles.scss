@@ -1,46 +1,52 @@
 @import "../helpers/variables";
 .my-articles {
+
   h3 {
     margin: 0;
     padding: 15px 0;
   }
+
   &__header {
     position: relative;
     border-color: $r-placeholder;
-    border-width: 4px 0 2px;
+    border-width: 2px 0 1px;
     border-style: solid;
     margin-bottom: 20px;
-    padding: 20px 4px 0;
+    padding: 15px 4px 0;
+
     &__items {
-      margin-bottom: 22px;
+      margin-bottom: 15px;
       text-transform: uppercase;
       color: #000;
       text-decoration: none;
+
       &__item {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         font-weight: 700;
+
         &:before {
           display: inline-block;
           content: "";
-          margin-right: 9px;
-          border: 7px solid transparent;
-          border-left: 7px solid $r-orange;
+          margin: 6px 10px 0 0;
+          width: 6px;
+          height: 6px;
+          background: $r-orange;
+          vertical-align: top;
         }
+
         &-active {
-          margin-left: 27px;
-          &:before {
-            display: none;
-          }
           a {
             color: $r-black;
+            text-decoration: none;
           }
         }
+
         &__link {
           color: $r-text-light-gray;
-          text-decoration: none;
         }
       }
     }
+
     &:after {
       position: absolute;
       left: 50%;
@@ -48,8 +54,9 @@
       content: "";
       border: 20px solid transparent;
       border-top: 10px solid $r-white;
-      bottom: -29px;
+      bottom: -30px;
     }
+
     &:before {
       position: absolute;
       left: 50%;
