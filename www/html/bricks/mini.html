@@ -1,0 +1,33 @@
+<div class="mini-brick">
+	@@if (context.image === 1){
+	<a href="#" class="mini-brick__image">
+		<img src="https://static1.smi2.net/img/135x90/2877639.jpeg" alt="News image" />
+	</a>
+	}
+	@@if (context.image === 2){
+	<a href="#" class="mini-brick__image">
+		<img src="https://static6.smi2.net/img/135x90/2825727.jpeg" alt="News image" />
+	</a>
+	}
+	@@if (context.image === 3){
+	<a href="#" class="mini-brick__image">
+		<img src="https://static2.smi2.net/img/135x90/2631075.jpeg" alt="News image" />
+	</a>
+	}
+
+	@@if (context.data === 1){
+		<div class="mini-brick__content">
+			<a href="#1" title="">Лимонов предложил лишить Гайдар самого дорогого</a>
+		</div>
+	}
+	@@if (context.data === 2){
+		<div class="mini-brick__content">
+			<a href="#2" title="">Народ Донбасса встретится с народом Украины в европейском суде</a>
+		</div>
+	}
+	@@if (context.data === 3){
+		<div class="mini-brick__content">
+			<a href="#3" title="">В Госдуме заявили, что Украина использует Гайдар в своих целях</a>
+		</div>
+	}
+</div>

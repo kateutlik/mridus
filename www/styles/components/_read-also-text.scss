@@ -1,0 +1,30 @@
+.read-also-text {
+	margin-bottom: 20px;
+
+	p {
+		margin-bottom: 10px;
+	}
+
+	&__list {
+		padding-left: 20px;
+
+		li {
+			margin-bottom: 10px;
+		}
+
+		a {
+			color: $r-light-red;
+			text-decoration: none;
+
+			&:before {
+				content: '';
+				display: inline-block;
+				width: 5px;
+				height: 5px;
+				margin: 0 10px 0 -15px;
+				vertical-align: 3px;
+				background: $r-light-red;
+			}
+		}
+	}
+}

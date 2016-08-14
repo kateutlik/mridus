@@ -1,7 +1,7 @@
 @import "../helpers/variables";
 @import './../sprite';   // imports sprite.scss
 
-.article-live {
+.article {
   .buttons {
     .save__button {
       float: right;
@@ -11,13 +11,13 @@
     font-size: 16px;
     line-height: 23px;
     font-weight: 300;
-    color: $r-black;
+    color: $r-text-dark;
 
-    p {
+    > div > p {
       margin-bottom: 20px;
     }
 
-    &__item {
+    p[data-time] {
       position: relative;
       margin-top: 60px !important;
 
