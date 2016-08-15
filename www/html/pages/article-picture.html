@@ -1,0 +1,135 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#"
+      prefix="ya: https://webmaster.yandex.ru/vocabularies/" xmlns="http://www.w3.org/1999/html">
+<head>
+
+    @@include('./../layout/_head.html')
+    <link href="./../../styles/pages/article.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="article" itemscope itemtype="http://schema.org/WebPage">
+
+@@include('./../layout/_header.html')
+
+<section class="wrapper bgColor_white paddings_side padding_top">
+
+    <ul class="tabs-inline padding-lr padding-tb">
+        <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Происшествия</a></li>
+        <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Война</a></li>
+    </ul>
+
+    <div class="row padding-lr padding-tb">
+        <div class="col-12">
+            <h3 class="article__page-title">Освобождение Пальмиры регулярной армией</h3>
+            @@include('./../components/_counter-block.html', {"like": 0, "comment": 2, "show": 408, "colorClass": "black"})
+        </div>
+    </div>
+
+    <div class="row padding-lr padding-tb">
+        <div class="col-12">
+            @@include('./../components/_author-container.html')
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            @@include('./../components/_socials-article.html', {"class": "small-size"})
+        </div>
+    </div>
+
+    <div class="row padding-lr buttons">
+        <div class="col-12 clearfix">
+            @@include('./../components/_likes-button.html')
+            @@include('./../components/_save-button.html')
+        </div>
+    </div>
+
+    <div class="row article__text padding-lr">
+        <div class="col-12">
+            <p>
+                «Ридус» ведет онлайн-трансляцию события.
+            </p>
+
+            <div class="full-width article__picture">
+                <a class="article__picture__href" href="#" title="">
+                    <img class="article__picture__image" src="http://www.ridus.ru/images/2016/3/28/382516/large_7065757556.jpg" alt="">
+                </a>
+                <p class="article__picture__name">
+                    Храм в Пальмире
+                </p>
+                <p class="article__picture__author">
+                    © kelin/pixabay.com
+                </p>
+            </div>
+
+            <p>
+                Совет безопасности Нидерландов публикует доклад о крушении боинга на Украине. Эксперты сосредоточатся на 4 главных вопросах: причинах катастрофы, проблеме полета над зоной конфликта, осознавали ли пассажиры, что происходило в тот злополучный момент, и почему родственники погибших были вынуждены несколько дней ждать подтверждения властей, летели ли их близкие на этом рейсе.
+            </p>
+
+            <div class="full-width article__picture">
+                <a class="article__picture__href" href="#" title="">
+                    <img class="article__picture__image" src="http://www.ridus.ru/images/2016/3/28/382528/hd_230c437033.jpg" alt="">
+                </a>
+                <p class="article__picture__name">
+                    Храм в Пальмире
+                </p>
+                <p class="article__picture__author">
+                    © kelin/pixabay.com
+                </p>
+            </div>
+
+            <p>
+                Первыми с докладом ознакомились родственники погибших, журналисты пока ждут своей очереди. Пресс-конференция начнется в два часа по московскому времени.
+            </p>
+
+            <div class="full-width article__picture">
+                <a class="article__picture__href" href="#" title="">
+                    <img class="article__picture__image" src="http://www.ridus.ru/images/2016/3/28/382538/hd_0428e017d3.jpg" alt="">
+                </a>
+                <p class="article__picture__name">
+                    Храм в Пальмире
+                </p>
+                <p class="article__picture__author">
+                    © kelin/pixabay.com
+                </p>
+            </div>
+
+            <p>
+                «Никто не должен был там летать, ни единый самолет, так как это было слишком опасно. Мы все видели это по ТВ, я не верила своим ушам, когда услышала, что они летели в том районе» — заявила БиБиСи Селена Фредрикз, мать погибшего на борту MH17 Брайса Фредрикза.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            @@include('./../components/_socials-article.html')
+        </div>
+    </div>
+
+    <div class="row padding-lr">
+        <div class="col-12 clearfix">
+            @@include('./../components/_likes-button.html')
+        </div>
+    </div>
+
+    <div class="row padding-lr">
+        <div class="col-12">
+            @@include('./../components/_article-tags.html')
+        </div>
+    </div>
+
+    <div class="row padding-lr">
+        <div class="col-12">
+            @@include('./../components/_comments.html')
+        </div>
+    </div>
+
+</section>
+@@include('./../layout/_news-include.html')
+
+@@include('./../layout/_footer.html')
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</body>
+</html>
