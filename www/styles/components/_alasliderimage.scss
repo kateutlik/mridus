@@ -27,4 +27,15 @@
       color: $r-white;
     }
   }
+  .brick {
+    &__typeLabel {
+      top: 20px;
+      padding: 5px 10px 4px;
+      font: 700 16px 'Roboto', sans-serif;
+      &:after,
+      &:before {
+        right: -6px;
+      }
+    }
+  }
 }

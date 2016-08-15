@@ -17,6 +17,12 @@
       margin-bottom: 20px;
     }
 
+    > div > a {
+      display: block;
+      margin-bottom: 20px;
+      color: $r-black;
+    }
+
     p[data-time] {
       position: relative;
       margin-top: 60px !important;
@@ -42,5 +48,8 @@
         border-top: 5px solid #000;
       }
     }
+  }
+  &__page-title {
+    margin-bottom: 5px;
   }
 }
