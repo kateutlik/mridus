@@ -129,6 +129,9 @@ on retina will be good resolution */
 	margin-left: -15px;
 	margin-right: -15px;
 }
+.full-width iframe {
+	min-width: 100% !important;
+}
 .full-width_twitter {
 	margin-left: -16px;
 	margin-right: -16px;
