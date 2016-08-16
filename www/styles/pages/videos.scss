@@ -1,0 +1,21 @@
+@import "../helpers/variables";
+.videos {
+  h3 {
+    margin: 0;
+    padding: 15px;
+    text-transform: uppercase;
+  }
+  &__time {
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    background: $r-placeholder;
+    &-first {
+      font: bold 21px 'Roboto Slab', serif;
+      color: $r-white;
+    }
+    &-second {
+      font: normal 13px 'Roboto Slab', serif;
+      color: $r-white;
+    }
+  }
+}
