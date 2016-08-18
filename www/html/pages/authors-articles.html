@@ -1,0 +1,184 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#"
+      prefix="ya: https://webmaster.yandex.ru/vocabularies/" xmlns="http://www.w3.org/1999/html">
+<head>
+
+    @@include('./../layout/_head.html')
+    <link href="./../../styles/pages/authors.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="authors" itemscope itemtype="http://schema.org/WebPage">
+
+@@include('./../layout/_header.html')
+
+<section class="wrapper bgColor_white paddings_side padding_top padding-lr">
+
+    <ul class="menu clearfix">
+        <li class="menu__item">Авторские колонки</li>
+        <li class="menu__item"><a href="#" class="menu__item-active" title="">Авторы</a></li>
+    </ul>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="author-profile">
+                <div class="author-photo">
+                    <span class="author-photo__label">Я — Автор</span>
+                    <img class="author-photo__image" src="https://pp.vk.me/c405016/v405016400/3291/QZGuxhoNmxM.jpg" alt="автор">
+                    <p class="author-photo__name">Hard Ingush</p>
+                </div>
+                <div class="author-info">
+                    <p>В пятницу утром 21 августа баррель нефти марки Brent вплотную приблизился к очередному
+                        психологическому рубежу — $46 за баррель, хотя так и не пробил его, немного отскочив назад.
+                        К 11.19 по Москве она торговалась на отметке $46,23 за баррель. Текущая неделя может стать
+                        восьмой подряд, когда зафиксировано недельное удешевление «черного золота» — это самый
+                        продолжительный период с 1986 года, отмечает РИА Новости. </p>
+                </div>
+                <ul class="author-popularity">
+                    <li class="watchers">
+                        408
+                    </li>
+                    <li class="rating">
+                        <b>Рейтинг #<span>56</span></b>
+                    </li>
+                    <li class="rate">
+                        <b>Оценки:
+                            <span class="positive">+234</span> /
+                            <span class="negative">-33</span>
+                        </b>
+                    </li>
+                </ul>
+                @@include('./../components/_socials-article.html')
+            </div>
+        </div>
+    </div>
+
+    <ul class="menu menu-small menu-bordered clearfix">
+        <li class="menu__item">Статьи автора (15)</li>
+        <li class="menu__item"><a href="#" class="menu__item-active" title="">Комментарии автора (133)</a></li>
+    </ul>
+
+    <div class="row">
+        <div class="col-6">
+            <div class="brick">
+                @@include('./../bricks/news-simple.html', {
+                "image": 2,
+                "data": 6,
+                "label": 22,
+                "counters": true,
+                "like": 0,
+                "comment": 2,
+                "show": 408
+                })
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="brick">
+                @@include('./../bricks/news-simple.html', {
+                "image": 1,
+                "data": 1,
+                "label": 31,
+                "counters": true,
+                "like": 0,
+                "comment": 2,
+                "show": 408
+                })
+            </div>
+        </div>
+    </div>
+
+    <div class="row padding-tb">
+        <div class="col-6">
+            <div class="brick">
+                @@include('./../bricks/news-simple.html', {
+                "image": 2,
+                "data": 6,
+                "label": 22,
+                "counters": true,
+                "like": 0,
+                "comment": 2,
+                "show": 408
+                })
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="brick">
+                @@include('./../bricks/news-simple.html', {
+                "image": 1,
+                "data": 1,
+                "label": 31,
+                "counters": true,
+                "like": 0,
+                "comment": 2,
+                "show": 408
+                })
+            </div>
+        </div>
+    </div>
+
+    <div class="row padding-tb">
+        <div class="col-6">
+            <div class="brick">
+                @@include('./../bricks/news-simple.html', {
+                "image": 2,
+                "data": 6,
+                "label": 22,
+                "counters": true,
+                "like": 0,
+                "comment": 2,
+                "show": 408
+                })
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="brick">
+                @@include('./../bricks/news-simple.html', {
+                "image": 1,
+                "data": 1,
+                "label": 31,
+                "counters": true,
+                "like": 0,
+                "comment": 2,
+                "show": 408
+                })
+            </div>
+        </div>
+    </div>
+
+    <div class="row padding-tb">
+        <div class="col-6">
+            <div class="brick">
+                @@include('./../bricks/news-simple.html', {
+                "image": 2,
+                "data": 6,
+                "label": 22,
+                "counters": true,
+                "like": 0,
+                "comment": 2,
+                "show": 408
+                })
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="brick">
+                @@include('./../bricks/news-simple.html', {
+                "image": 1,
+                "data": 1,
+                "label": 31,
+                "counters": true,
+                "like": 0,
+                "comment": 2,
+                "show": 408
+                })
+            </div>
+        </div>
+    </div>
+
+</section>
+
+@@include('./../components/_datepicker-bottom.html')
+@@include('./../layout/_footer.html')
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</body>
+</html>
