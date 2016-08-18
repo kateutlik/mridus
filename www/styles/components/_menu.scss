@@ -1,0 +1,23 @@
+.menu {
+  font: bold 21px 'Roboto Slab', serif;
+  padding-top: 15px;
+  margin-bottom: 25px;
+  &__item {
+    text-transform: uppercase;
+    &:first-child {
+      margin-bottom: 5px;
+    }
+    &:before {
+      display: inline-block;
+      content: "";
+      width: .286em;
+      height: .286em;
+      margin-right: .6em;
+      margin-bottom: .24em;
+      background: #ffd051;
+    }
+    &-active {
+      color: #a3a3a3;
+    }
+  }
+}

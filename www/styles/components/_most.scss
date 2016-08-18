@@ -1,0 +1,35 @@
+.most {
+  border-top: 3px solid $r-light-gray;
+  border-bottom: 3px solid $r-light-gray;
+  &__tabs {
+    &__item {
+      float: left;
+      width: 50%;
+      background: $r-light-gray;
+      font: bold 16px 'Roboto Slab', sans-serif;
+      a {
+        display: block;
+        padding: 12px 16px;
+        color: $r-most-tabs;
+      }
+    }
+    .ui-state-active {
+      background: $r-white;
+      a {
+        color: $r-carrot;
+        text-decoration: none;
+      }
+    }
+  }
+  .newsList__item {
+    border-bottom: none;
+    &-date {
+      float: none;
+      width: 100%;
+      margin-bottom: 5px;
+    }
+    &-link {
+      margin-left: 0;
+    }
+  }
+}
