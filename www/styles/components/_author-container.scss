@@ -5,21 +5,20 @@
   align-items: center;
 
   &__avatar {
-    float: left;
-    width: 56px;
-    height: 44px;
-    padding-right: 10px;
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
     margin-right: 10px;
-    border-right: 1px solid $r-avatar-border;
 
     img {
       width: 100%;
-      margin-top: 5px;
       border-radius: 50%;
     }
   }
 
   &__info {
+    padding-left: 10px;
+    border-left: 1px solid $r-avatar-border;
     font-size: 12px;
     color: $r-text-avatar-info;
 

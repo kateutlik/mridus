@@ -2,7 +2,7 @@ $(document).ready(function() {
 	var header = $('#header'),
 		sectionTitleTransparent = $('.section-title.transparent'),
 		scrollVar = $(window).scrollTop(),
-		slider = $('.slider'),
+		slider = $('.slowDown .slider'),
 		introSection = slider.find('.slider__image img');
 
 	$(window).scroll(function () {
