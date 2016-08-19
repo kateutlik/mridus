@@ -13,6 +13,7 @@ var gulp = require('gulp'),
 	gutil       = require('gulp-util'),
 	tinylr      = require('tiny-lr'),
     spritesmith = require('gulp.spritesmith'),
+	svgSprite = require('gulp-svg-sprite'),
 	app = express(),
 	server      = tinylr();
 
@@ -91,22 +92,44 @@ gulp.task('watch', function () {
 		gulp.watch('www/images/*', ['images']);
 	});
 });
-
+//todo https://www.liquidlight.co.uk/blog/article/creating-svg-sprites-using-gulp-and-sass/
 gulp.task('sprite', function() {
-    var spriteData = gulp.src('./www/sprite/*.png').pipe(spritesmith({
-                retinaSrcFilter: './www/sprite/*-2x.png',
-                imgName: '../images/sprite.png',
-                retinaImgName: 'sprite-2x.png',
-                cssName: '_sprite.scss',
-                algorithm: 'binary-tree',
-                cssTemplate: './scss.template.handlebars',
-                cssVarMap: function(sprite) {
-                    sprite.name = 'icon-' + sprite.name
-                }
-            }));
+    // var spriteData = gulp.src('./www/sprite/*.png').pipe(spritesmith({
+    //             retinaSrcFilter: './www/sprite/*-2x.png',
+    //             imgName: '../images/sprite.png',
+    //             retinaImgName: 'sprite-2x.png',
+    //             cssName: '_sprite.scss',
+    //             algorithm: 'binary-tree',
+    //             cssTemplate: './scss.template.handlebars',
+    //             cssVarMap: function(sprite) {
+    //                 sprite.name = 'icon-' + sprite.name
+    //             }
+    //         }));
+    //
+    // spriteData.img.pipe(gulp.dest('./dist/images/'));
+    // spriteData.css.pipe(gulp.dest('./www/styles/'));
 
-    spriteData.img.pipe(gulp.dest('./dist/images/'));
-    spriteData.css.pipe(gulp.dest('./www/styles/'));
+	config                  = {
+		mode                : {
+			prefix          : "icon-%s",  // Prefix for CSS selectors
+			view            : {         // Activate the «view» mode
+				bust        : false,
+				render      : {
+					scss    : {
+						dest: '_sprite.scss',
+						// template: "./scss.template.handlebars"
+
+					}
+				},
+				example: true
+			}
+		}
+	};
+
+
+	gulp.src('*.svg', {cwd: './www/sprite/'})
+		.pipe(svgSprite(config))
+		.pipe(gulp.dest('./www/styles/'));
 });
 
 gulp.task('default', ['vendors', 'scripts', 'images', 'fonts', 'sprite', 'styles', 'fileinclude', 'express', 'watch']);

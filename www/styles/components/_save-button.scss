@@ -12,7 +12,7 @@
   position: relative;
   transition: background .2s ease, opacity .2s ease;
   &:before {
-    @include sprite-pseudo-box($icon-gray-glasses);
+    //@include sprite-pseudo-box($icon-gray-glasses);
     position: absolute;
     left: 13px;
     top: 13px;

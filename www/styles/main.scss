@@ -3,9 +3,9 @@
 @import "helpers/variables";
 @import "helpers/mixins";
 
-@import 'sprite';   // imports sprite.scss
+@import 'view/sprite';   // imports sprite.scss
 // $spritesheet-sprites is an array of all sprite image names
-@include sprites($spritesheet-sprites);
+//@include sprites($spritesheet-sprites);
 
 /* Import reset */
 @import "base/reset";

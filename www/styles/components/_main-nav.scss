@@ -48,7 +48,7 @@
 					margin-top: 50%;
 					margin-left: 50%;
 
-					@include sprite-pseudo-box($icon-read-later);
+					//@include sprite-pseudo-box($icon-read-later);
 				}
 			}
 
@@ -68,7 +68,7 @@
 			text-decoration: none;
 
 			&:before {
-				@include sprite-pseudo-box($icon-login);
+				//@include sprite-pseudo-box($icon-login);
 			}
 		}
 	}
@@ -136,7 +136,7 @@
 			cursor: pointer;
 
 			&:before {
-				@include sprite-pseudo-box($icon-loupe-white);
+				//@include sprite-pseudo-box($icon-loupe-white);
 				transition: 0.25s ease-out;
 			}
 		}

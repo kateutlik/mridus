@@ -18,7 +18,7 @@
       display: inline-block;
       width: 27px;
       &:after {
-        @include sprite-pseudo-box($icon-input-datepicker);
+        //@include sprite-pseudo-box($icon-input-datepicker);
         position: absolute;
         left: 54px;
       }
@@ -42,7 +42,7 @@
       display: inline-block;
       width: 27px;
       &:after {
-        @include sprite-pseudo-box($icon-input-datepicker);
+        //@include sprite-pseudo-box($icon-input-datepicker);
         position: absolute;
         left: 39px;
       }

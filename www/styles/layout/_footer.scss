@@ -76,7 +76,7 @@ body > footer {
         position: absolute;
         right: 15px;
         top: 13px;
-        @include sprite-pseudo-box($icon-age-limit);
+        //@include sprite-pseudo-box($icon-age-limit);
       }
     }
 }
