@@ -1,70 +1,7 @@
 @import "../helpers/variables";
 .my-articles {
-
   h3 {
     margin: 0;
     padding: 15px 0;
-  }
-
-  &__header {
-    position: relative;
-    border-color: $r-placeholder;
-    border-width: 2px 0 1px;
-    border-style: solid;
-    margin-bottom: 20px;
-    padding: 15px 4px 0;
-
-    &__items {
-      margin-bottom: 15px;
-      text-transform: uppercase;
-      color: #000;
-      text-decoration: none;
-
-      &__item {
-        margin-bottom: 10px;
-        font-weight: 700;
-
-        &:before {
-          display: inline-block;
-          content: "";
-          margin: 6px 10px 0 0;
-          width: 6px;
-          height: 6px;
-          background: $r-orange;
-          vertical-align: top;
-        }
-
-        &-active {
-          a {
-            color: $r-black;
-            text-decoration: none;
-          }
-        }
-
-        &__link {
-          color: $r-text-light-gray;
-        }
-      }
-    }
-
-    &:after {
-      position: absolute;
-      left: 50%;
-      margin-left: -20px;
-      content: "";
-      border: 20px solid transparent;
-      border-top: 10px solid $r-white;
-      bottom: -30px;
-    }
-
-    &:before {
-      position: absolute;
-      left: 50%;
-      margin-left: -20px;
-      content: "";
-      border: 20px solid transparent;
-      border-top: 10px solid $r-placeholder;
-      bottom: -31px;
-    }
   }
 }

@@ -2,11 +2,18 @@
   font: bold 21px 'Roboto Slab', serif;
   padding-top: 15px;
   margin-bottom: 25px;
+
   &__item {
     text-transform: uppercase;
+
+    a {
+      color: #a3a3a3;
+    }
+
     &:first-child {
       margin-bottom: 5px;
     }
+
     &:before {
       display: inline-block;
       content: "";
@@ -16,14 +23,28 @@
       margin-bottom: .24em;
       background: #ffd051;
     }
-    &-active {
-      color: #a3a3a3;
+
+    &-active a {
+      color: $r-black;
+      text-decoration: none;
+      cursor: default;
     }
   }
+
   &-small {
     font-size: 16px;
+
     .menu__item:before {
       margin-bottom: .3em;
+    }
+  }
+
+  &-medium {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+
+    .menu__item {
+      margin-bottom: 10px;
     }
   }
 
@@ -31,5 +52,29 @@
       border-top: 2px solid $r-border-light-gray;
       border-bottom: 1px solid $r-border-light-gray;
       padding-bottom: 15px;
+  }
+
+  &-arrowed {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      left: 50%;
+      margin-left: -20px;
+      content: "";
+      border: 20px solid transparent;
+      border-top: 10px solid $r-white;
+      bottom: -30px;
+    }
+
+    &:before {
+      position: absolute;
+      left: 50%;
+      margin-left: -20px;
+      content: "";
+      border: 20px solid transparent;
+      border-top: 10px solid $r-placeholder;
+      bottom: -31px;
+    }
   }
 }
