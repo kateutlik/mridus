@@ -49,4 +49,28 @@
       }
     }
   }
+  &-list {
+    .brick__image {
+      display: block;
+      height: 90px;
+    }
+    .brick__mainLink {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  &-filtr {
+    &__button {
+      display: block;
+      margin-bottom: 5px;
+      padding: 15px 0;
+      width: 100%;
+      background: $r-light-gray;
+      color: $r-author-filtr-button;
+      font: bold 13px 'Roboto Slab', sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
 }

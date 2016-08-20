@@ -1,0 +1,117 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#"
+      prefix="ya: https://webmaster.yandex.ru/vocabularies/" xmlns="http://www.w3.org/1999/html">
+<head>
+
+    @@include('./../layout/_head.html')
+    <link href="./../../styles/pages/authors.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="authors" itemscope itemtype="http://schema.org/WebPage">
+
+@@include('./../layout/_header.html')
+
+<section class="wrapper bgColor_white paddings_side padding_top padding-lr authors-list">
+
+    <ul class="menu clearfix">
+        <li class="menu__item"><a href="#" class="menu__item-active" title="">Авторские колонки</a></li>
+        <li class="menu__item">Авторы</li>
+    </ul>
+
+    <ul class="menu menu-small menu-bordered clearfix">
+        <li class="menu__item"><a href="#" class="menu__item-active" title="">Новые авторы</a></li>
+        <li class="menu__item"><a href="#" class="menu__item-active" title="">Самые читаемые</a></li>
+    </ul>
+
+    <div class="row">
+        <div class="col-12">
+            <a href="#" class="authors-filtr__button">Фильтровать по алфавиту</a>
+        </div>
+    </div>
+
+    <div class="row padding-tb">
+        <div class="col-6">
+            @@include('./../bricks/mini-author.html', {
+            "image": 1,
+            "data": 1})
+        </div>
+        <div class="col-6">
+            @@include('./../bricks/mini-author.html', {
+            "image": 2,
+            "data": 2})
+        </div>
+    </div>
+
+    <div class="row padding-tb">
+        <div class="col-6">
+            @@include('./../bricks/mini-author.html', {
+            "image": 3,
+            "data": 3})
+        </div>
+        <div class="col-6">
+            @@include('./../bricks/mini-author.html', {
+            "image": 1,
+            "data": 1})
+        </div>
+    </div>
+
+    <div class="row padding-tb">
+        <div class="col-6">
+            @@include('./../bricks/mini-author.html', {
+            "image": 1,
+            "data": 1})
+        </div>
+        <div class="col-6">
+            @@include('./../bricks/mini-author.html', {
+            "image": 2,
+            "data": 2})
+        </div>
+    </div>
+
+    <div class="row padding-tb">
+        <div class="col-6">
+            @@include('./../bricks/mini-author.html', {
+            "image": 3,
+            "data": 3})
+        </div>
+        <div class="col-6">
+            @@include('./../bricks/mini-author.html', {
+            "image": 1,
+            "data": 1})
+        </div>
+    </div>
+
+    <div class="row padding-tb">
+        <div class="col-6">
+            @@include('./../bricks/mini-author.html', {
+            "image": 1,
+            "data": 1})
+        </div>
+        <div class="col-6">
+            @@include('./../bricks/mini-author.html', {
+            "image": 2,
+            "data": 2})
+        </div>
+    </div>
+
+    <div class="row padding-tb">
+        <div class="col-6">
+            @@include('./../bricks/mini-author.html', {
+            "image": 3,
+            "data": 3})
+        </div>
+        <div class="col-6">
+            @@include('./../bricks/mini-author.html', {
+            "image": 1,
+            "data": 1})
+        </div>
+    </div>
+
+</section>
+
+@@include('./../layout/_footer.html')
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</body>
+</html>
