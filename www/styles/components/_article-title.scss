@@ -1,0 +1,12 @@
+.article-title {
+  margin: 15px 0 25px 0;
+  &__date {
+    margin-bottom: 7px;
+    font: normal 12px 'Roboto', sans-serif;
+    color: $r-text-avatar-info;
+  }
+  &__agenda {
+    margin-bottom: 7px;
+    font: bold 21px 'Roboto Slab', sans-serif;
+  }
+}

@@ -1,0 +1,21 @@
+.author-info {
+  background: $r-light-gray;
+  &__avatar {
+    width: 100%;
+  }
+  &__author {
+    padding: 25px 15px;
+  }
+  &__name {
+    margin-bottom: 15px;
+    font: bold 16px 'RobotoSlab', sans-serif;
+  }
+  &__about {
+    margin-bottom: 25px;
+    font: normal 13px/19px 'Roboto', sans-serif;
+  }
+  a {
+    font: normal 13px 'Roboto', sans-serif;
+    color: $r-black;
+  }
+}
