@@ -5,7 +5,7 @@
   }
   &__item {
     padding: 13px 0;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid $r-light-gray;
     &:last-child {
       border-bottom: none;
     }
@@ -34,5 +34,30 @@
     text-decoration: none;
     text-transform: uppercase;
     color: #85929f;
+  }
+  &-float-none {
+    .newsList__item {
+      &-date {
+        float: none;
+        width: 100%;
+        margin-bottom: 5px;
+      }
+      &-link {
+        margin-left: 0;
+      }
+    }
+  }
+  &-noborder {
+    .newsList__item {
+      border-bottom: none;
+    }
+  }
+  &-border-dotted {
+    .newsList__item {
+      border-bottom: 1px dotted $r-light-gray;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
   }
 }
