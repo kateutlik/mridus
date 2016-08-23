@@ -1,0 +1,21 @@
+.my-comment {
+  padding: 15px;
+  margin-bottom: 15px;
+  background: $r-my-comment;
+  &__title {
+    margin-bottom: 12px;
+    font: normal 13px/20px 'Roboto', sans-serif;
+    color: $r-my-comment-title;
+  }
+  &__date {
+    color: $r-author-rate-negative;
+  }
+  &__text {
+    font: normal 16px/26px 'Roboto', sans-serif ;
+  }
+  &__count {
+    text-align: right;
+    font: normal 16px/26px 'Roboto', sans-serif ;
+    color: $r-green;
+  }
+}
