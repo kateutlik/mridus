@@ -1,0 +1,20 @@
+/* ----- photoreports.scss ----- */
+
+.photoreports {
+  background: $r-black;
+  color: $r-white;
+  .brick__label {
+    display: none;
+  }
+  .countersBlock {
+    display: none;
+  }
+  .brick__header {
+    background: $r-black;
+    color: $r-white;
+  }
+}
+
+.view_photoreports {
+  background: $r-black;
+}
