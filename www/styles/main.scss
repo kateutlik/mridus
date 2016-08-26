@@ -1,17 +1,15 @@
 /* Import helpers */
+@import "helpers/sprite";
 @import "helpers/extends";
 @import "helpers/variables";
 @import "helpers/mixins";
-
-@import 'view/sprite';   // imports sprite.scss
-// $spritesheet-sprites is an array of all sprite image names
-//@include sprites($spritesheet-sprites);
 
 /* Import reset */
 @import "base/reset";
 
 /* Import vendors */
 @import "vendors/font-awesome.min";
+@import "vendors/mq";
 @import "vendors/swiper";
 
 /* Import base */

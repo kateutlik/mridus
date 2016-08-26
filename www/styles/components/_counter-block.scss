@@ -38,16 +38,18 @@
     opacity: 0.5;
 
     &-like:after {
-      //@include svg-comments-black;
-      //@include sprite-pseudo-box($icon-white-count-like);
+      content: '';
+      @include sprite(like-white);
     }
 
     &-comment:after {
-      //@include sprite-pseudo-box($icon-white-count-comment);
+      content: '';
+      @include sprite(comments-white);
     }
 
     &-show:after {
-      //@include sprite-pseudo-box($icon-white-count-show);
+      content: '';
+      @include sprite(see-white);
     }
   }
 }
