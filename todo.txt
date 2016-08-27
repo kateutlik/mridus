@@ -2,3 +2,5 @@
 2. Добавить иконки на страницу authors-list для этого нужно добавить картинки в компонент _author-counter-block
 3. _article-title в counter-block добавить картинки и посмотреть цвет
 4._photoreports need add buttons next and prev
+5. добавить стрелочку в компонент read-more
+6. добавить картинку (pen-icon) на клмпонент all-materials

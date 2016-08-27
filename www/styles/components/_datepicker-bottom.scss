@@ -49,3 +49,17 @@
     }
   }
 }
+.in-component {
+  padding: 0;
+  .datepicker-bottom__to {
+    margin-bottom: 8px;
+    input {
+      width: calc(100% - 27px);
+    }
+  }
+  .yellowButton.view_big {
+    margin-left: 26px;
+    width: calc(100% - 53px);
+    text-align: center;
+  }
+}
