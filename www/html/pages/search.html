@@ -1,0 +1,122 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#"
+      prefix="ya: https://webmaster.yandex.ru/vocabularies/" xmlns="http://www.w3.org/1999/html">
+<head>
+
+    @@include('./../layout/_head.html')
+    <link href="./../../styles/pages/search.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="search" itemscope itemtype="http://schema.org/WebPage">
+
+@@include('./../layout/_header.html')
+
+<section class="bgColor_white">
+    <p class="search-title">Результаты поиска</p>
+
+    <div class="row">
+        <div class="col-12">
+            @@include('./../components/_search-form.html')
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 padding-lr">
+            @@include('./../components/_search-result.html')
+        </div>
+    </div>
+
+    <div class="row padding-lr">
+        <div class="col-6">
+            <div class="brick">
+                @@include('./../bricks/news-simple.html', {
+                "image": 2,
+                "data": 6,
+                "label": 22,
+                "counters": true,
+                "like": 0,
+                "comment": 2,
+                "show": 408
+                })
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="brick">
+                @@include('./../bricks/news-simple.html', {
+                "image": 1,
+                "data": 1,
+                "label": 31,
+                "counters": true,
+                "like": 0,
+                "comment": 2,
+                "show": 408
+                })
+            </div>
+        </div>
+    </div>
+
+    <div class="row padding-lr padding-tb">
+        <div class="col-6">
+            <div class="brick">
+                @@include('./../bricks/news-simple.html', {
+                "image": 2,
+                "data": 6,
+                "label": 22,
+                "counters": true,
+                "like": 0,
+                "comment": 2,
+                "show": 408
+                })
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="brick">
+                @@include('./../bricks/news-simple.html', {
+                "image": 1,
+                "data": 1,
+                "label": 31,
+                "counters": true,
+                "like": 0,
+                "comment": 2,
+                "show": 408
+                })
+            </div>
+        </div>
+    </div>
+
+    <div class="row padding-lr padding-tb">
+        <div class="col-6">
+            <div class="brick">
+                @@include('./../bricks/news-simple.html', {
+                "image": 2,
+                "data": 6,
+                "label": 22,
+                "counters": true,
+                "like": 0,
+                "comment": 2,
+                "show": 408
+                })
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="brick">
+                @@include('./../bricks/news-simple.html', {
+                "image": 1,
+                "data": 1,
+                "label": 31,
+                "counters": true,
+                "like": 0,
+                "comment": 2,
+                "show": 408
+                })
+            </div>
+        </div>
+    </div>
+
+</section>
+@@include('./../layout/_footer.html')
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</body>
+</html>
