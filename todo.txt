@@ -3,3 +3,8 @@
 3. _article-title в counter-block добавить картинки и посмотреть цвет
 4. _photoreports need add buttons next and prev
 5. исправить подключение плагинов
+4._photoreports need add buttons next and prev
+5. добавить стрелочку в компонент read-more
+6. добавить картинку (pen-icon) на клмпонент all-materials
+7. На странице search выбор рубрик
+8. На странице authors-list фильтровать по алфовиту надо добавить алфавит

@@ -1,0 +1,155 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#"
+      prefix="ya: https://webmaster.yandex.ru/vocabularies/" xmlns="http://www.w3.org/1999/html">
+<head>
+
+    @@include('./../layout/_head.html')
+    <link href="./../../styles/pages/chapter.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="chapter" itemscope itemtype="http://schema.org/WebPage">
+
+@@include('./../layout/_header.html')
+
+<section class="bgColor_white">
+
+    @@include('./../components/_weather.html')
+
+    <div class="row">
+        <div class="col-12">
+            @@include('./../bricks/alasliderimage.html', {"image": 5, "brickLabel": "false"})
+        </div>
+    </div>
+
+    <div class="row padding-lr padding-tb">
+        <div class="col-12">
+            @@include('./../components/_author-container.html', {"class": "noavatar"})
+        </div>
+    </div>
+
+    <div class="row article__text padding-lr">
+        <div class="col-12">
+            <p>
+                В пятницу утром 21 августа баррель нефти марки Brent вплотную приблизился к очередному психологическому рубежу — $46 за баррель, хотя так и не пробил его, немного отскочив назад. К 11.19
+                по Москве она торговалась на отметке $46,23 за баррель. Текущая неделя может стать восьмой подряд, когда зафиксировано недельное удешевление «черного золота» — это самый продолжительный период с 1986 года, отмечает РИА Новости.
+                И большинство аналитиков пока не видят поводов к развороту нисходящего тренда.
+            </p>
+            @@include('./../components/_read-more.html')
+        </div>
+    </div>
+
+    <div class="row padding-lr padding-tb">
+        <div class="col-6">
+            <div class="brick">
+                @@include('./../bricks/news-simple.html', {
+                "image": 2,
+                "data": 6,
+                "label": 22,
+                "counters": true,
+                "like": 0,
+                "comment": 2,
+                "show": 408
+                })
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="brick">
+                @@include('./../bricks/news-simple.html', {
+                "image": 1,
+                "data": 1,
+                "label": 31,
+                "counters": true,
+                "like": 0,
+                "comment": 2,
+                "show": 408
+                })
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            @@include('./../bricks/alasliderimage.html', {"image": 3, "brickLabel": "false"})
+        </div>
+    </div>
+
+    <div class="row padding-lr padding-tb">
+        <div class="col-12">
+            @@include('./../components/_author-container.html', {"class": "noavatar"})
+        </div>
+    </div>
+
+    <div class="row article__text padding-lr">
+        <div class="col-12">
+            <p>
+                В пятницу утром 21 августа баррель нефти марки Brent вплотную приблизился к очередному психологическому рубежу — $46 за баррель, хотя так и не пробил его, немного отскочив назад. К 11.19
+                по Москве она торговалась на отметке $46,23 за баррель. Текущая неделя может стать восьмой подряд, когда зафиксировано недельное удешевление «черного золота» — это самый продолжительный период с 1986 года, отмечает РИА Новости.
+                И большинство аналитиков пока не видят поводов к развороту нисходящего тренда.
+            </p>
+            @@include('./../components/_read-more.html')
+        </div>
+    </div>
+
+    <div class="row padding-lr padding-tb">
+        <div class="col-6">
+            <div class="brick">
+                @@include('./../bricks/news-simple.html', {
+                "image": 2,
+                "data": 6,
+                "label": 22,
+                "counters": true,
+                "like": 0,
+                "comment": 2,
+                "show": 408
+                })
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="brick">
+                @@include('./../bricks/news-simple.html', {
+                "image": 1,
+                "data": 1,
+                "label": 31,
+                "counters": true,
+                "like": 0,
+                "comment": 2,
+                "show": 408
+                })
+            </div>
+        </div>
+    </div>
+
+    <div class="row padding-tb">
+        <div class="col-12">
+            @@include('./../bricks/all-materials.html', {"id": "allMaterials1"})
+        </div>
+    </div>
+
+    <div class="row padding-lr">
+        <div class="col-12">
+            @@include('./../components/_photo-materials.html')
+        </div>
+    </div>
+
+    <div class="row padding-lr">
+        <div class="col-12">
+            @@include('./../components/_video-materials.html')
+        </div>
+    </div>
+
+    <div class="row padding-lr">
+        <div class="col-12">
+            <div class="brick border_yellow view_opinion">
+                @@include('./../bricks/opinion.html')
+            </div>
+        </div>
+    </div>
+
+</section>
+
+@@include('./../layout/_footer.html')
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</body>
+</html>

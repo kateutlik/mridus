@@ -1,0 +1,45 @@
+.materials {
+  margin-bottom: 25px;
+  line-height: 0px;
+  &__image {
+    position: relative;
+    margin-bottom: 15px;
+    img {
+      width: 100%;
+      height: 220px;
+    }
+  }
+  &__fullscreenLabel {
+    background: rgba(92, 72, 29, 0.3);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: background .15s ease;
+    color: #fff;
+    font-size: 61px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 300;
+    padding-top: 110px;
+  }
+  &__content {
+    &__link {
+      margin-bottom: 7px;
+      font: bold 16px 'Roboto Slab', sans-serif;
+      text-transform: uppercase;
+      a {
+        color: $r-black;
+        text-decoration: none;
+      }
+      span {
+        color: $r-materials-count;
+      }
+    }
+    &__date {
+      font: 300 13px 'Roboto', sans-serif;
+      color: $r-materials-date;
+    }
+  }
+}

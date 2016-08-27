@@ -1,0 +1,34 @@
+.weather {
+  position: relative;
+  border: 15px solid $r-orange;
+  &__image {
+    width: 100%;
+  }
+  &__content {
+    font: normal 12px 'Roboto', sans-serif;
+    padding: 17px;
+    h3 {
+      color: $r-text-light-gray;
+      margin-bottom: 15px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    .hidden {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: $r-black;
+      text-decoration: none;
+      border-bottom: 1px dotted $r-black;
+    }
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    bottom: -20px;
+    border: 10px solid transparent;
+    border-top: 10px solid $r-white;
+  }
+}

@@ -1,9 +1,34 @@
-<div class="search">
-	<form>
-		<input class="search__input" type="text" placeholder="Искать по Ридусу">
-		<a class="yellowButton view_big" href="" title="">
-			найти
-			<i class="corner"><!-- corner --></i>
-		</a>
-	</form>
+<div class="search-form">
+    @@include('./_search-input.html')
+    <div class="search-form__category">
+        <label>искать:</label>
+        <div class="search-form__category__items">
+            <label>
+                <input type="radio" name="in" checked="">
+                в заголовке
+            </label>
+            <label>
+                <input type="radio" name="in" checked="">
+                в статье
+            </label>
+            <label>
+                <input type="radio" name="in" checked="">
+                автора
+            </label>
+        </div>
+    </div>
+    <a class="search-form__rubric">В рубриках
+        <i class="icon"></i>
+    </a>
+    <div class="datepicker-bottom in-component">
+        <label>по датам</label>
+        <div class="datepicker-bottom__from">
+            <label>c</label>
+            <input type="text" class="datepicker" placeholder="чч/мм/гггг">
+        </div>
+        <div class="datepicker-bottom__to">
+            <label>по</label>
+            <input type="text" class="datepicker" placeholder="чч/мм/гггг">
+        </div>
+    </div>
 </div>

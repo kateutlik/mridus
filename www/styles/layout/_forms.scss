@@ -99,12 +99,12 @@ input:-ms-input-placeholder {
     }
 }
 
-.search {
+.search-input-form {
   position: relative;
 
   .yellowButton {
     position: absolute;
-    right: 0;
+    right: 5px;
     transform: none;
   }
 }

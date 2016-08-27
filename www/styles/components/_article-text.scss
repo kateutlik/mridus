@@ -1,0 +1,42 @@
+.article__text {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 300;
+  color: $r-text-dark;
+
+  > div > p {
+    margin-bottom: 20px;
+  }
+
+  > div > a {
+    display: block;
+    margin-bottom: 20px;
+    color: $r-black;
+  }
+
+  p[data-time] {
+    position: relative;
+    margin-top: 60px !important;
+
+    &:before {
+      content: attr(data-time);
+      width: 95px;
+      position: absolute;
+      top: -42px;
+      text-align: center;
+      background-color: #000;
+      color: #fff;
+      font-size: 13px;
+      line-height: 22px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 42px;
+      top: -20px;
+      border: 5px solid transparent;
+      border-top: 5px solid #000;
+    }
+  }
+}
