@@ -49,7 +49,7 @@
 
     &-show:after {
       content: '';
-      @include sprite(see-white);
+      @include sprite(seen-white);
     }
   }
 }

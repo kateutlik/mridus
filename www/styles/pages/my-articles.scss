@@ -5,3 +5,52 @@
     padding: 15px 0;
   }
 }
+
+.avatar {
+  position: relative;
+  max-width: 280px;
+
+  img {
+    width: 100%;
+    vertical-align: bottom;
+  }
+
+  &-delete-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: rgba(0,0,0,0.5);
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 20px;
+      height: 2px;
+      margin: 14px 0 0 5px;
+      transform: rotate(45deg);
+      background: rgba(255,255,255,1);
+      transition: .25s ease-in-out;
+    }
+
+    &:after {
+        transform: rotate(-45deg);
+    }
+  }
+
+  &-change-button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $r-white;
+    background: rgba(0,0,0,0.5);
+
+  }
+}

@@ -127,11 +127,6 @@ gulp.task('sprite', function() {
 	};
 */
 	var config = {
-		shape: {
-			spacing: {
-				padding: 5
-			}
-		},
 		mode: {
 			css: {
 				dest: "./",
