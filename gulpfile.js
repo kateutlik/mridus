@@ -108,7 +108,7 @@ gulp.task('sprite', function() {
     //
     // spriteData.img.pipe(gulp.dest('./dist/images/'));
     // spriteData.css.pipe(gulp.dest('./www/styles/'));
-
+/*
 	config                  = {
 		mode                : {
 			prefix          : "icon-%s",  // Prefix for CSS selectors
@@ -125,11 +125,32 @@ gulp.task('sprite', function() {
 			}
 		}
 	};
+*/
+	var config = {
+		mode: {
+			css: {
+				dest: "./",
+				prefix: "icon-%s",
+				layout: "diagonal",
+				sprite: "images/sprite.svg",
+				bust: false,
+				render: {
+					scss: {
+						dest: "styles/helpers/_sprite.scss",
+						template: "build/sprite-template.scss"
+					}
+				}
+			}
+		},
+		variables: {
+			mapname: "icons"
+		}
+	};
 
 
-	gulp.src('*.svg', {cwd: './www/sprite/'})
+	gulp.src('./www/sprite/*.svg')
 		.pipe(svgSprite(config))
-		.pipe(gulp.dest('./www/styles/'));
+		.pipe(gulp.dest('./www/'));
 });
 
 gulp.task('default', ['vendors', 'scripts', 'images', 'fonts', 'sprite', 'styles', 'fileinclude', 'express', 'watch']);
