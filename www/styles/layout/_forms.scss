@@ -9,7 +9,7 @@ input[type="url"] {
     padding: 7px 7px 6px;
     border: 1px solid $r-gray;
     border-radius: 0;
-    font: normal 17px/10px 'RobotoLight', sans-serif;
+    font: 300 17px/10px 'Roboto', sans-serif;
     -webkit-appearance: none;
 }
 
@@ -53,6 +53,7 @@ input:-ms-input-placeholder {
     color: $r-black;
     background: $r-orange;
     transition: all 0.18s;
+    border-right: 10px solid $r-white;
 
     .corner {
         position: absolute;
@@ -106,4 +107,100 @@ input:-ms-input-placeholder {
     right: 0;
     transform: none;
   }
+}
+
+.form {
+    font: normal 16px 'Roboto', serif;
+    margin-bottom: 60px;
+
+    &-control {
+        margin-bottom: 20px;
+    }
+
+    &-line {
+        display: flex;
+
+        div {
+            flex-shrink: 2;
+            margin-right: 15px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.shrink1 {
+                flex-shrink: 1;
+            }
+
+        }
+    };
+    
+    &-link {
+        display: inline-block;
+        color: $r-black;
+    }
+
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        color: #747474;
+    }
+
+    .yellowButton {
+        display: block;
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+.select {
+    padding: 0 30px 0 0;
+    margin: 0;
+    border: 1px solid #bbb;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+    border-radius: 0;
+}
+.select:after {
+    position: absolute;
+    content: "";
+    right: 9px;
+    top: 46%;
+    border: 5px solid transparent;
+    border-top: 5px solid #bbb;
+}
+.select select {
+    font-family: 'Roboto', sans-serif;
+    padding: 7px 13px 6px;
+    font-size: 16px;
+    width: calc(100% + 2px);
+    margin-left: -1px;
+    border: none;
+    box-shadow: none;
+    background: transparent none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.select select:focus {
+    outline: none;
+}
+
+textarea {
+    font-family: 'Roboto', sans-serif;
+    padding: 7px 13px 6px;
+    font-size: 16px;
+    border: 1px solid #bbb;
+    width: 100%;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 80px;
 }

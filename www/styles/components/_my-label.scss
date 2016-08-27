@@ -1,0 +1,64 @@
+.myLabel__wrapper {
+	display: inline-block;
+}
+.myLabel {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 13px;
+	padding: 3px 5px;
+	border-radius: 3px;
+	color: #fff;
+	margin: 0 10px 0 0;
+
+}
+.myLabel.view_male {
+	background-color: #69A1E2;
+}
+.myLabel.view_female {
+	background-color: #fC73d0;
+	margin-left: 10px;
+}
+.myLabel.view_offline {
+	background-color: #ccc;
+	width: 105px;
+	display: inline-block;
+	text-align: center;
+}
+.myLabel.view_offline .offlineLabel__text {
+	display: inline;
+}
+.myLabel.view_offline .onllineLabel__text {
+	display: none;
+}
+.myLabel.view_online {
+	background-color: #64BD63;
+}
+.myLabel.view_online .offlineLabel__text {
+	display: none;
+}
+.myLabel.view_online .onllineLabel__text {
+	display: inline;
+}
+
+.myLabel.view_hdr {
+	font-family: 'Roboto Slab', serif;
+	background-color: #bbb;
+	font-weight: bold;
+	font-size: 12px;
+	padding-top: 2px;
+}
+.myLabel.view_i {
+	font-style: italic;
+	background-color: #bbb;
+}
+.myLabel.view_b {
+	font-weight: bold;
+	background-color: #bbb;
+}
+.myLabel.view_a {
+	text-decoration: underline;
+	background-color: #bbb;
+}
+.myLabel.view_video {
+	background-color: #bbb;
+}

@@ -3,49 +3,48 @@
 <head>
 
     @@include('./../layout/_head.html')
-    <link href="./../../styles/pages/signup.css" rel="stylesheet" type="text/css">
 
 </head>
-<body class="signup" itemscope itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage">
 
 
 @@include('./../layout/_header.html')
 
-<section class="signup__form">
+<section class="bgColor_white padding-lr">
+    <form class="form">
+        <h3>Регистрация нового пользователя</h3>
 
-    <p class="signup__form-title">Регистрация нового пользователя</p>
-
-    <div class="signup__form-question">
-        <label>Электронная почта</label>
-        <input type="text" placeholder="Ваш e-mail">
-    </div>
-    <div class="signup__form-question">
-        <label>Имя</label>
-        <input type="text" placeholder="Ваше имя">
-    </div>
-    <div class="signup__form-question">
-        <label>Фамилия</label>
-        <input type="text" placeholder="Ваша фамилия">
-    </div>
-    <div class="signup__form-question">
-        <label>Пароль</label>
-        <input type="password" placeholder="">
-    </div>
-    <div class="signup__form-question">
-        <label>Подтвердите пароль</label>
-        <input type="password" placeholder="">
-    </div>
-
-    <label class="signup__form-subscribe">
-        <input type="checkbox" checked="checked">
-        Я хочу получать рассылку свежих новостей
-    </label>
-
-    <a class="yellowButton view_big" href="" title="">
-        Зарегистрироваться
-        <i class="corner"><!-- corner --></i>
-    </a>
-
+        <div class="form-control">
+            <label>Электронная почта</label>
+            <input type="text" placeholder="Ваш e-mail">
+        </div>
+        <div class="form-control">
+            <label>Имя</label>
+            <input type="text" placeholder="Ваше имя">
+        </div>
+        <div class="form-control">
+            <label>Фамилия</label>
+            <input type="text" placeholder="Ваша фамилия">
+        </div>
+        <div class="form-control">
+            <label>Пароль</label>
+            <input type="password" placeholder="">
+        </div>
+        <div class="form-control">
+            <label>Подтвердите пароль</label>
+            <input type="password" placeholder="">
+        </div>
+        <div class="form-control">
+            <label>
+                <input type="checkbox" checked="checked" />
+                Я хочу получать рассылку свежих новостей
+            </label>
+        </div>
+        <a class="yellowButton view_big" href="" title="">
+            Зарегистрироваться
+            <i class="corner"><!-- corner --></i>
+        </a>
+    </form>
 </section>
 
 @@include('./../layout/_footer.html')

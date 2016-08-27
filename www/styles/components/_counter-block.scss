@@ -18,15 +18,18 @@
     }
 
     &-like:after {
-      //@include sprite-pseudo-box($icon-black-count-like);
+      content: '';
+      @include sprite(like-black);
     }
 
     &-comment:after {
-      //@include sprite-pseudo-box($icon-black-count-comment);
+      content: '';
+      @include sprite(comments-black);
     }
 
     &-show:after {
-      //@include sprite-pseudo-box($icon-black-count-show);
+      content: '';
+      @include sprite(seen-black);
     }
   }
 }

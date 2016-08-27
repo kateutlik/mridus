@@ -41,13 +41,13 @@ h4 {
 h3 {
 	font-family: 'Roboto Slab', serif;
 	font-size: 21px;
-	margin-bottom: 30px;
+	margin: 15px 0 30px;
 }
 
 h2 {
 	font-family: 'Roboto Slab', serif;
-	font-size: 32px; /* in use */
-	margin-bottom: 10px;
+	font-size: 26px; /* in use */
+	margin-bottom: 15px;
 }
 
 h1 {
@@ -57,10 +57,14 @@ h1 {
 }
 
 hr {
-	height: 1px;
 	margin: 15px 0;
-	border: 0;
-	background: $r-hr-color;
+	border: none;
+	border-bottom: 1px solid $r-hr-color;
+
+	&.dashed {
+		border-bottom-style: dashed;
+		border-bottom-color: $r-placeholder;
+	}
 }
 
 .clickable {

@@ -1,14 +1,42 @@
 @import "../helpers/variables";
-.my-articles {
+.my-page {
   h3 {
     margin: 0;
     padding: 15px 0;
   }
+
+  &-socials {
+    display: block;
+    max-width: 300px;
+
+    .socialNetwork__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+
+      a {
+        color: $r-black;
+        text-decoration: none;
+      }
+
+      label {
+        margin: 0;
+      }
+    }
+    .socialNetwork__link {
+      background: $r-socials;
+    }
+
+
+  }
+
 }
 
 .avatar {
   position: relative;
   max-width: 280px;
+  margin-bottom: 20px;
 
   img {
     width: 100%;
@@ -23,6 +51,7 @@
     width: 30px;
     height: 30px;
     background: rgba(0,0,0,0.5);
+    text-decoration: none;
 
     &:before,
     &:after {
@@ -46,11 +75,12 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    line-height: 35px;
     text-align: center;
     text-transform: uppercase;
     color: $r-white;
     background: rgba(0,0,0,0.5);
+    font: normal 13px/35px Roboto, sans-serif;
+    text-decoration: none;
 
   }
 }
