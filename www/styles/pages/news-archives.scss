@@ -1,0 +1,10 @@
+.news-archives {
+  .newsList {
+    padding-bottom: 7px;
+    .newsList__item {
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+}

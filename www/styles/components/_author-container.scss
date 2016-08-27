@@ -39,3 +39,13 @@
     }
   }
 }
+
+.noavatar {
+  .author-container__avatar {
+    display: none;
+  }
+  .author-container__info {
+    border-left: none;
+    padding-left: 0;
+  }
+}
