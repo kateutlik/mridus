@@ -15,7 +15,7 @@
 	&:before {
 		vertical-align: middle;
 
-		//@include sprite-pseudo-box($icon-load-messages);
+		//@include sprite($icon-load-messages);
 		//background-image: url('./../../../images/sprite.png');
 	}
 }

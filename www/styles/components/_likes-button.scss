@@ -26,7 +26,7 @@
     font-size: 13px;
 
     &:before {
-      //@include sprite-pseudo-box($icon-likes-button);
+      @include sprite(like-green);
       margin-right: 5px;
       vertical-align: middle;
     }

@@ -44,11 +44,12 @@
 				vertical-align: middle;
 
 				&:before {
+					content: '';
 					transform: translate(-50%, -51%);
 					margin-top: 50%;
 					margin-left: 50%;
 
-					//@include sprite-pseudo-box($icon-read-later);
+					@include sprite(saved);
 				}
 			}
 
@@ -68,7 +69,8 @@
 			text-decoration: none;
 
 			&:before {
-				//@include sprite-pseudo-box($icon-login);
+				content: '';
+				@include sprite(login);
 			}
 		}
 	}
@@ -136,7 +138,8 @@
 			cursor: pointer;
 
 			&:before {
-				//@include sprite-pseudo-box($icon-loupe-white);
+				content: '';
+				@include sprite(search-white);
 				transition: 0.25s ease-out;
 			}
 		}

@@ -19,6 +19,11 @@ body {
 	overflow: auto;
 	overflow-x: hidden;
 	color: $r-text-dark;
+
+	&.state_fixed {
+		overflow: hidden;
+	}
+
 }
 
 h1, h2, h3, h4, h5, h6 {

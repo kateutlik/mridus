@@ -167,7 +167,7 @@
     background: $r-light-gray;
     &__icon {
       margin-left: 5px;
-      //@include sprite-pseudo-box($icon-close);
+      @include sprite(close);
     }
   }
 
@@ -180,7 +180,8 @@
     color: $r-text-gray;
     background: $r-light-gray;
     &__icon {
-      //@include sprite-pseudo-box($icon-glasses);
+      @include sprite(save);
+
     }
   }
 }

@@ -12,11 +12,11 @@
   position: relative;
   transition: background .2s ease, opacity .2s ease;
   &:before {
-    //@include sprite-pseudo-box($icon-gray-glasses);
+    content: '';
+    @include sprite(save);
     position: absolute;
     left: 13px;
     top: 13px;
-    content: "";
   }
   &-hidden {
     display: none;

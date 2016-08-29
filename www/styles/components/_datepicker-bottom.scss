@@ -18,7 +18,8 @@
       display: inline-block;
       width: 27px;
       &:after {
-        //@include sprite-pseudo-box($icon-input-datepicker);
+        content: '';
+        @include sprite(calendar);
         position: absolute;
         left: 54px;
       }
@@ -42,7 +43,7 @@
       display: inline-block;
       width: 27px;
       &:after {
-        //@include sprite-pseudo-box($icon-input-datepicker);
+        @include sprite(calendar);
         position: absolute;
         left: 39px;
       }
