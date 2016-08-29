@@ -1,14 +1,23 @@
 .materials {
   margin-bottom: 25px;
-  line-height: 0px;
+  line-height: 0;
+
   &__image {
+    overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 15px;
+    height: 220px;
+
     img {
-      width: 100%;
-      height: 220px;
+      min-width: 100%;
+      min-height: 100%;
+      flex-shrink: 0;
     }
   }
+
   &__fullscreenLabel {
     background: rgba(92, 72, 29, 0.3);
     position: absolute;
@@ -24,19 +33,23 @@
     font-weight: 300;
     padding-top: 110px;
   }
+
   &__content {
     &__link {
       margin-bottom: 7px;
       font: bold 16px 'Roboto Slab', sans-serif;
       text-transform: uppercase;
+
       a {
         color: $r-black;
         text-decoration: none;
       }
+
       span {
         color: $r-materials-count;
       }
     }
+
     &__date {
       font: 300 13px 'Roboto', sans-serif;
       color: $r-materials-date;

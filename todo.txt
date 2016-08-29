@@ -1,12 +1,10 @@
 1. Рефакторинг slow-down.js: выход, если нету такого элемента
 2. Добавить иконки на страницу authors-list для этого нужно добавить картинки в компонент _author-counter-block
-3. _article-title в counter-block добавить картинки и посмотреть цвет
-4. _photoreports need add buttons next and prev
+4. _photoreports need add buttons next and prev -- не работают кнопки
 5. исправить подключение плагинов
-4._photoreports need add buttons next and prev
-5. добавить стрелочку в компонент read-more
-6. добавить картинку (pen-icon) на клмпонент all-materials
 7. На странице search выбор рубрик
 8. На странице authors-list фильтровать по алфовиту надо добавить алфавит
 
 1. load-messages.png
+2. articles-count.png
+3. добавить картинку (pen-icon) на клмпонент all-materials

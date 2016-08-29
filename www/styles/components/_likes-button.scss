@@ -26,9 +26,10 @@
     font-size: 13px;
 
     &:before {
+      content: '';
       @include sprite(like-green);
       margin-right: 5px;
-      vertical-align: middle;
+      vertical-align: -3px;
     }
   }
 }

@@ -35,7 +35,7 @@
     }
     a {
       position: absolute;
-      right: 6px;
+      right: 1px;
       top: 0;
       font-size: 13px;
     }
@@ -43,6 +43,7 @@
       display: inline-block;
       width: 27px;
       &:after {
+        content: '';
         @include sprite(calendar);
         position: absolute;
         left: 39px;

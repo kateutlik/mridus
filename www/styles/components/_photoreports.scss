@@ -10,8 +10,20 @@
     display: none;
   }
   .brick__header {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
     background: $r-black;
     color: $r-white;
+    justify-content: space-between;
+  }
+
+  &-button-prev {
+    transform: scale(-1, 1);
+    @include sprite(arrow-white);
+  }
+  &-button-next {
+    @include sprite(arrow-white);
   }
 }
 

@@ -79,4 +79,8 @@ body > footer {
         @include sprite(18plus);
       }
     }
+
+    .socials {
+        justify-content: flex-start;
+    }
 }

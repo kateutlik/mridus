@@ -31,6 +31,10 @@
       content: '';
       @include sprite(seen-black);
     }
+    &-articles:after {
+      content: '';
+      @include sprite(seen-black);
+    }
   }
 }
 

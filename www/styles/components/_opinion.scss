@@ -1,6 +1,13 @@
 /* ----- opinion.scss ----- */
 
 .opinion {
+  &-button-prev {
+    transform: scale(-1, 1);
+    @include sprite(arrow-black);
+  }
+  &-button-next {
+    @include sprite(arrow-black);
+  }
   &__sliderInfo {
     font-weight: normal;
     font-size: 12px;
@@ -60,4 +67,11 @@
 .view_opinion {
   background: $r-dark-white;
   overflow: hidden;
+
+  .brick__header {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+  }
 }
