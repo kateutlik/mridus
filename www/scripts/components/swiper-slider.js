@@ -14,5 +14,17 @@ $(function() {
                 observer: true
             });
         });
+
+        $('.slider-page').each(function () {
+            var imagesSlider = new Swiper($(this), {
+                loop: true,
+                nested: true,
+                autoplayDisableOnInteraction: true,
+                observeParents: true,
+                observer: true
+            });
+        });
+
+
     });
 });
