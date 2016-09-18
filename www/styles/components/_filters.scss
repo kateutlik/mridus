@@ -1,0 +1,131 @@
+.filter {
+	z-index: 600;
+	position: fixed;
+	top: 100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+	padding: 15px;
+	background: $r-white;
+	transition: all 0.3s ease-out;
+
+	&.view_open {
+		top: 0;
+	}
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 3px solid $r-placeholder;
+
+		h3 {
+			margin: 0 0 10px 0;
+		}
+	}
+
+	&__close {
+		position: relative;
+		width: 35px;
+
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 20px;
+			height: 2px;
+			margin: 12px 0 0 6px;
+			transform: rotate(45deg);
+			background: #808080;
+			transition: .25s ease-in-out;
+		}
+
+		&:after {
+			transform: rotate(-45deg);
+		}
+	}
+
+	section {
+		padding: 10px 0;
+		border-bottom: 1px solid $r-placeholder;
+
+		&:last-child {
+			border: none;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__button {
+		display: block;
+		width: 100%;
+		margin-bottom: 15px;
+		background: $r-light-gray;
+		font: 600 13px/42px 'Roboto Slab', sans-serif;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	&__applyButton {
+		background: $r-orange;
+	}
+}
+.alphabethNav {
+	display: flex;
+
+	li {
+		padding: 5px 8px;
+		margin: 5px 2px;
+
+		&.view_noEmpty {
+			color: $r-placeholder;
+			cursor: pointer;
+		}
+
+		&.view_selected {
+			background: $r-orange;
+			font-weight: 600;
+			color: $r-black;
+		}
+	}
+}
+.filter__title {
+	margin-right: 20px;
+}
+.filter__reset {
+	display: none;
+	color: $r-text-dark;
+	font-weight: 300;
+	text-transform: none;
+	text-decoration: underline;
+
+	span {
+		position: relative;
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		top: 4px;
+		border-left: 5px solid $r-light-gray;
+	}
+
+	span:before,
+	span:after {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 20px;
+		height: 1px;
+		margin: 7px 0 0 -2px;
+		transform: rotate(45deg);
+		background: $r-text-dark;
+		transition: .25s ease-in-out;
+	}
+
+	span:after {
+		transform: rotate(-45deg);
+	}
+}
+.view_removeAll {
+	.filter__reset {
+		display: inline-block;
+	}
+}

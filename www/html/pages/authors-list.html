@@ -25,7 +25,12 @@
 
     <div class="row">
         <div class="col-12">
-            <a href="#" class="authors-filtr__button">Фильтровать по алфавиту</a>
+            <a href="#" class="filter-open authors-filtr__button" data-filter="author-filter" data-title="Фильтровать по алфавиту">
+                <span class="filter__title">Фильтровать по алфавиту</span>
+                <span class="filter__reset">
+                    Сбросить<span></span>
+                </span>
+            </a>
         </div>
     </div>
 
@@ -111,7 +116,7 @@
 
 @@include('./../layout/_footer.html')
 
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+@@include('./../components/_author-filter.html')
 
 </body>
 </html>
