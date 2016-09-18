@@ -1,0 +1,33 @@
+.slider-page {
+  &__header {
+    height: 65px;
+    text-align: center;
+    border-bottom: 1px solid $r-border-light-gray;
+  }
+  &__border {
+    display: inline-block;
+    height: 61px;
+    border-bottom: 4px solid $r-white;
+    transition: .25s ease-in-out;
+    p {
+      margin: auto;
+      font: bold 18px 'Roboto Slab', serif;
+      text-transform: uppercase;
+    }
+  }
+  &__aligner {
+    display: flex;
+    height: 100%;
+  }
+  .swiper-slide-active {
+    .slider-page__border {
+      border-bottom: 4px solid $r-orange;
+    }
+  }
+  .swiper-slide {
+    height: 0px;
+  }
+  .swiper-slide-active {
+    height: 100%;
+  }
+}

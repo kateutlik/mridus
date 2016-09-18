@@ -56,7 +56,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('vendors', function() {
-    return gulp.src('www/scripts/vendors/*.js')
+    return gulp.src('www/scripts/vendors/**')
         .pipe(gulp.dest('dist/scripts'));
 });
 

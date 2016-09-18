@@ -9,23 +9,7 @@
     font-weight: 400;
   }
  &__rubric {
-   display: block;
-   position: relative;
-   background: $r-orange;
    margin-bottom: 20px;
-   padding: 15px 0;
-   font: bold 13px 'Roboto Slab', sans-serif;
-   text-decoration: none;
-   text-transform: uppercase;
-   text-align: center;
-   .icon {
-     position: absolute;
-     right: 83px;
-     top: 19px;
-     display: inline-block;
-     border: 5px solid transparent;
-     border-left: 5px solid $r-black;
-   }
  }
   &__category {
     margin-bottom: 10px;

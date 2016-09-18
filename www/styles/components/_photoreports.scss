@@ -25,6 +25,12 @@
   &-button-next {
     @include sprite(arrow-white);
   }
+  .swiper-slide {
+    display: none;
+  }
+  .swiper-slide-active {
+    display: block;
+  }
 }
 
 .view_photoreports {
