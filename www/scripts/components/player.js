@@ -15,9 +15,6 @@ $(function() {
             instant = (jwplayer(id).setup({
                 width: "100%",
                 height: height,
-                autostart: true,
-                mute: true,
-                repeat: true,
                 playlist: [{
                     image: el.data('image'),
                     sources: [{

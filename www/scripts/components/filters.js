@@ -22,13 +22,13 @@ $(document).ready(function () {
 
 		var filter = $(this).closest('.filter');
 
-		if($(e.target).hasClass('filter__removeButton')) {
+		if ($(e.target).hasClass('filter__removeButton')) {
 			filter.find('.view_selected').removeClass('view_selected');
 		}
 
 		var filterName = filter.data('name'),
 			selectedNumber = filter.find('.view_selected').length,
-			openButton = $('[data-filter='+ filterName +']'),
+			openButton = $('[data-filter=' + filterName + ']'),
 			openButtonTitle = openButton.find('.filter__title');
 
 		if (selectedNumber) {
@@ -55,5 +55,9 @@ $(document).ready(function () {
 
 		openButton.removeClass('view_removeAll');
 		openButtonTitle.text(openButton.data('title'));
+	});
+
+	$('.all-rubrics').click(function filters(e) {
+		$('.rubrics li.view_noEmpty').addClass('view_selected');
 	})
 });
