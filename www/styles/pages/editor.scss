@@ -1,0 +1,39 @@
+@import "../helpers/variables";
+
+.editor-label {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 13px;
+  width: 29%;
+  padding: 3px 0;
+  border-radius: 3px;
+  color: #fff;
+  margin: 0 10px 10px 0;
+  background-color: #bbb;
+  text-align: center;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &.view_hdr {
+    font-family: 'Roboto Slab', serif;
+    background-color: $r-gray;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 2px;
+  }
+  &.view_i {
+    text-transform: capitalize;
+    font-style: italic;
+  }
+  &.view_b {
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  &.view_a {
+    text-decoration: underline;
+  }
+
+}

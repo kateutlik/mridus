@@ -1,0 +1,82 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#"
+      prefix="ya: https://webmaster.yandex.ru/vocabularies/">
+<head>
+
+	@@include('./../layout/_head.html')
+	<link href="./../../styles/pages/editor.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="my-page" itemscope itemtype="http://schema.org/WebPage">
+
+@@include('./../layout/_header.html')
+
+<section class="bgColor_white padding-lr">
+	<h3>Добавление новости</h3>
+
+	<form class="form">
+		<div class="form-control">
+			<label>Заголовок</label>
+			<input type="text" placeholder="Введите заголовок" />
+		</div>
+		<div class="form-control">
+			<label>Фотография для анонса</label>
+			<label class="photo-upload">
+				<span class="photo-upload__button">Выбрать фото</span>
+				<input type="file" name="preview-photo" accept="image/*,image/jpeg" />
+			</label>
+		</div>
+		<div class="form-control">
+			<label>
+				Краткий анонс новости
+				<span class="text-counter">200</span>
+			</label>
+			<textarea placeholder="Краткий анонс новости не более 200 символов"></textarea>
+		</div>
+		<div class="form-control">
+			<label>Фотографии</label>
+			<label class="photo-upload">
+				<span class="photo-upload__button">Выбрать фото</span>
+				<input type="file" name="photo" multiple accept="image/*,image/jpeg" />
+			</label>
+		</div>
+		<div class="form-control">
+			<label>Полный текст новости</label>
+			<div class="editor-label__wrapper">
+				<a href="#" class="editor-label view_hdr">
+					заголовок
+				</a>
+				<a href="#" class="editor-label view_i">
+					курсив
+				</a>
+				<a href="#" class="editor-label view_b">
+					жирный
+				</a>
+				<a href="#" class="editor-label view_a">
+					ссылка
+				</a>
+				<a href="#" class="editor-label view_video">
+					видео
+				</a>
+			</div>
+			<textarea placeholder=""></textarea>
+		</div>
+
+		<div class="form-control">
+			<label class="inline-label">
+				<input type="checkbox" checked="checked" />
+				Я согласен с <a href="#">правилами</a>
+			</label>
+		</div>
+		<a class="yellowButton view_big" href="" title="">
+			Добавить новость
+			<i class="corner"><!-- corner --></i>
+		</a>
+
+	</form>
+</section>
+
+@@include('./../layout/_footer.html')
+
+</body>
+</html>
