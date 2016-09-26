@@ -23,7 +23,7 @@ body > footer {
         position: relative;
 
         .footerSubscribe__input {
-            width: calc(100% - 119px);
+            width: calc(100% - 115px);
             border: 1px solid $r-orange;
             color: $r-white;
             background: transparent;
@@ -47,14 +47,8 @@ body > footer {
         }
 
         .yellowButton {
-            position: absolute;
-            right: 0;
-            top: 0;
-            font-size: 13px;
-
-            .corner {
-                height: 23px;
-            }
+            top: -1px;
+            margin-left: -10px;
         }
     }
 

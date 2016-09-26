@@ -9,29 +9,25 @@ input[type="url"] {
     padding: 7px 7px 6px;
     border: 1px solid $r-gray;
     border-radius: 0;
-    font: 300 17px/10px 'Roboto', sans-serif;
+    font: 300 17px 'Roboto', sans-serif;
     -webkit-appearance: none;
 }
 
 ::-webkit-input-placeholder {
     color: $r-placeholder;
-    font-weight: 100;
-    font-family: 'Roboto', sans-serif;
+    font: 100 17px 'Roboto', sans-serif;
 }
 ::-moz-placeholder {
     color: $r-placeholder;
-    font-weight: 100;
-    font-family: 'Roboto', sans-serif;
+    font: 100 17px 'Roboto', sans-serif;
 }
 :-moz-placeholder {
     color: $r-placeholder;
-    font-weight: 100;
-    font-family: 'Roboto', sans-serif;
+    font: 100 17px 'Roboto', sans-serif;
 }
 :-ms-input-placeholder {
     color: $r-placeholder;
-    font-weight: 100;
-    font-family: 'Roboto', sans-serif;
+    font: 100 17px 'Roboto', sans-serif;
 }
 
 .search__input[type="text"] {
@@ -153,7 +149,6 @@ input[type="url"] {
     .yellowButton {
         display: block;
         text-align: center;
-        margin-right: 0;
     }
 }
 
