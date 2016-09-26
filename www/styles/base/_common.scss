@@ -20,12 +20,9 @@ body {
 	overflow-x: hidden;
 	color: $r-text-dark;
 
-	//&.state_fixed {
-		.fixed_content {
-			height: 100%;
-			overflow: auto;
-		}
-	//}
+	&.state_fixed {
+		overflow: hidden;
+	}
 
 }
 
