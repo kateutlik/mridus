@@ -18,10 +18,14 @@
 		display: flex;
 		justify-content: space-between;
 		border-bottom: 3px solid $r-placeholder;
+	}
 
-		h3 {
-			margin: 0 0 10px 0;
-		}
+	h3 {
+		margin: 0 0 10px 0;
+	}
+
+	&.full-width h3 {
+		padding: 0 15px;
 	}
 
 	&__close {
@@ -68,6 +72,39 @@
 	&__applyButton {
 		background: $r-orange;
 	}
+
+	.view_gray {
+		background: $r-filter-bg;
+		ul {
+			color: $r-white;
+			text-align: left;
+
+			li.view_selected {
+				position: relative;
+
+				&:before,
+				&:after {
+					content: '';
+					position: absolute;
+					right: 10px;
+					top: 18px;
+					display: block;
+					width: 20px;
+					height: 1px;
+					transform: rotate(45deg);
+					background: $r-text-dark;
+					transition: .25s ease-in-out;
+				}
+
+				&:after {
+					transform: rotate(-45deg);
+				}
+			}
+		}
+	}
+	.padding-lr {
+		padding-bottom: 1px;
+	}
 }
 .alphabethNav {
 	display: flex;
@@ -88,6 +125,37 @@
 		}
 	}
 }
+.tilesNav {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -1px 15px 0;
+	color: $r-text-light-gray;
+
+	li {
+		width: 50%;
+		padding: 8px 10px;
+		text-transform: uppercase;
+		text-align: center;
+		border-bottom: 1px solid $r-placeholder;
+		border-right: 1px solid $r-placeholder;
+		box-sizing: border-box;
+
+		&.two-sized {
+			width: 100%;
+		}
+
+		&.view_selected {
+			background: $r-orange;
+			font-weight: 600;
+			color: $r-black;
+			border: 1px solid #ffd051;
+			margin-top: -1px;
+		}
+	}
+}
+.block-filter {
+	padding-bottom: 0;
+}
 .filter__title {
 	margin-right: 20px;
 }
@@ -96,19 +164,21 @@
 	color: $r-text-dark;
 	font-weight: 300;
 	text-transform: none;
-	text-decoration: underline;
 
-	span {
+	&-text {
+		text-decoration: underline;
+	}
+
+	&-button {
 		position: relative;
 		display: inline-block;
 		width: 16px;
 		height: 16px;
 		top: 4px;
-		border-left: 5px solid $r-light-gray;
 	}
 
-	span:before,
-	span:after {
+	&-button:before,
+	&-button:after {
 		content: '';
 		position: absolute;
 		display: block;
@@ -120,7 +190,7 @@
 		transition: .25s ease-in-out;
 	}
 
-	span:after {
+	&-button:after {
 		transform: rotate(-45deg);
 	}
 }
