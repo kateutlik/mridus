@@ -11,884 +11,886 @@
         "headerClass": "transparent"
     })
 
-    <section class="bgColor_black">
-        <div class="section-title sticky transparent">
-            Картина дня
-            @@include('../components/_burger-button.html')
-        </div>
+    <div class="disable_scrolling">
+        <section class="bgColor_black">
+            <div class="section-title sticky transparent">
+                Картина дня
+                @@include('../components/_burger-button.html')
+            </div>
 
-        <div class="slowDown">
-            @@include('./../components/_slider.html')
-        </div>
+            <div class="slowDown">
+                @@include('./../components/_slider.html')
+            </div>
 
-        <div class="row padding-lr padding-tb">
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                        "image": 2,
-                        "data": 3,
+            <div class="row padding-lr padding-tb">
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                            "image": 2,
+                            "data": 3,
+                            "label": 22,
+                            "counters": true,
+                            "like": 120,
+                            "comment": 35,
+                            "show": 3812
+                        })
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 1,
+                        "data": 2,
+                        "label": 31,
+                        "counters": true,
+                        "like": 154,
+                        "comment": 26,
+                        "show": 2789
+                        })
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="brick">
+                        @@include('./../bricks/main-for-today.html')
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="brick">
+                        @@include('./../bricks/news-list.html')
+                    </div>
+                </div>
+            </div>
+
+            <div class="row padding-lr padding-tb">
+                <div class="col-12">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 1,
+                        "data": 4,
                         "label": 22,
                         "counters": true,
-                        "like": 120,
-                        "comment": 35,
-                        "show": 3812
-                    })
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 1,
-                    "data": 2,
-                    "label": 31,
-                    "counters": true,
-                    "like": 154,
-                    "comment": 26,
-                    "show": 2789
-                    })
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <div class="brick">
-                    @@include('./../bricks/main-for-today.html')
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <div class="brick">
-                    @@include('./../bricks/news-list.html')
-                </div>
-            </div>
-        </div>
-
-        <div class="row padding-lr padding-tb">
-            <div class="col-12">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 1,
-                    "data": 4,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-        </div>
-
-        <div class="row padding-lr padding-tb">
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 2,
-                    "data": 2,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 1,
-                    "data": 1,
-                    "label": 31,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-        </div>
-
-        <div class="row padding-lr padding-tb">
-            <div class="col-12">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 2,
-                    "data": 5,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-        </div>
-
-        <div class="row padding-lr padding-tb">
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 2,
-                    "data": 6,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 1,
-                    "data": 1,
-                    "label": 31,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="accordion">
-
-        <section class="bgColor_deepblue technologies">
-            <div class="accordion-section-title section-title sticky" data-content="#accordion-1">
-                Технологии
-                <i class="accordion-section-title__flip"></i>
-                @@include('../components/_burger-button.html')
-            </div>
-
-            <div class="accordion-section-content" id="accordion-1">
-                <div class="row">
-                    <div class="col-12">
-                        @@include('./../bricks/alasliderimage.html', {"image": 6})
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
                     </div>
                 </div>
+            </div>
 
-                <div class="row padding-lr padding-tb">
-                    <div class="col-6">
-                        <div class="brick counters-white">
-                            @@include('./../bricks/news-simple.html', {
-                            "image": 2,
-                            "data": 6,
-                            "label": 22,
-                            "counters": true,
-                            "like": 0,
-                            "comment": 2,
-                            "show": 408
-                            })
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="brick counters-white">
-                            @@include('./../bricks/news-simple.html', {
-                            "image": 1,
-                            "data": 1,
-                            "label": 31,
-                            "counters": true,
-                            "like": 0,
-                            "comment": 2,
-                            "show": 408
-                            })
-                        </div>
+            <div class="row padding-lr padding-tb">
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 2,
+                        "data": 2,
+                        "label": 22,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
                     </div>
                 </div>
-
-                <div class="row padding-lr padding-tb">
-                    <div class="col-12">
-                        <div class="brick counters-white">
-                            @@include('./../bricks/news-simple.html', {
-                            "image": 2,
-                            "data": 5,
-                            "label": 22,
-                            "counters": true,
-                            "like": 0,
-                            "comment": 2,
-                            "show": 408
-                            })
-                        </div>
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 1,
+                        "data": 1,
+                        "label": 31,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
                     </div>
                 </div>
+            </div>
 
-                <div class="row padding-lr padding-tb">
-                    <div class="col-6">
-                        <div class="brick counters-white">
-                            @@include('./../bricks/news-simple.html', {
-                            "image": 2,
-                            "data": 6,
-                            "label": 22,
-                            "counters": true,
-                            "like": 0,
-                            "comment": 2,
-                            "show": 408
-                            })
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="brick counters-white">
-                            @@include('./../bricks/news-simple.html', {
-                            "image": 1,
-                            "data": 1,
-                            "label": 31,
-                            "counters": true,
-                            "like": 0,
-                            "comment": 2,
-                            "show": 408
-                            })
-                        </div>
+            <div class="row padding-lr padding-tb">
+                <div class="col-12">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 2,
+                        "data": 5,
+                        "label": 22,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
                     </div>
                 </div>
+            </div>
 
+            <div class="row padding-lr padding-tb">
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 2,
+                        "data": 6,
+                        "label": 22,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 1,
+                        "data": 1,
+                        "label": 31,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="bgColor_red technologies">
-            <div class="accordion-section-title section-title sticky" data-content="#accordion-2">
-                Украинский<br>кризис
-                <i class="accordion-section-title__flip"></i>
+        <section class="accordion">
+
+            <section class="bgColor_deepblue technologies">
+                <div class="accordion-section-title section-title sticky" data-content="#accordion-1">
+                    Технологии
+                    <i class="accordion-section-title__flip"></i>
+                    @@include('../components/_burger-button.html')
+                </div>
+
+                <div class="accordion-section-content" id="accordion-1">
+                    <div class="row">
+                        <div class="col-12">
+                            @@include('./../bricks/alasliderimage.html', {"image": 6})
+                        </div>
+                    </div>
+
+                    <div class="row padding-lr padding-tb">
+                        <div class="col-6">
+                            <div class="brick counters-white">
+                                @@include('./../bricks/news-simple.html', {
+                                "image": 2,
+                                "data": 6,
+                                "label": 22,
+                                "counters": true,
+                                "like": 0,
+                                "comment": 2,
+                                "show": 408
+                                })
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="brick counters-white">
+                                @@include('./../bricks/news-simple.html', {
+                                "image": 1,
+                                "data": 1,
+                                "label": 31,
+                                "counters": true,
+                                "like": 0,
+                                "comment": 2,
+                                "show": 408
+                                })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row padding-lr padding-tb">
+                        <div class="col-12">
+                            <div class="brick counters-white">
+                                @@include('./../bricks/news-simple.html', {
+                                "image": 2,
+                                "data": 5,
+                                "label": 22,
+                                "counters": true,
+                                "like": 0,
+                                "comment": 2,
+                                "show": 408
+                                })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row padding-lr padding-tb">
+                        <div class="col-6">
+                            <div class="brick counters-white">
+                                @@include('./../bricks/news-simple.html', {
+                                "image": 2,
+                                "data": 6,
+                                "label": 22,
+                                "counters": true,
+                                "like": 0,
+                                "comment": 2,
+                                "show": 408
+                                })
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="brick counters-white">
+                                @@include('./../bricks/news-simple.html', {
+                                "image": 1,
+                                "data": 1,
+                                "label": 31,
+                                "counters": true,
+                                "like": 0,
+                                "comment": 2,
+                                "show": 408
+                                })
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="bgColor_red technologies">
+                <div class="accordion-section-title section-title sticky" data-content="#accordion-2">
+                    Украинский<br>кризис
+                    <i class="accordion-section-title__flip"></i>
+                    @@include('../components/_burger-button.html')
+                </div>
+
+                <div class="accordion-section-content" id="accordion-2">
+                    <div class="row">
+                        <div class="col-12">
+                            @@include('./../bricks/alasliderimage.html', {"image": 6})
+                        </div>
+                    </div>
+
+                    <div class="row padding-lr padding-tb">
+                        <div class="col-6">
+                            <div class="brick counters-white">
+                                @@include('./../bricks/news-simple.html', {
+                                "image": 2,
+                                "data": 6,
+                                "label": 22,
+                                "counters": true,
+                                "like": 0,
+                                "comment": 2,
+                                "show": 408
+                                })
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="brick counters-white">
+                                @@include('./../bricks/news-simple.html', {
+                                "image": 1,
+                                "data": 1,
+                                "label": 31,
+                                "counters": true,
+                                "like": 0,
+                                "comment": 2,
+                                "show": 408
+                                })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row padding-lr padding-tb">
+                        <div class="col-12">
+                            <div class="brick counters-white">
+                                @@include('./../bricks/news-simple.html', {
+                                "image": 2,
+                                "data": 5,
+                                "label": 22,
+                                "counters": true,
+                                "like": 0,
+                                "comment": 2,
+                                "show": 408
+                                })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row padding-lr padding-tb">
+                        <div class="col-6">
+                            <div class="brick counters-white">
+                                @@include('./../bricks/news-simple.html', {
+                                "image": 2,
+                                "data": 6,
+                                "label": 22,
+                                "counters": true,
+                                "like": 0,
+                                "comment": 2,
+                                "show": 408
+                                })
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="brick counters-white">
+                                @@include('./../bricks/news-simple.html', {
+                                "image": 1,
+                                "data": 1,
+                                "label": 31,
+                                "counters": true,
+                                "like": 0,
+                                "comment": 2,
+                                "show": 408
+                                })
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="bgColor_gunmetal">
+                <div class="accordion-section-title section-title sticky" data-content="#accordion-3">
+                    Операция в<br>сирии
+                    <i class="accordion-section-title__flip"></i>
+                    @@include('../components/_burger-button.html')
+                </div>
+
+                <div class="accordion-section-content" id="accordion-3">
+                    <div class="row">
+                        <div class="col-12">
+                            @@include('./../bricks/alasliderimage.html', {"image": 6})
+                        </div>
+                    </div>
+
+                    <div class="row padding-lr padding-tb">
+                        <div class="col-6">
+                            <div class="brick counters-white">
+                                @@include('./../bricks/news-simple.html', {
+                                "image": 2,
+                                "data": 6,
+                                "label": 22,
+                                "counters": true,
+                                "like": 0,
+                                "comment": 2,
+                                "show": 408
+                                })
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="brick counters-white">
+                                @@include('./../bricks/news-simple.html', {
+                                "image": 1,
+                                "data": 1,
+                                "label": 31,
+                                "counters": true,
+                                "like": 0,
+                                "comment": 2,
+                                "show": 408
+                                })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row padding-lr padding-tb">
+                        <div class="col-12">
+                            <div class="brick counters-white">
+                                @@include('./../bricks/news-simple.html', {
+                                "image": 2,
+                                "data": 5,
+                                "label": 22,
+                                "counters": true,
+                                "like": 0,
+                                "comment": 2,
+                                "show": 408
+                                })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row padding-lr padding-tb">
+                        <div class="col-6">
+                            <div class="brick counters-white">
+                                @@include('./../bricks/news-simple.html', {
+                                "image": 2,
+                                "data": 6,
+                                "label": 22,
+                                "counters": true,
+                                "like": 0,
+                                "comment": 2,
+                                "show": 408
+                                })
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="brick counters-white">
+                                @@include('./../bricks/news-simple.html', {
+                                "image": 1,
+                                "data": 1,
+                                "label": 31,
+                                "counters": true,
+                                "like": 0,
+                                "comment": 2,
+                                "show": 408
+                                })
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+        <section class="bgColor_white">
+            <div class="section-title sticky">
+                Гражданская<br>журналистика
                 @@include('../components/_burger-button.html')
             </div>
 
-            <div class="accordion-section-content" id="accordion-2">
-                <div class="row">
-                    <div class="col-12">
-                        @@include('./../bricks/alasliderimage.html', {"image": 6})
+            <div class="row">
+                <div class="col-12">
+                    @@include('./../bricks/alasliderimage.html', {"image": 3})
+                </div>
+            </div>
+
+            <div class="row padding-lr padding-tb">
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 2,
+                        "data": 6,
+                        "label": 22,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408,
+                        "typelabel": 1
+                        })
                     </div>
                 </div>
-
-                <div class="row padding-lr padding-tb">
-                    <div class="col-6">
-                        <div class="brick counters-white">
-                            @@include('./../bricks/news-simple.html', {
-                            "image": 2,
-                            "data": 6,
-                            "label": 22,
-                            "counters": true,
-                            "like": 0,
-                            "comment": 2,
-                            "show": 408
-                            })
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="brick counters-white">
-                            @@include('./../bricks/news-simple.html', {
-                            "image": 1,
-                            "data": 1,
-                            "label": 31,
-                            "counters": true,
-                            "like": 0,
-                            "comment": 2,
-                            "show": 408
-                            })
-                        </div>
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 1,
+                        "data": 1,
+                        "label": 31,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
                     </div>
                 </div>
+            </div>
 
-                <div class="row padding-lr padding-tb">
-                    <div class="col-12">
-                        <div class="brick counters-white">
-                            @@include('./../bricks/news-simple.html', {
-                            "image": 2,
-                            "data": 5,
-                            "label": 22,
-                            "counters": true,
-                            "like": 0,
-                            "comment": 2,
-                            "show": 408
-                            })
-                        </div>
+            <div class="row padding-lr padding-tb">
+                <div class="col-12">
+                    <div class="brick border_yellow">
+                        @@include('./../bricks/translations.html')
                     </div>
                 </div>
+            </div>
 
-                <div class="row padding-lr padding-tb">
-                    <div class="col-6">
-                        <div class="brick counters-white">
-                            @@include('./../bricks/news-simple.html', {
-                            "image": 2,
-                            "data": 6,
-                            "label": 22,
-                            "counters": true,
-                            "like": 0,
-                            "comment": 2,
-                            "show": 408
-                            })
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="brick counters-white">
-                            @@include('./../bricks/news-simple.html', {
-                            "image": 1,
-                            "data": 1,
-                            "label": 31,
-                            "counters": true,
-                            "like": 0,
-                            "comment": 2,
-                            "show": 408
-                            })
-                        </div>
+            <div class="row padding-lr padding-tb">
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 2,
+                        "data": 6,
+                        "label": 22,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408,
+                        "video": true
+                        })
                     </div>
                 </div>
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 1,
+                        "data": 1,
+                        "label": 31,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408,
+                        "typelabel": 2
+                        })
+                    </div>
+                </div>
+            </div>
 
+            <div class="row padding-lr padding-tb">
+                <div class="col-12">
+                    <div class="brick border_yellow view_opinion">
+                        @@include('./../bricks/opinion.html')
+                    </div>
+                </div>
+            </div>
+
+            <div class="row padding-lr padding-tb">
+                <div class="col-12">
+                    <div class="brick">
+                        @@include('./../bricks/videosection.html')
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="bgColor_gunmetal">
-            <div class="accordion-section-title section-title sticky" data-content="#accordion-3">
-                Операция в<br>сирии
-                <i class="accordion-section-title__flip"></i>
+        <section class="bgColor_blue">
+            <div class="section-title sticky">
+                <p>Интересное</p>
                 @@include('../components/_burger-button.html')
             </div>
 
-            <div class="accordion-section-content" id="accordion-3">
-                <div class="row">
-                    <div class="col-12">
-                        @@include('./../bricks/alasliderimage.html', {"image": 6})
+            <div class="row">
+                <div class="col-12">
+                    @@include('./../bricks/alasliderimage.html', {"image": 4})
+                </div>
+            </div>
+
+            <div class="row padding-lr padding-tb">
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 2,
+                        "data": 6,
+                        "label": 22,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
                     </div>
                 </div>
-
-                <div class="row padding-lr padding-tb">
-                    <div class="col-6">
-                        <div class="brick counters-white">
-                            @@include('./../bricks/news-simple.html', {
-                            "image": 2,
-                            "data": 6,
-                            "label": 22,
-                            "counters": true,
-                            "like": 0,
-                            "comment": 2,
-                            "show": 408
-                            })
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="brick counters-white">
-                            @@include('./../bricks/news-simple.html', {
-                            "image": 1,
-                            "data": 1,
-                            "label": 31,
-                            "counters": true,
-                            "like": 0,
-                            "comment": 2,
-                            "show": 408
-                            })
-                        </div>
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 1,
+                        "data": 1,
+                        "label": 31,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
                     </div>
                 </div>
+            </div>
 
-                <div class="row padding-lr padding-tb">
-                    <div class="col-12">
-                        <div class="brick counters-white">
-                            @@include('./../bricks/news-simple.html', {
-                            "image": 2,
-                            "data": 5,
-                            "label": 22,
-                            "counters": true,
-                            "like": 0,
-                            "comment": 2,
-                            "show": 408
-                            })
-                        </div>
+            <div class="row padding-lr padding-tb">
+                <div class="col-12">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 2,
+                        "data": 5,
+                        "label": 22,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
                     </div>
                 </div>
+            </div>
 
-                <div class="row padding-lr padding-tb">
-                    <div class="col-6">
-                        <div class="brick counters-white">
-                            @@include('./../bricks/news-simple.html', {
-                            "image": 2,
-                            "data": 6,
-                            "label": 22,
-                            "counters": true,
-                            "like": 0,
-                            "comment": 2,
-                            "show": 408
-                            })
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="brick counters-white">
-                            @@include('./../bricks/news-simple.html', {
-                            "image": 1,
-                            "data": 1,
-                            "label": 31,
-                            "counters": true,
-                            "like": 0,
-                            "comment": 2,
-                            "show": 408
-                            })
-                        </div>
+            <div class="row padding-lr padding-tb">
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 2,
+                        "data": 7,
+                        "label": 22,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
                     </div>
                 </div>
-
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 1,
+                        "data": 1,
+                        "label": 31,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
+                    </div>
+                </div>
             </div>
         </section>
-    </section>
 
-    <section class="bgColor_white">
-        <div class="section-title sticky">
-            Гражданская<br>журналистика
-            @@include('../components/_burger-button.html')
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                @@include('./../bricks/alasliderimage.html', {"image": 3})
+        <section class="bgColor_white">
+            <div class="section-title sticky">
+                Полезное
+                @@include('../components/_burger-button.html')
             </div>
-        </div>
 
-        <div class="row padding-lr padding-tb">
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 2,
-                    "data": 6,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408,
-                    "typelabel": 1
-                    })
+            <div class="row">
+                <div class="col-12">
+                    @@include('./../bricks/alasliderimage.html', {"image": 1})
                 </div>
             </div>
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 1,
-                    "data": 1,
-                    "label": 31,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
+
+            <div class="row padding-lr padding-tb">
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 2,
+                        "data": 6,
+                        "label": 22,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 1,
+                        "data": 1,
+                        "label": 31,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row padding-lr padding-tb">
-            <div class="col-12">
-                <div class="brick border_yellow">
-                    @@include('./../bricks/translations.html')
+            <div class="row padding-lr padding-tb">
+                <div class="col-12">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 1,
+                        "data": 5,
+                        "label": 22,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row padding-lr padding-tb">
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 2,
-                    "data": 6,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408,
-                    "video": true
-                    })
+            <div class="row padding-lr padding-tb">
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 2,
+                        "data": 6,
+                        "label": 22,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 1,
+                        "data": 1,
+                        "label": 31,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
+                    </div>
                 </div>
             </div>
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 1,
-                    "data": 1,
-                    "label": 31,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408,
-                    "typelabel": 2
-                    })
+
+        </section>
+
+        <section class="bgColor_dark bricksContainer">
+            <!--<img src="./../../images/med.png" class="health__logo">-->
+            <div class="section-title sticky">
+                <p>Здоровье</p>
+                @@include('../components/_burger-button.html')
+            </div>
+            <div class="view_centred">
+                <a class="yellowButton" href="" title="">
+                    записаться на прием
+                    <i class="corner"><!-- corner --></i>
+                </a>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12">
+                    @@include('./../bricks/alasliderimage.html', {"image": 2})
                 </div>
             </div>
-        </div>
 
-        <div class="row padding-lr padding-tb">
-            <div class="col-12">
-                <div class="brick border_yellow view_opinion">
-                    @@include('./../bricks/opinion.html')
+            <div class="row padding-lr padding-tb">
+                <div class="col-6">
+                    <div class="brick counters-white">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 2,
+                        "data": 6,
+                        "label": 22,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="brick counters-white">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 1,
+                        "data": 1,
+                        "label": 31,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row padding-lr padding-tb">
-            <div class="col-12">
-                <div class="brick">
-                    @@include('./../bricks/videosection.html')
+            <div class="row padding-lr padding-tb">
+                <div class="col-12">
+                    <div class="brick counters-white">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 1,
+                        "data": 5,
+                        "label": 22,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="bgColor_blue">
-        <div class="section-title sticky">
-            <p>Интересное</p>
-            @@include('../components/_burger-button.html')
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                @@include('./../bricks/alasliderimage.html', {"image": 4})
-            </div>
-        </div>
-
-        <div class="row padding-lr padding-tb">
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 2,
-                    "data": 6,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
+            <div class="row padding-lr padding-tb">
+                <div class="col-6">
+                    <div class="brick counters-white">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 2,
+                        "data": 6,
+                        "label": 22,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="brick counters-white">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 1,
+                        "data": 1,
+                        "label": 31,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
+                    </div>
                 </div>
             </div>
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 1,
-                    "data": 1,
-                    "label": 31,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
+
+        </section>
+
+        <section class="bgColor_white">
+            <div class="section-title sticky">
+                Развлечения
+                @@include('../components/_burger-button.html')
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    @@include('./../bricks/alasliderimage.html', {"image": 5})
                 </div>
             </div>
-        </div>
 
-        <div class="row padding-lr padding-tb">
-            <div class="col-12">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 2,
-                    "data": 5,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
+            <div class="row padding-lr padding-tb">
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 2,
+                        "data": 6,
+                        "label": 22,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 1,
+                        "data": 1,
+                        "label": 31,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row padding-lr padding-tb">
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 2,
-                    "data": 7,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
+            <div class="row padding-lr padding-tb">
+                <div class="col-12">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 2,
+                        "data": 5,
+                        "label": 22,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
+                    </div>
                 </div>
             </div>
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 1,
-                    "data": 1,
-                    "label": 31,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
+
+            <div class="row padding-lr padding-tb">
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 2,
+                        "data": 6,
+                        "label": 22,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="brick">
+                        @@include('./../bricks/news-simple.html', {
+                        "image": 1,
+                        "data": 1,
+                        "label": 31,
+                        "counters": true,
+                        "like": 0,
+                        "comment": 2,
+                        "show": 408
+                        })
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="bgColor_white">
-        <div class="section-title sticky">
-            Полезное
-            @@include('../components/_burger-button.html')
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                @@include('./../bricks/alasliderimage.html', {"image": 1})
-            </div>
-        </div>
-
-        <div class="row padding-lr padding-tb">
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 2,
-                    "data": 6,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 1,
-                    "data": 1,
-                    "label": 31,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-        </div>
-
-        <div class="row padding-lr padding-tb">
-            <div class="col-12">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 1,
-                    "data": 5,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-        </div>
-
-        <div class="row padding-lr padding-tb">
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 2,
-                    "data": 6,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 1,
-                    "data": 1,
-                    "label": 31,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="bgColor_dark bricksContainer">
-        <!--<img src="./../../images/med.png" class="health__logo">-->
-        <div class="section-title sticky">
-            <p>Здоровье</p>
-            @@include('../components/_burger-button.html')
-        </div>
-        <div class="view_centred">
-            <a class="yellowButton" href="" title="">
-                записаться на прием
-                <i class="corner"><!-- corner --></i>
-            </a>
-        </div>
-
-
-        <div class="row">
-            <div class="col-12">
-                @@include('./../bricks/alasliderimage.html', {"image": 2})
-            </div>
-        </div>
-
-        <div class="row padding-lr padding-tb">
-            <div class="col-6">
-                <div class="brick counters-white">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 2,
-                    "data": 6,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="brick counters-white">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 1,
-                    "data": 1,
-                    "label": 31,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-        </div>
-
-        <div class="row padding-lr padding-tb">
-            <div class="col-12">
-                <div class="brick counters-white">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 1,
-                    "data": 5,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-        </div>
-
-        <div class="row padding-lr padding-tb">
-            <div class="col-6">
-                <div class="brick counters-white">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 2,
-                    "data": 6,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="brick counters-white">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 1,
-                    "data": 1,
-                    "label": 31,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="bgColor_white">
-        <div class="section-title sticky">
-            Развлечения
-            @@include('../components/_burger-button.html')
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                @@include('./../bricks/alasliderimage.html', {"image": 5})
-            </div>
-        </div>
-
-        <div class="row padding-lr padding-tb">
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 2,
-                    "data": 6,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 1,
-                    "data": 1,
-                    "label": 31,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-        </div>
-
-        <div class="row padding-lr padding-tb">
-            <div class="col-12">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 2,
-                    "data": 5,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-        </div>
-
-        <div class="row padding-lr padding-tb">
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 2,
-                    "data": 6,
-                    "label": 22,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="brick">
-                    @@include('./../bricks/news-simple.html', {
-                    "image": 1,
-                    "data": 1,
-                    "label": 31,
-                    "counters": true,
-                    "like": 0,
-                    "comment": 2,
-                    "show": 408
-                    })
-                </div>
-            </div>
-        </div>
-    </section>
-
-    @@include('./../layout/_footer.html')
+        @@include('./../layout/_footer.html')
+    </div>
 </body>
 </html>
