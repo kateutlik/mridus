@@ -17,7 +17,7 @@ $(document).ready(function() {
 			sectionTitleTransparent.css({'opacity': 1, 'background': 'rgba(0,0,0,1)'});
 		}
 
-		if (scrollVar === 0) {
+		if (scrollVar <= 0) {
 			header.removeClass('state_scroll');
 		} else {
 			header.addClass('state_scroll');

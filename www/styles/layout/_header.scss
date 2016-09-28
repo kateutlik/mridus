@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 555;
   display: flex;
@@ -9,6 +9,10 @@
   padding: 2px 0 2px 15px;
   background: #FFF;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
+
+  &.state_scroll {
+    position: fixed;
+  }
 
   &.transparent {
     background: transparent;
@@ -23,6 +27,11 @@
     img {
       transition: all 200ms ease-out;
     }
+  }
+
+  .burgerButton {
+    position: absolute;
+    right: 15px;
   }
 }
 
