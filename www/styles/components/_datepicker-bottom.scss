@@ -32,6 +32,19 @@
       left: 39px;
       top: 9px;
     }
+
+    .yellowButton {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 13px;
+
+      .corner:before {
+        border: 5px solid #eee;
+        border-bottom-color: #000;
+        border-left-color: #000;
+      }
+    }
   }
 }
 .in-component {
