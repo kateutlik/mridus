@@ -1,79 +1,91 @@
 /* ----- footer.scss ----- */
 
-body > footer {
-    padding-top: 13px;
-    background: $r-medium-gray;
+.footer {
+	padding-top: 13px;
+	background: $r-medium-gray;
 
-    p {
-        margin-bottom: 10px;
-        font: bold 16px 'Roboto Slab', serif;
-        color: $r-white;
-    }
+	p {
+		margin-bottom: 10px;
+		font: bold 16px 'Roboto Slab', serif;
+		color: $r-white;
+	}
 
-    .footerLinks {
-        margin-bottom: 15px;
-    }
+	.footerLinks {
+		margin-bottom: 15px;
+		box-sizing: border-box;
+	}
 
+	.footerSubscribe {
+		margin-bottom: 15px;
+		box-sizing: border-box;
 
-    .footerSubscribe {
-        margin-bottom: 15px;
-    }
+		form {
+			margin-bottom: 15px;
+		}
 
-    .footerSubscribe__form {
-        position: relative;
+		&__siteLink {
+			text-decoration: none;
+			color: $r-white;
+			font: 100 14px 'Roboto', sans-serif;
+		}
+	}
 
-        .footerSubscribe__input {
-            width: calc(100% - 115px);
-            border: 1px solid $r-orange;
-            color: $r-white;
-            background: transparent;
+	.footerSubscribe__form {
+		position: relative;
 
-            &::-webkit-input-placeholder {
-                color: $r-white;
-                font-weight: 200;
-            }
-            &::-moz-placeholder {
-                color: $r-white;
-                font-weight: 200;
-            }
-            &:-moz-placeholder {
-                color: $r-white;
-                font-weight: 200;
-            }
-            &:-ms-input-placeholder {
-                color: $r-white;
-                font-weight: 200;
-            }
-        }
+		.footerSubscribe__input {
+			width: calc(100% - 115px);
+			border: 1px solid $r-orange;
+			color: $r-white;
+			background: transparent;
 
-        .yellowButton {
-            margin-left: -10px;
-        }
-    }
+			&::-webkit-input-placeholder {
+				color: $r-white;
+				font-weight: 200;
+			}
+			&::-moz-placeholder {
+				color: $r-white;
+				font-weight: 200;
+			}
+			&:-moz-placeholder {
+				color: $r-white;
+				font-weight: 200;
+			}
+			&:-ms-input-placeholder {
+				color: $r-white;
+				font-weight: 200;
+			}
+		}
 
-    .footerCopy {
-      position: relative;
-        padding: 16px 15px;
-        background: $r-black;
-        font-size: 12px;
+		.yellowButton {
+			margin-left: -10px;
+		}
+	}
 
-        &__text {
-            margin: 0;
-            font-size: 12px;
-            font-weight: normal;
-            color: #8a8a8a;
-        }
+	.footerCopy {
+		position: relative;
+		padding: 16px 15px;
+		background: $r-black;
+		font-size: 12px;
+		box-sizing: border-box;
 
-      &__18plus {
-        display: block;
-        position: absolute;
-        right: 15px;
-        top: 13px;
-        @include sprite(18plus);
-      }
-    }
+		&__text {
+			margin: 0;
+			font-size: 12px;
+			font-weight: normal;
+			color: #8a8a8a;
+		}
 
-    .socials {
-        justify-content: flex-start;
-    }
+		&__18plus {
+			display: block;
+			position: absolute;
+			right: 15px;
+			top: 13px;
+			@include sprite(18plus);
+		}
+	}
+
+	.socials {
+		justify-content: flex-start;
+	}
 }

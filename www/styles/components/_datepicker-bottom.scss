@@ -1,64 +1,42 @@
 .datepicker-bottom {
   padding: 20px 15px;
+
   label {
+    display: block;
+    margin-bottom: 12px;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     color: $r-text-light-gray;
   }
-  &__from {
-    margin-top: 12px;
+
+  &__row {
+    position: relative;
     margin-bottom: 8px;
+
     input {
       width: calc(100% - 27px);
       margin-left: -4px;
       padding-left: 40px;
     }
+
     label {
       display: inline-block;
       width: 27px;
-      &:after {
-        content: '';
-        @include sprite(calendar);
-        position: absolute;
-        left: 54px;
-      }
     }
-  }
-  &__to {
-    position: relative;
-    margin-bottom: 6px;
-    input {
-      width: calc(100% - 102px);
-      margin-left: -4px;
-      padding-left: 40px;
-    }
-    a {
+
+    &:after {
+      content: '';
+      @include sprite(calendar);
       position: absolute;
-      right: 1px;
-      top: 0;
-      font-size: 13px;
-    }
-    label {
-      display: inline-block;
-      width: 27px;
-      &:after {
-        content: '';
-        @include sprite(calendar);
-        position: absolute;
-        left: 39px;
-      }
+      left: 39px;
+      top: 9px;
     }
   }
 }
 .in-component {
   padding: 0;
-  .datepicker-bottom__to {
-    margin-bottom: 8px;
-    input {
-      width: calc(100% - 27px);
-    }
-  }
+
   .yellowButton.view_big {
     margin-left: 26px;
     width: calc(100% - 53px);

@@ -12,6 +12,12 @@
     background-position: center;
   }
 
+  @media only screen and (orientation: landscape) {
+    .brick__image {
+      height: 180px;
+    }
+  }
+
   &__content {
     h4,
     h4 a {

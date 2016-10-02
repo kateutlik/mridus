@@ -1,5 +1,6 @@
 .alasliderimage {
   position: relative;
+
   &__image {
     display: flex;
     justify-content: center;
@@ -15,23 +16,31 @@
       min-width: 100%;
     }
   }
+
   &__text {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     padding: 0 15px 15px;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+
     p {
       margin-bottom: 5px;
-      font: bold 26px 'Roboto Slab', serif;
+      font: bold 26px/28px 'Roboto Slab', serif;
       color: $r-white;
     }
   }
+
   .brick {
+
     &__typeLabel {
       top: 20px;
       padding: 5px 10px 4px;
       font: 700 16px 'Roboto', sans-serif;
+
       &:after,
       &:before {
         right: -6px;

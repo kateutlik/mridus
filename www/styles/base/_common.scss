@@ -20,7 +20,7 @@ body {
 	overflow-x: hidden;
 	color: $r-text-dark;
 
-	&.state_fixed {
+	&.state_open {
 		overflow: hidden;
 	}
 
@@ -127,6 +127,11 @@ on retina will be good resolution */
 	text-align: center;
 	text-transform: uppercase;
 	color: $r-white;
+
+	span {
+		display: inline-block;
+		max-width: 60%;
+	}
 }
 
 .sticky {

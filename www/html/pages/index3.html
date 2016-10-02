@@ -7,11 +7,14 @@
 
 </head>
 <body itemscope itemtype="http://schema.org/WebPage">
-    @@include('./../layout/_header.html', {
-        "headerClass": "transparent"
-    })
+
+    @@include('./../layout/_main-nav.html')
 
     <div class="page ">
+        @@include('./../layout/_header.html', {
+            "headerClass": "transparent"
+        })
+
         <section class="bgColor_black">
             <div class="section-title sticky transparent">
                 Картина дня
@@ -162,8 +165,9 @@
 
             <section class="bgColor_deepblue technologies">
                 <div class="accordion-section-title section-title sticky" data-content="#accordion-1">
-                    Технологии
-                    <i class="accordion-section-title__flip"></i>
+                    <span>
+                        Технологии<i class="accordion-section-title__flip"></i>
+                    </span>
                     @@include('../components/_burger-button.html')
                 </div>
 
@@ -253,8 +257,9 @@
 
             <section class="bgColor_red technologies">
                 <div class="accordion-section-title section-title sticky" data-content="#accordion-2">
-                    Украинский<br>кризис
-                    <i class="accordion-section-title__flip"></i>
+                    <span>
+                        Украинский кризис<i class="accordion-section-title__flip"></i>
+                    </span>
                     @@include('../components/_burger-button.html')
                 </div>
 
@@ -344,8 +349,9 @@
 
             <section class="bgColor_gunmetal">
                 <div class="accordion-section-title section-title sticky" data-content="#accordion-3">
-                    Операция в<br>сирии
-                    <i class="accordion-section-title__flip"></i>
+                    <span>
+                        Операция в Cирии<i class="accordion-section-title__flip"></i>
+                    </span>
                     @@include('../components/_burger-button.html')
                 </div>
 
@@ -436,7 +442,7 @@
 
         <section class="bgColor_white">
             <div class="section-title sticky">
-                Гражданская<br>журналистика
+                <span>Гражданская журналистика</span>
                 @@include('../components/_burger-button.html')
             </div>
 

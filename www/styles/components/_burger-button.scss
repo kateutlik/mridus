@@ -51,7 +51,7 @@
 	}
 
 	.state_open {
-		&.burgerButton {
+		header .burgerButton {
 			li {
 				background: rgba(0,0,0,0);
 
@@ -69,14 +69,12 @@
 	position: absolute;
 	top: 50%;
 	margin-top: -20px;
-
-	&.state_open {
-		opacity: 0;
-	}
 }
 
 .state_open {
-	&.burgerButton {
+	.header.transparent .burgerButton {
+		position: fixed;
+		top: 10px;
 		opacity: 1;
 
 		li {
@@ -87,5 +85,9 @@
 				background: rgba(255,255,255,1);
 			}
 		}
+	}
+
+	.section-title .burgerButton {
+		opacity: 0;
 	}
 }

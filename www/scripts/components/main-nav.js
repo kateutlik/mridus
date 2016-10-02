@@ -11,9 +11,8 @@ $(function() {
 			e.stopPropagation();
 			e.preventDefault();
 
-			header.toggleClass('state_open');
-			burgerButton.toggleClass('state_open');
-			body.toggleClass('state_fixed');
+			//header.toggleClass('state_open');
+			body.toggleClass('state_open');
 			page.toggleClass('disable_scrolling');
 		});
 	});

@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 555;
+  z-index: 777;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -17,6 +17,7 @@
   }
 
   &.transparent {
+    z-index: 555;
     background: transparent;
     box-sizing: border-box;
     box-shadow: none;
@@ -37,7 +38,7 @@
 }
 
 .header:not(.transparent) + section {
-  padding-top: 46px;
+  padding-top: 44px;
   padding-bottom: 1px;
 }
 
@@ -50,9 +51,11 @@
   .burgerButton {
     opacity: 0;
   }
+}
 
-  &.state_open .burgerButton {
-    opacity: 1;
+.state_open {
+  .header__mainLogo {
+    opacity: 0;
   }
 }
 

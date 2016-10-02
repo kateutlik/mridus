@@ -8,6 +8,10 @@
       text-transform: uppercase;
       color: $r-white;
 
+      span {
+        max-width: 50%;
+      }
+
       &__flip {
         position: relative;
         width: 30px;

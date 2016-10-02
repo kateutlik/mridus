@@ -1,14 +1,8 @@
 .socials-article {
 	margin-bottom: 20px;
-	text-align: center;
 
 	.ya-share2__badge {
 		border-radius: 0;
-	}
-
-	.ya-share2__list {
-		display: flex;
-		justify-content: space-between;
 	}
 
 	.ya-share2__item {
@@ -47,7 +41,7 @@
 		.ya-share2__item .ya-share2__icon {
 			width: auto;
 			height: auto;
-			padding: 0 10px;
+			padding: 0 11px 0 10px;
 			text-align: center;
 			line-height: 32px;
 			font-size: 14px;
