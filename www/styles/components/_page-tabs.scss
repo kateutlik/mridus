@@ -1,0 +1,99 @@
+.pageTabs {
+
+	&__items {
+		position: relative;
+		display: flex;
+		height: 65px;
+		margin: 0 -80%;
+		text-align: center;
+		border-bottom: 1px solid #d4d4d4;
+		transition: all .5s ease-out;
+		justify-content: space-between;
+
+		li {
+			position: relative;
+			display: flex;
+			width: 33.3%;
+			height: 100%;
+			transition: all .5s ease-out;
+			font: bold 18px 'Roboto Slab', serif;
+			text-transform: uppercase;
+
+			&:after,
+			&:before {
+				content: '';
+				z-index: 2;
+				position: absolute;
+				top: 0;
+				height: 100%;
+				width: 50%;
+			}
+
+			&:before {
+				left: 0;
+
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+53,ffffff+100&1+0,0.8+53,0+100 */
+				background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 10%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 10%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 10%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			}
+
+			&:after {
+				right: 0;
+
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+47,ffffff+100&0+0,0.8+47,1+100 */
+				background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 90%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.8) 90%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.8) 90%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			}
+
+			span {
+				display: flex;
+				align-items: center;
+				height: 100%;
+			}
+
+			&:first-child {
+				order: 1;
+				justify-content: flex-end;
+
+				&.state_current {
+					order: 3;
+
+					+ li {
+						justify-content: flex-end;
+					}
+				}
+			}
+			&:nth-child(2) {
+				order: 2;
+				justify-content: flex-start;
+
+				&.state_current {
+					order: 4;
+				}
+			}
+			&:last-child {
+				order: 4;
+				justify-content: flex-start;
+
+				&.state_current {
+					order: 1;
+				}
+			}
+
+			&.state_current {
+				justify-content: center;
+
+				&:after,
+				&:before {
+					display: none;
+				}
+
+				span {
+					border-bottom: 4px solid #ffd051;
+				}
+			}
+		}
+	}
+}

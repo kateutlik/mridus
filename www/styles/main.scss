@@ -12,6 +12,7 @@
 @import "vendors/mq";
 @import "vendors/swiper";
 @import "vendors/switchery.min";
+@import "vendors/md-preloader.min";
 
 /* Import base */
 @import "base/common";
@@ -70,5 +71,6 @@
 @import "components/filters";
 @import "components/slider-page";
 @import "components/button";
+@import "components/page-tabs";
 
 /* Do not write styles here. This is file for build. */
