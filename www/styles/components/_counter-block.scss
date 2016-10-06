@@ -2,6 +2,7 @@
 
 .countersBlock {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font: 700 11px 'Roboto', sans-serif;
 
@@ -63,17 +64,21 @@
   }
 }
 
-.brick .countersBlock__item-readLater {
-  opacity: 0.7;
-  height: 11px;
-  vertical-align: text-bottom;
+.brick .countersBlock__item {
+  margin-right: 10px;
 
-  span {
-    display: none;
-  }
+  &-readLater {
+    opacity: 0.7;
+    height: 11px;
+    vertical-align: text-bottom;
 
-  &:after {
-    margin: 0;
+    span {
+      display: none;
+    }
+
+    &:after {
+      margin: 0;
+    }
   }
 }
 

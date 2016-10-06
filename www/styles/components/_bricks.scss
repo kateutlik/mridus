@@ -12,12 +12,6 @@
     background-position: center;
   }
 
-  @media only screen and (orientation: landscape) {
-    .brick__image {
-      height: 180px;
-    }
-  }
-
   &__content {
     h4,
     h4 a {
@@ -54,7 +48,7 @@
 
   &__mainLinkDate {
     margin-top: 3px;
-    font: 300 10px 'Roboto', sans-serif;
+    font: 300 9px 'Roboto', sans-serif;
     color: $r-dark-gray;
     text-transform: uppercase;
   }
@@ -76,7 +70,7 @@
     left: 0;
     top: 0;
     padding: 6px 10px 5px;
-    font: 700 12px 'Roboto', sans-serif;
+    font: 700 9px 'Roboto', sans-serif;
     text-transform: uppercase;
     background: $r-orange;
 
@@ -215,5 +209,15 @@
 
   .row {
     margin-bottom: 5px;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .brick .brick__image {
+    height: 180px;
+  }
+
+  .col-12 .brick .brick__image {
+    height: 240px;
   }
 }
