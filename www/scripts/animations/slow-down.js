@@ -78,6 +78,5 @@ $(document).ready(function () {
 
 	}
 
-	//removeIOSRubberEffect(document.querySelector(".scrollable"));
-
+	removeIOSRubberEffect(document.querySelector(".scrollable"));
 });
