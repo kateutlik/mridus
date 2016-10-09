@@ -13,7 +13,7 @@ $(function() {
 
 			//header.toggleClass('state_open');
 			body.toggleClass('state_open');
-			page.toggleClass('disable_scrolling');
+			//page.toggleClass('disable_scrolling');
 		});
 	});
 });
