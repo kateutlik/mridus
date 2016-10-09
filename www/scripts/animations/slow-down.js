@@ -47,6 +47,11 @@ $(document).ready(function () {
 			target = event.target;
 
 		while (target !== null) {
+			if (target.classList && target.classList.contains('enable_scrolling')) {
+				isTouchMoveAllowed = true;
+				break;
+			}
+
 			if (target.classList && target.classList.contains('disable_scrolling')) {
 				isTouchMoveAllowed = false;
 				break;
