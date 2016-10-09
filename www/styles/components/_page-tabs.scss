@@ -1,5 +1,9 @@
 .pageTabs {
 
+	&__wrapper {
+		overflow: hidden;
+	}
+
 	&__items {
 		position: relative;
 		display: flex;
