@@ -72,7 +72,7 @@
 }
 
 .state_open {
-	.header.transparent .burgerButton {
+	#header .burgerButton {
 		position: fixed;
 		top: 10px;
 		opacity: 1;
