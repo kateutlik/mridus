@@ -1,14 +1,22 @@
 .newsList {
   padding: 0 15px;
+
   ul {
     margin: 7px 0;
   }
+
   &__item {
     padding: 13px 0;
     border-bottom: 1px solid $r-light-gray;
+
+    .countersBlock__item-readLater {
+      display: inline-block;
+    }
+
     &:last-child {
       border-bottom: none;
     }
+
     &-date {
       display: block;
       float: left;
@@ -17,6 +25,7 @@
       font-size: 9px;
       color: #7e7e7e;
     }
+
     &-link {
       display: block;
       margin-left: 29px;
@@ -25,6 +34,7 @@
       text-decoration: none;
     }
   }
+
   &__all {
     display: block;
     padding: 15px 0;
@@ -35,6 +45,7 @@
     text-transform: uppercase;
     color: #85929f;
   }
+
   &-float-none {
     .newsList__item {
       &-date {
@@ -42,6 +53,7 @@
         width: 100%;
         margin-bottom: 5px;
       }
+
       &-link {
         margin-left: 0;
       }
@@ -55,6 +67,7 @@
   &-border-dotted {
     .newsList__item {
       border-bottom: 1px dotted $r-light-gray;
+
       &:last-child {
         border-bottom: none;
       }

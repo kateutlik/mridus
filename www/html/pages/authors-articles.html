@@ -15,14 +15,14 @@
 
 @@include('./../layout/_header.html')
 
-<section class="bgColor_white padding-lr">
+<section class="bgColor_white">
 
-    <ul class="menu clearfix">
+    <ul class="menu padding-lr clearfix">
         <li class="menu__item menu__item-active"><a href="#" title="">Авторские колонки</a></li>
         <li class="menu__item"><a href="#" title="">Авторы</a></li>
     </ul>
 
-    <div class="row">
+    <div class="row padding-lr">
         <div class="col-12">
             <div class="author-profile">
                 <div class="author-photo">
@@ -30,14 +30,15 @@
                     <img class="author-photo__image" src="https://pp.vk.me/c405016/v405016400/3291/QZGuxhoNmxM.jpg" alt="автор">
                     <p class="author-photo__name">Hard Ingush</p>
                 </div>
-                <div class="author-info">
+                <div class="article__text">
                     <p>В пятницу утром 21 августа баррель нефти марки Brent вплотную приблизился к очередному
                         психологическому рубежу — $46 за баррель, хотя так и не пробил его, немного отскочив назад.
                         К 11.19 по Москве она торговалась на отметке $46,23 за баррель. Текущая неделя может стать
                         восьмой подряд, когда зафиксировано недельное удешевление «черного золота» — это самый
-                        продолжительный период с 1986 года, отмечает РИА Новости. </p>
+                        продолжительный период с 1986 года, отмечает РИА Новости.
+                    </p>
                 </div>
-                <ul class="author-popularity">
+                <ul class="author-popularity padding-tb">
                     <li class="watchers">
                         408
                     </li>
@@ -51,17 +52,20 @@
                         </b>
                     </li>
                 </ul>
-                @@include('./../components/_socials-article.html')
             </div>
         </div>
     </div>
 
-    <ul class="menu menu-small menu-bordered clearfix">
-        <li class="menu__item menu__item-active"><a href="#" title="">Статьи автора (15)</a></li>
-        <li class="menu__item"><a href="#" title="">Комментарии автора (133)</a></li>
-    </ul>
+    @@include('./../components/_socials-article.html')
 
-    <div class="row">
+    <div class="padding-lr">
+        <ul class="menu menu-small menu-bordered clearfix">
+            <li class="menu__item menu__item-active"><a href="#" title="">Статьи автора (15)</a></li>
+            <li class="menu__item"><a href="#" title="">Комментарии автора (133)</a></li>
+        </ul>
+    </div>
+
+    <div class="row padding-lr">
         <div class="col-6">
             <div class="brick">
                 @@include('./../bricks/news-simple.html', {
@@ -90,7 +94,7 @@
         </div>
     </div>
 
-    <div class="row padding-tb">
+    <div class="row padding-tb padding-lr">
         <div class="col-6">
             <div class="brick">
                 @@include('./../bricks/news-simple.html', {
@@ -119,7 +123,7 @@
         </div>
     </div>
 
-    <div class="row padding-tb">
+    <div class="row padding-tb padding-lr">
         <div class="col-6">
             <div class="brick">
                 @@include('./../bricks/news-simple.html', {
@@ -148,7 +152,7 @@
         </div>
     </div>
 
-    <div class="row padding-tb">
+    <div class="row padding-tb padding-lr">
         <div class="col-6">
             <div class="brick">
                 @@include('./../bricks/news-simple.html', {

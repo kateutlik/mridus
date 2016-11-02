@@ -5,6 +5,10 @@
     padding: 0 0 0 30px;
     border-top: 1px solid $r-light-gray;
 
+    .countersBlock__item-readLater {
+      display: inline-block;
+    }
+
     &:first-child {
       border-top: none;
     }

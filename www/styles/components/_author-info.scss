@@ -1,5 +1,6 @@
 .author-info {
   background: $r-light-gray;
+
   &__avatar {
     width: 100%;
   }
@@ -13,7 +14,26 @@
   &__about {
     margin-bottom: 25px;
     font: normal 13px/19px 'Roboto', sans-serif;
+
+    &.expanded {
+      p {
+        max-height: 1000px;
+      }
+    }
+
+    p {
+      overflow-y: hidden;
+      height: 100%;
+      max-height: 40px;
+      transition: all 1s ease-out;
+    }
+
+    a {
+      text-decoration: none;
+      border-bottom: 1px dashed $r-black;
+    }
   }
+
   a {
     font: normal 13px 'Roboto', sans-serif;
     color: $r-black;

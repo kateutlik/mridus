@@ -31,10 +31,10 @@
 	}
 
 	.footerSubscribe__form {
-		position: relative;
+		display: flex;
 
 		.footerSubscribe__input {
-			width: calc(100% - 115px);
+			//width: calc(100% - 115px);
 			border: 1px solid $r-orange;
 			color: $r-white;
 			background: transparent;
@@ -55,10 +55,6 @@
 				color: $r-white;
 				font-weight: 200;
 			}
-		}
-
-		.yellowButton {
-			margin-left: -10px;
 		}
 	}
 

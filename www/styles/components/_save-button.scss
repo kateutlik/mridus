@@ -7,18 +7,10 @@
   font-weight: bold;
   text-decoration: none;
   font-family: 'Roboto Slab', serif;
-  padding: 12px 15px 0 35px;
+  padding: 12px 15px 0 15px;
   box-sizing: border-box;
   position: relative;
   transition: background .2s ease, opacity .2s ease;
-
-  &:before {
-    content: '';
-    @include sprite(save);
-    position: absolute;
-    left: 13px;
-    top: 13px;
-  }
 
   &-hidden {
     display: none;
