@@ -9,7 +9,6 @@
   font-family: 'Roboto Slab', serif;
   padding: 12px 15px 0 15px;
   box-sizing: border-box;
-  position: relative;
   transition: background .2s ease, opacity .2s ease;
 
   &-hidden {
@@ -26,4 +25,13 @@
       @include sprite(save-white);
     }
   }
+}
+.row_header .save__button {
+  z-index: 777;
+  position: fixed;
+  top: 5px;
+  right: 50px;
+}
+.state_open .row_header .save__button {
+  display: none;
 }
