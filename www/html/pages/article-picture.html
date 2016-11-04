@@ -13,9 +13,11 @@
 
 <div class="page">
 
-@@include('./../layout/_header.html')
+@@include('./../layout/_header.html', {
+    "headerClass": "header_article"
+})
 
-<section class="bgColor_white">
+<section class="article__container bgColor_white">
 
     <ul class="tabs-inline padding-lr padding-tb">
         <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Происшествия</a></li>
@@ -34,12 +36,6 @@
             @@include('./../components/_author-container.html')
         </div>
     </div>
-
-    <!--<div class="row">-->
-        <!--<div class="col-12">-->
-            <!--@@include('./../components/_socials-article.html', {"class": "small-size"})-->
-        <!--</div>-->
-    <!--</div>-->
 
     <div class="row padding-lr buttons">
         <div class="col-12 clearfix">
@@ -129,6 +125,7 @@
     </div>
 
 </section>
+
 @@include('./../layout/_news-include.html')
 
 @@include('./../layout/_footer.html')

@@ -5,6 +5,12 @@ $(document).ready(function () {
 		slider = $('.slowDown .slider'),
 		introSection = slider.find('.slider__image img');
 
+	if (scrollVar <= 0) {
+		header.removeClass('state_scroll');
+	} else {
+		header.addClass('state_scroll');
+	}
+
 	$(window).scroll(function () {
 
 		scrollVar = $(window).scrollTop();

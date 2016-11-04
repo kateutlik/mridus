@@ -13,7 +13,11 @@
 
 <div class="page">
 
-@@include('./../layout/_header.html')
+@@include('./../layout/_header.html', {
+    "headerClass": "header_article"
+})
+
+<section class="article__container">
 
 <section class="bgColor_white">
 
@@ -619,6 +623,8 @@
             @@include('./../components/_comments.html')
         </div>
     </div>
+
+</section>
 
 </section>
 
