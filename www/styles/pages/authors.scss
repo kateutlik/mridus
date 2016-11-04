@@ -1,54 +1,5 @@
 @import "../helpers/variables";
 .authors {
-  .author {
-    &-photo {
-      margin: 10px 0;
-      position: relative;
-      &__image {
-        width: 100%;
-      }
-      &__name {
-        position: absolute;
-        left: 17px;
-        bottom: 20px;
-        color: $r-white;
-        font: 700 26px 'Roboto Slab', serif;
-      }
-      &__label {
-        position: absolute;
-        top: -22px;
-        left: 0;
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: bold;
-        color: $r-white;
-        padding: 11px 16px;
-        background: #000;
-      }
-    }
-    &-info {
-      font: 300 16px 'Roboto', serif;
-      line-height: 26px;
-      margin-bottom: 25px;
-    }
-    &-popularity {
-      font: 500 16px 'Roboto', sans-serif;
-
-      li {
-        display: inline-block;
-      }
-      .watchers,
-      .rating {
-        margin-right: 9px;
-      }
-      .positive {
-        color: $r-author-rate-positive
-      }
-      .negative {
-        color: $r-author-rate-negative
-      }
-    }
-  }
   &-list {
     .brick__image {
       display: block;
