@@ -1,0 +1,119 @@
+html {
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+
+.photo_story-clickable {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.photo_story {
+    color: #a3a3a3;
+}
+
+.photo_story-header {
+    &:after {
+      content: '';
+      width: 100%;
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.photo_story-logo {
+    background: url(./../../images/logo.png);
+    width: 62px;
+    height: 24px;
+    background-size: 62px 24px;
+}
+
+.photo_story-page {
+    flex: 2;
+    text-align: center;
+}
+
+.photo_story-title {
+    order: 1;
+    margin-top: 25px;
+}
+
+.photo_story-images {
+    text-align: center;
+}
+
+.photo_story-view {
+    display: none;
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: black;
+}
+
+.photo_story-view-visible {
+    display: block;
+}
+
+.photo_story-images img {
+    width: 100%;
+    height: 100%;
+    max-width: 675px;
+    max-height: 450px;
+}
+
+.photo_story-item-text {
+    padding: 0 20px;
+}
+
+.photo_story-author {
+    margin: 15px 0;
+    font-size: 12px;
+    font-style: italic;
+    color: #505050;
+}
+
+.photo_story-description b {
+    font-weight: 700;
+}
+
+@media all and (orientation:portrait) {
+  /* Styles for Portrait screen */
+
+}
+@media all and (orientation:landscape) {
+  /* Styles for Landscape screen */
+  .photo_story-description,
+  .photo_story-author {
+      display: none;
+  }
+
+  .photo_story-images {
+      padding: 0 60px;
+  }
+}
+
+.photo_story {
+    .socials-article {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    &-view {
+        .ya-share2__counter:before {
+            display: none;
+        }
+
+        .ya-share2__item_service_vkontakte .ya-share2__badge,
+        .ya-share2__item_service_facebook .ya-share2__badge,
+        .ya-share2__item_service_odnoklassniki .ya-share2__badge,
+        .ya-share2__item_service_gplus .ya-share2__badge,
+        .ya-share2__item_service_twitter .ya-share2__badge {
+            background-color: transparent;
+        }
+    }
+}
