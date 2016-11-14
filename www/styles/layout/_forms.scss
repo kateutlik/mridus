@@ -112,6 +112,14 @@ input[type="url"] {
         margin-bottom: 20px;
     }
 
+    &-control-before-btn {
+        margin-bottom: 24px;
+    }
+
+    &-control-register {
+        margin-bottom: 10px;
+    }
+
     &-line {
         display: flex;
 
@@ -129,7 +137,7 @@ input[type="url"] {
 
         }
     };
-    
+
     &-link {
         display: inline-block;
         color: $r-black;
