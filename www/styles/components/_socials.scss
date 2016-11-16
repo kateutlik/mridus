@@ -1,10 +1,9 @@
 .socials {
 	display: flex;
-	justify-content: center;
 
 	.socialNetwork__item {
 		display: inline-block;
-		margin-right: 6px;
+		margin-right: 4px;
 	}
 
 	.socialNetwork__link {
@@ -20,7 +19,7 @@
 		color: $r-white;
 		text-decoration: none;
 		text-align: center;
-		
+
 		&:before {
 			font-size: 20px;
 			line-height: 36px;

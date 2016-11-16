@@ -173,6 +173,18 @@ on retina will be good resolution */
 	display: none;
 }
 
+.view-more-btn {
+	display: block;
+	padding: 15px 0;
+	border: 1px solid #667787;
+	font-size: 11px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #85929f;
+	margin: 0 15px 20px;
+}
+
 //todo where is it used? do not suit default form styles
 //label {
 //  font-size: 16px;
