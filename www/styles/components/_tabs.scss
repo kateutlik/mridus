@@ -6,6 +6,20 @@
       margin-left: .46em;
       font-size: 12px;
       font-weight: 700;
+
+      &.ui-state-default a {
+          color: #a3a3a3;
+          text-decoration: none;
+      }
+
+      &.ui-tabs-active a {
+          color: black;
+      }
+
+      .registration & {
+          font-size: 21px;
+      }
+
       &:before {
         display: inline-block;
         content: "";
@@ -26,5 +40,9 @@
         }
       }
     }
+  }
+
+  &-wrapper {
+      margin: 15px 0 30px;
   }
 }

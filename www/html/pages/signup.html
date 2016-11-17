@@ -13,10 +13,13 @@
 
 @@include('./../layout/_header.html')
 
-<section class="bgColor_white padding-lr">
-    <form class="form">
-        <h3>Регистрация нового пользователя</h3>
+<section class="bgColor_white padding-lr registration">
+    <ul class="tabs tabs-wrapper">
+        <li class="tabs-inline__item"><a href="#signup">Регистрация</a></li>
+        <li class="tabs-inline__item"><a href="#signin">Войти</a></li>
+    </ul>
 
+    <form class="form signup" id="signup">
         <div class="form-control">
             <label>Электронная почта</label>
             <input type="text" placeholder="Ваш e-mail">
@@ -48,9 +51,28 @@
             </label>
         </div>
     </form>
+    <form class="form signin" id="signin">
+        <div class="form-control">
+            <label>Электронная почта</label>
+            <input type="text" placeholder="Ваш e-mail">
+        </div>
+        <div class="form-control">
+            <label>Пароль</label>
+            <input type="password" placeholder="">
+        </div>
+        <a class="form-control-register yellowButton view_big" href="" title="">
+            Войти
+            <i class="corner"><!-- corner --></i>
+        </a>
+
+    </form>
 </section>
 
 @@include('./../layout/_footer.html')
 </div>
+
+<script type="text/javascript">
+
+</script>
 </body>
 </html>
