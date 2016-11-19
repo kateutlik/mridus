@@ -18,17 +18,23 @@
 
 <section class="bgColor_white relative">
     <div class="pageTabs__wrapper">
-        <ul class="pageTabs__items">
-            <li class="pageTabs__item state_current" data-url="../components/_tab-day-view.html" data-target="pageTabs__target" data-wrapper="pageTabs__wrapper">
-                <span>картина дня</span>
-            </li>
-            <li class="pageTabs__item" data-url="../components/_tab-journalism.html" data-target="pageTabs__target" data-wrapper="pageTabs__wrapper">
-                <span>гражданская<br/>журналистика</span>
-            </li>
-            <li class="pageTabs__item"  data-url="../components/_tab-interesting.html" data-target="pageTabs__target" data-wrapper="pageTabs__wrapper">
-                <span>интересное</span>
-            </li>
-        </ul>
+        <div class="pageTabs__scrollbar-hide">
+            <div class="pageTabs__view">
+                <ul class="pageTabs__items">
+                    <li class="pageTabs__item state_current" data-url="../components/_tab-day-view.html" data-target="pageTabs__target" data-wrapper="pageTabs__wrapper">
+                        <span>картина дня</span>
+                    </li>
+                    <li class="pageTabs__item" data-url="../components/_tab-journalism.html" data-target="pageTabs__target" data-wrapper="pageTabs__wrapper">
+                        <span>гражданская<br/>журналистика</span>
+                    </li>
+                    <li class="pageTabs__item"  data-url="../components/_tab-interesting.html" data-target="pageTabs__target" data-wrapper="pageTabs__wrapper">
+                        <span>интересное</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <span class="pageTabs-border-bottom"></span>
+
         <div id="pageTabs__target">
             @@include('./../components/_tab-day-view.html')
         </div>
