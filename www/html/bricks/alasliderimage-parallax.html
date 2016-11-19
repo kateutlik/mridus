@@ -1,0 +1,61 @@
+<div class="alasliderimage">
+    <a href="#" class="alasliderimage__image" title="">
+        @@if (context.image === 1){
+            <span class="alasliderimage__background alasliderimage__background-image1"></span>
+        }
+        @@if (context.image === 2){
+            <span class="alasliderimage__background alasliderimage__background-image2"></span>
+        }
+        @@if (context.image === 3){
+            <span class="alasliderimage__background alasliderimage__background-image3"></span>
+        }
+        @@if (context.image === 4){
+            <span class="alasliderimage__background alasliderimage__background-image3"></span>
+        }
+        @@if (context.image === 5){
+            <span class="alasliderimage__background alasliderimage__background-image1"></span>
+        }
+        @@if (context.image === 6){
+            <span class="alasliderimage__background alasliderimage__background-image3"></span>
+        }
+        @@if (context.image === 7){
+            <span class="alasliderimage__background alasliderimage__background-image3"></span>
+        }
+    </a>
+
+    <div class="alasliderimage__text">
+        @@if (context.brickLabel !== 'false'){
+        <a href="#life" class="brick__label" title="">жизнь</a>
+        }
+        <p>
+            @@if (context.image === 1){
+            Реорганизация общественного транспорта в Москве
+            }
+            @@if (context.image === 2){
+            Оздоравливание озоном - новый тренд
+            }
+            @@if (context.image === 3){
+            На главном проспекте установят новые говорящие остановки
+            }
+            @@if (context.image === 4){
+            Новая головоломка сбила с толку весь Интеренет
+            }
+            @@if (context.image === 5){
+            Реорганизация речного транспорта в Москве
+            }
+            @@if (context.image === 6){
+            Олимпийский робото-футбол
+            }
+            @@if (context.image === 7){
+            Регулярные войска идут на Алеппо
+            }
+        </p>
+        @@include('./../components/_counter-block.html', {"like": 0, "comment": 2, "show": 408, "colorClass": "white"})
+        <!--<a href="#" class="clickable"></a>-->
+    </div>
+    @@if (context.typelabel === 1){
+        <span class="brick__typeLabel">трансляция</span>
+    }
+
+    <!--<a href="#" class="clickable"></a>-->
+</div>

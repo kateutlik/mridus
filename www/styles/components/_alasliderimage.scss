@@ -1,6 +1,26 @@
 .alasliderimage {
   position: relative;
 
+  &__background {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-image1 {
+      background-image: url(http://www.ridus.ru/images/2015/11/27/339969/in_article_f324f74275.png);
+    }
+    &-image2 {
+      background-image: url(http://www.ridus.ru/images/2015/12/1/340559/in_article_e6d5d3c187.jpg);
+    }
+    &-image3 {
+      background-image: url(https://www.ridus.ru/images/2016/3/9/374241/in_article_6e0fbfdc98.jpg);
+    }
+  }
+
   &__image {
     display: flex;
     justify-content: center;
