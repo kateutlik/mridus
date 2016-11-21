@@ -13,9 +13,11 @@
 
 <div class="page">
 
-@@include('./../layout/_header.html')
+@@include('./../layout/_header.html', {
+    "headerClass": "header_article"
+    })
 
-<section class="bgColor_white">
+<section class="article__container bgColor_white">
 
     <ul class="tabs-inline padding-lr padding-tb">
         <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Новости кратко</a></li>
@@ -24,7 +26,10 @@
 
     <div class="row row_header">
         <div class="col-12">
-            @@include('./../bricks/alasliderimage.html', {"image": 5, "brickLabel": "false"})
+            @@include('./../bricks/alasliderimage.html', {"image": 5, "brickLabel": "false", "saveButton": "none"})
+
+            @@include('./../components/_likes-button.html')
+            @@include('./../components/_save-button.html')
         </div>
     </div>
 
@@ -77,9 +82,12 @@
         <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Политика</a></li>
     </ul>
 
-    <div class="row row_header padding-tb">
+    <div class="row row_header">
         <div class="col-12">
-            @@include('./../bricks/alasliderimage.html', {"image": 3, "brickLabel": "false"})
+            @@include('./../bricks/alasliderimage.html', {"image": 3, "brickLabel": "false", "saveButton": "none"})
+
+            @@include('./../components/_likes-button.html')
+            @@include('./../components/_save-button.html')
         </div>
     </div>
 

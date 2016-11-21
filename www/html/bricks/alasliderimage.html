@@ -50,7 +50,16 @@
             Регулярные войска идут на Алеппо
             }
         </p>
-        @@include('./../components/_counter-block.html', {"like": 0, "comment": 2, "show": 408, "colorClass": "white"})
+        @@if (context.saveButton === "save"){
+            @@include('./../components/_counter-block.html', {"like": 0, "comment": 2, "show": 408, "colorClass": "white", "saveButton": "save"})
+        }
+        @@if (context.saveButton === "read"){
+            @@include('./../components/_counter-block.html', {"like": 0, "comment": 2, "show": 408, "colorClass": "white", "saveButton": "read"})
+        }
+        @@if (context.saveButton === "none"){
+            @@include('./../components/_counter-block.html', {"like": 0, "comment": 2, "show": 408, "colorClass": "white"})
+        }
+
         <!--<a href="#" class="clickable"></a>-->
     </div>
     @@if (context.typelabel === 1){

@@ -181,7 +181,12 @@
 </div>
 
 @@if (context.counters === true){
-    @@include('./../components/_counter-block.html', {"like": @@like, "comment": @@comment, "show": @@show, "colorClass": "black"})
+    @@include('./../components/_counter-block.html', {
+        "like": @@like,
+        "comment": @@comment,
+        "show": @@show,
+        "colorClass": "black",
+        "saveButton": "read"})
 }
 
 @@if (context.action === "read"){

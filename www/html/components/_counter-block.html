@@ -8,8 +8,16 @@
     <span class="countersBlock__item countersBlock__item-show view_count3">
         @@show
     </span>
+    @@if (context.saveButton === "save"){
+    <i class="countersBlock__item countersBlock__item-readLater">
+        <span>сохранить</span>
+        <span class="state_hidden">сохранено</span>
+    </i>
+    }
+    @@if (context.saveButton === "read"){
     <i class="countersBlock__item countersBlock__item-readLater">
         <span>читать позже</span>
         <span class="state_hidden">читаю позже</span>
     </i>
+    }
 </div>
