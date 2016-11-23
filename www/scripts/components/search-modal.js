@@ -1,16 +1,21 @@
 $(function() {
     $(document).ready(function() {
-        if( $('body').hasClass('search') && $('.filtersList__wrapper').length ) {
+        var $body = $('body');
+        
+        if( $body.hasClass('search') && $('.filtersList__wrapper').length ) {
             var parentElement = $('.filtersList__wrapper');
             var parentElementList = parentElement.find('.filtersList');
             var allItems = parentElement.find('.filtersList__item');
+            var selectedNumberElement = $('.search-rubric-selected-number');
+            var btnElement = $('.search-form__rubric'); 
 
             initHandlers();
+            updateSelectedNumberElement();
         }
 
         function initHandlers() {
 
-            $('.search-form__rubric').click(openList);
+            btnElement.click(openList);
 
             parentElement.find('.filtersList__header-close').click(closeList);
             parentElement.find('.categoryFilter__applyButton').click(applyList);
@@ -19,18 +24,24 @@ $(function() {
         }
 
         function openList() {
-            $('body').addClass('rubric-open');
+            $body.scrollTop(0);
+
+            $body.addClass('rubric-open');
         }
 
         function closeList() {
-            $('body').removeClass('rubric-open');
+            updateSelectedNumberElement();
+            
+            $body.removeClass('rubric-open');
+
+            btnElement && btnElement[0] && btnElement[0].scrollIntoViewIfNeeded && btnElement[0].scrollIntoViewIfNeeded();
         }
 
         function applyList() {
             var items = parentElementList.find('.selected');
             console.log('Выбранные элементы:');
             console.log(items);
-
+            
             closeList();
         }
 
@@ -58,6 +69,25 @@ $(function() {
             } else {
                 parentElementList.removeClass('selectedAll');
             }
+        }
+
+        function updateSelectedNumberElement(items) {
+            var selectedCount = allItems.filter('.selected').length;
+            var template;
+
+            switch(selectedCount) {
+                case 0:
+                    template = '0 рубрик';
+                    break;
+                case 1:
+                    template = '1 рубрика';
+                    break;
+                default:
+                    template = selectedCount + ' рубрики';
+                    break;
+            }
+
+            selectedNumberElement.html(template);
         }
     });
 });

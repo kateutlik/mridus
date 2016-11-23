@@ -203,3 +203,12 @@
 	position: static;
 	margin-right: 20px;
 }
+
+.author-filter--scrollable {
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.author-filter {
+	user-select: none;
+}
