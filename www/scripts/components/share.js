@@ -4,7 +4,7 @@ $(function() {
     $(document).ready(function() {
         $('.share-handler').on('click', function(){
             var shareEl = $('.share-container');
-            var cancelBtn = shareEl.find('.share-cancel');
+            var cancelBtn = shareEl.find('.share-cancel, .share-header-close');
             var body = $('body');
 
             if (shareEl.length) {

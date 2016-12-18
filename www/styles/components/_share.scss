@@ -9,6 +9,20 @@
         font-size: 17px;   
     }
 
+    &-header {
+        display: flex;
+        flex-direction: row;
+
+        &-text {
+            flex: 1;
+        }
+
+        &-close {
+            width: 25px;
+            top: -3px;
+        }
+    }
+
     &-cancel {
         bottom: 80px;
         background-color: #fff;
