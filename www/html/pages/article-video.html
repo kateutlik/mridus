@@ -17,8 +17,6 @@
     "headerClass": "header_article"
 })
 
-<section class="article__container">
-
 <section class="bgColor_white">
 
     <ul class="tabs-inline padding-lr padding-tb">
@@ -26,10 +24,16 @@
         <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Война</a></li>
     </ul>
 
+    <div class="row row_header">
+        <div class="col-12">
+            @@include('./../components/_save-button.html')
+        </div>
+    </div>
+    <section class="article__container">
     <div class="row padding-lr">
         <div class="col-12">
             <h3 class="article__page-title">Освобождение Пальмиры регулярной армией</h3>
-            @@include('./../components/_counter-block.html', {"like": 0, "comment": 2, "show": 408, "colorClass": "black", "saveButton": "read"})
+            @@include('./../components/_counter-block.html', {"like": 0, "comment": 2, "show": 408, "colorClass": "black"})
         </div>
     </div>
 
@@ -58,6 +62,12 @@
         </div>
     </div>
 
+    </section>
+
+    <div class="share-handler">
+        <a href="#">Поделится</a>
+    </div>
+
     <div class="row">
         <div class="col-12">
             @@include('./../components/_socials-article.html')
@@ -67,7 +77,6 @@
     <div class="row padding-lr buttons">
         <div class="col-12 clearfix">
             @@include('./../components/_likes-button.html')
-            @@include('./../components/_save-button.html')
         </div>
     </div>
 
@@ -83,42 +92,44 @@
         </div>
     </div>
 
-    <ul class="tabs-inline padding-lr padding-tb">
-        <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Происшествия</a></li>
-        <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Война</a></li>
-    </ul>
+    <section class="article__container">
+        <ul class="tabs-inline padding-lr padding-tb">
+            <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Происшествия</a></li>
+            <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Война</a></li>
+        </ul>
 
-    <div class="row padding-lr">
-        <div class="col-12">
-            <h3 class="article__page-title">Освобождение Пальмиры регулярной армией</h3>
-            @@include('./../components/_counter-block.html', {"like": 0, "comment": 2, "show": 408, "colorClass": "black", "saveButton": "read"})
-        </div>
-    </div>
-
-    <div class="row padding-lr padding-tb">
-        <div class="col-12">
-            @@include('./../components/_author-container.html')
-        </div>
-    </div>
-
-    <div class="row article__text padding-lr">
-        <div class="col-12">
-            <p>
-                На нефтяные цены действует сразу несколько негативных факторов. К уже привычному превышению предложения над спросом добавились ожидания предстоящего выхода на рынок дешевой иранской нефти, неутешительная статистика из Китая и рост числа действующих буровых установок в США.
-            </p>
-            <div class="full-width">
-                <iframe width="320" height="187" src="https://www.youtube.com/embed/RmZvqr53KyM" frameborder="0" allowfullscreen></iframe>
+        <div class="row padding-lr">
+            <div class="col-12">
+                <h3 class="article__page-title">Освобождение Пальмиры регулярной армией</h3>
+                @@include('./../components/_counter-block.html', {"like": 0, "comment": 2, "show": 408, "colorClass": "black"})
             </div>
-            <p>
-                Самонаблюдение мгновенно отталкивает депрессивный эскапизм. Код, в представлении Морено, семантически выбирает интеллект.
-            </p>
-            <p id="video1Details" class="hidden__hide">Назарбаев, когда провёл на этой неделе девальвацию своей валюты, предварительно все вклады населения перевёл в доллары, чтобы люди ничего не потеряли на падении курса валюты и не говорили про своего руководителя плохо. Это же родное государство? Продолжается ослабление национальной валюты и в России. На фоне дешевеющей нефти доллар перешагнул рубеж в 68 рублей. Но это же не какое-то вражеское население, это родное государство, свои люди, братья свои, одна семья, одна страна - Казахстан.</p>
-            <a href="#" class="hidden" data-id="video1Details" title="">
-                <span>Развернуть</span>
-                <span class="hidden__hide">Свернуть</span>
-            </a>
         </div>
-    </div>
+
+        <div class="row padding-lr padding-tb">
+            <div class="col-12">
+                @@include('./../components/_author-container.html')
+            </div>
+        </div>
+
+        <div class="row article__text padding-lr">
+            <div class="col-12">
+                <p>
+                    На нефтяные цены действует сразу несколько негативных факторов. К уже привычному превышению предложения над спросом добавились ожидания предстоящего выхода на рынок дешевой иранской нефти, неутешительная статистика из Китая и рост числа действующих буровых установок в США.
+                </p>
+                <div class="full-width">
+                    <iframe width="320" height="187" src="https://www.youtube.com/embed/RmZvqr53KyM" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p>
+                    Самонаблюдение мгновенно отталкивает депрессивный эскапизм. Код, в представлении Морено, семантически выбирает интеллект.
+                </p>
+                <p id="video1Details" class="hidden__hide">Назарбаев, когда провёл на этой неделе девальвацию своей валюты, предварительно все вклады населения перевёл в доллары, чтобы люди ничего не потеряли на падении курса валюты и не говорили про своего руководителя плохо. Это же родное государство? Продолжается ослабление национальной валюты и в России. На фоне дешевеющей нефти доллар перешагнул рубеж в 68 рублей. Но это же не какое-то вражеское население, это родное государство, свои люди, братья свои, одна семья, одна страна - Казахстан.</p>
+                <a href="#" class="hidden" data-id="video1Details" title="">
+                    <span>Развернуть</span>
+                    <span class="hidden__hide">Свернуть</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <div class="row">
         <div class="col-12">
@@ -129,7 +140,6 @@
     <div class="row padding-lr buttons">
         <div class="col-12 clearfix">
             @@include('./../components/_likes-button.html')
-            @@include('./../components/_save-button.html')
         </div>
     </div>
 
@@ -216,42 +226,44 @@
 
 <section class="bgColor_white">
 
-    <ul class="tabs-inline padding-lr padding-tb">
-        <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Происшествия</a></li>
-        <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Война</a></li>
-    </ul>
+    <section class="article__container">
+        <ul class="tabs-inline padding-lr padding-tb">
+            <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Происшествия</a></li>
+            <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Война</a></li>
+        </ul>
 
-    <div class="row padding-lr">
-        <div class="col-12">
-            <h3 class="article__page-title">Освобождение Пальмиры регулярной армией</h3>
-            @@include('./../components/_counter-block.html', {"like": 0, "comment": 2, "show": 408, "colorClass": "black", "saveButton": "read"})
-        </div>
-    </div>
-
-    <div class="row padding-lr padding-tb">
-        <div class="col-12">
-            @@include('./../components/_author-container.html')
-        </div>
-    </div>
-
-    <div class="row article__text padding-lr">
-        <div class="col-12">
-            <p>
-                На нефтяные цены действует сразу несколько негативных факторов. К уже привычному превышению предложения над спросом добавились ожидания предстоящего выхода на рынок дешевой иранской нефти, неутешительная статистика из Китая и рост числа действующих буровых установок в США.
-            </p>
-            <div class="full-width">
-                <iframe width="320" height="187" src="https://www.youtube.com/embed/RmZvqr53KyM" frameborder="0" allowfullscreen></iframe>
+        <div class="row padding-lr">
+            <div class="col-12">
+                <h3 class="article__page-title">Освобождение Пальмиры регулярной армией</h3>
+                @@include('./../components/_counter-block.html', {"like": 0, "comment": 2, "show": 408, "colorClass": "black"})
             </div>
-            <p>
-                Самонаблюдение мгновенно отталкивает депрессивный эскапизм. Код, в представлении Морено, семантически выбирает интеллект.
-            </p>
-            <p id="video2Details" class="hidden__hide">Назарбаев, когда провёл на этой неделе девальвацию своей валюты, предварительно все вклады населения перевёл в доллары, чтобы люди ничего не потеряли на падении курса валюты и не говорили про своего руководителя плохо. Это же родное государство? Продолжается ослабление национальной валюты и в России. На фоне дешевеющей нефти доллар перешагнул рубеж в 68 рублей. Но это же не какое-то вражеское население, это родное государство, свои люди, братья свои, одна семья, одна страна - Казахстан.</p>
-            <a href="#" class="hidden" data-id="video2Details" title="">
-                <span>Развернуть</span>
-                <span class="hidden__hide">Свернуть</span>
-            </a>
         </div>
-    </div>
+
+        <div class="row padding-lr padding-tb">
+            <div class="col-12">
+                @@include('./../components/_author-container.html')
+            </div>
+        </div>
+
+        <div class="row article__text padding-lr">
+            <div class="col-12">
+                <p>
+                    На нефтяные цены действует сразу несколько негативных факторов. К уже привычному превышению предложения над спросом добавились ожидания предстоящего выхода на рынок дешевой иранской нефти, неутешительная статистика из Китая и рост числа действующих буровых установок в США.
+                </p>
+                <div class="full-width">
+                    <iframe width="320" height="187" src="https://www.youtube.com/embed/RmZvqr53KyM" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p>
+                    Самонаблюдение мгновенно отталкивает депрессивный эскапизм. Код, в представлении Морено, семантически выбирает интеллект.
+                </p>
+                <p id="video2Details" class="hidden__hide">Назарбаев, когда провёл на этой неделе девальвацию своей валюты, предварительно все вклады населения перевёл в доллары, чтобы люди ничего не потеряли на падении курса валюты и не говорили про своего руководителя плохо. Это же родное государство? Продолжается ослабление национальной валюты и в России. На фоне дешевеющей нефти доллар перешагнул рубеж в 68 рублей. Но это же не какое-то вражеское население, это родное государство, свои люди, братья свои, одна семья, одна страна - Казахстан.</p>
+                <a href="#" class="hidden" data-id="video2Details" title="">
+                    <span>Развернуть</span>
+                    <span class="hidden__hide">Свернуть</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <div class="row">
         <div class="col-12">
@@ -262,7 +274,6 @@
     <div class="row padding-lr buttons">
         <div class="col-12 clearfix">
             @@include('./../components/_likes-button.html')
-            @@include('./../components/_save-button.html')
         </div>
     </div>
 
@@ -321,42 +332,44 @@
 
 <section class="bgColor_white">
 
-    <ul class="tabs-inline padding-lr padding-tb">
-        <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Происшествия</a></li>
-        <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Война</a></li>
-    </ul>
+    <section class="article__container">
+        <ul class="tabs-inline padding-lr padding-tb">
+            <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Происшествия</a></li>
+            <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Война</a></li>
+        </ul>
 
-    <div class="row padding-lr">
-        <div class="col-12">
-            <h3 class="article__page-title">Освобождение Пальмиры регулярной армией</h3>
-            @@include('./../components/_counter-block.html', {"like": 0, "comment": 2, "show": 408, "colorClass": "black", "saveButton": "read"})
-        </div>
-    </div>
-
-    <div class="row padding-lr padding-tb">
-        <div class="col-12">
-            @@include('./../components/_author-container.html')
-        </div>
-    </div>
-
-    <div class="row article__text padding-lr">
-        <div class="col-12">
-            <p>
-                На нефтяные цены действует сразу несколько негативных факторов. К уже привычному превышению предложения над спросом добавились ожидания предстоящего выхода на рынок дешевой иранской нефти, неутешительная статистика из Китая и рост числа действующих буровых установок в США.
-            </p>
-            <div class="full-width">
-                <iframe width="320" height="187" src="https://www.youtube.com/embed/RmZvqr53KyM" frameborder="0" allowfullscreen></iframe>
+        <div class="row padding-lr">
+            <div class="col-12">
+                <h3 class="article__page-title">Освобождение Пальмиры регулярной армией</h3>
+                @@include('./../components/_counter-block.html', {"like": 0, "comment": 2, "show": 408, "colorClass": "black"})
             </div>
-            <p>
-                Самонаблюдение мгновенно отталкивает депрессивный эскапизм. Код, в представлении Морено, семантически выбирает интеллект.
-            </p>
-            <p id="video3Details" class="hidden__hide">Назарбаев, когда провёл на этой неделе девальвацию своей валюты, предварительно все вклады населения перевёл в доллары, чтобы люди ничего не потеряли на падении курса валюты и не говорили про своего руководителя плохо. Это же родное государство? Продолжается ослабление национальной валюты и в России. На фоне дешевеющей нефти доллар перешагнул рубеж в 68 рублей. Но это же не какое-то вражеское население, это родное государство, свои люди, братья свои, одна семья, одна страна - Казахстан.</p>
-            <a href="#" class="hidden" data-id="video3Details" title="">
-                <span>Развернуть</span>
-                <span class="hidden__hide">Свернуть</span>
-            </a>
         </div>
-    </div>
+
+        <div class="row padding-lr padding-tb">
+            <div class="col-12">
+                @@include('./../components/_author-container.html')
+            </div>
+        </div>
+
+        <div class="row article__text padding-lr">
+            <div class="col-12">
+                <p>
+                    На нефтяные цены действует сразу несколько негативных факторов. К уже привычному превышению предложения над спросом добавились ожидания предстоящего выхода на рынок дешевой иранской нефти, неутешительная статистика из Китая и рост числа действующих буровых установок в США.
+                </p>
+                <div class="full-width">
+                    <iframe width="320" height="187" src="https://www.youtube.com/embed/RmZvqr53KyM" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p>
+                    Самонаблюдение мгновенно отталкивает депрессивный эскапизм. Код, в представлении Морено, семантически выбирает интеллект.
+                </p>
+                <p id="video3Details" class="hidden__hide">Назарбаев, когда провёл на этой неделе девальвацию своей валюты, предварительно все вклады населения перевёл в доллары, чтобы люди ничего не потеряли на падении курса валюты и не говорили про своего руководителя плохо. Это же родное государство? Продолжается ослабление национальной валюты и в России. На фоне дешевеющей нефти доллар перешагнул рубеж в 68 рублей. Но это же не какое-то вражеское население, это родное государство, свои люди, братья свои, одна семья, одна страна - Казахстан.</p>
+                <a href="#" class="hidden" data-id="video3Details" title="">
+                    <span>Развернуть</span>
+                    <span class="hidden__hide">Свернуть</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <div class="row">
         <div class="col-12">
@@ -367,7 +380,6 @@
     <div class="row padding-lr buttons">
         <div class="col-12 clearfix">
             @@include('./../components/_likes-button.html')
-            @@include('./../components/_save-button.html')
         </div>
     </div>
 
@@ -453,42 +465,44 @@
 
 <section class="bgColor_white">
 
-    <ul class="tabs-inline padding-lr padding-tb">
-        <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Происшествия</a></li>
-        <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Война</a></li>
-    </ul>
+    <section class="article__container">
+        <ul class="tabs-inline padding-lr padding-tb">
+            <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Происшествия</a></li>
+            <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Война</a></li>
+        </ul>
 
-    <div class="row padding-lr">
-        <div class="col-12">
-            <h3 class="article__page-title">Освобождение Пальмиры регулярной армией</h3>
-            @@include('./../components/_counter-block.html', {"like": 0, "comment": 2, "show": 408, "colorClass": "black", "saveButton": "read"})
-        </div>
-    </div>
-
-    <div class="row padding-lr padding-tb">
-        <div class="col-12">
-            @@include('./../components/_author-container.html')
-        </div>
-    </div>
-
-    <div class="row article__text padding-lr">
-        <div class="col-12">
-            <p>
-                На нефтяные цены действует сразу несколько негативных факторов. К уже привычному превышению предложения над спросом добавились ожидания предстоящего выхода на рынок дешевой иранской нефти, неутешительная статистика из Китая и рост числа действующих буровых установок в США.
-            </p>
-            <div class="full-width">
-                <iframe width="320" height="187" src="https://www.youtube.com/embed/RmZvqr53KyM" frameborder="0" allowfullscreen></iframe>
+        <div class="row padding-lr">
+            <div class="col-12">
+                <h3 class="article__page-title">Освобождение Пальмиры регулярной армией</h3>
+                @@include('./../components/_counter-block.html', {"like": 0, "comment": 2, "show": 408, "colorClass": "black"})
             </div>
-            <p>
-                Самонаблюдение мгновенно отталкивает депрессивный эскапизм. Код, в представлении Морено, семантически выбирает интеллект.
-            </p>
-            <p id="video4Details" class="hidden__hide">Назарбаев, когда провёл на этой неделе девальвацию своей валюты, предварительно все вклады населения перевёл в доллары, чтобы люди ничего не потеряли на падении курса валюты и не говорили про своего руководителя плохо. Это же родное государство? Продолжается ослабление национальной валюты и в России. На фоне дешевеющей нефти доллар перешагнул рубеж в 68 рублей. Но это же не какое-то вражеское население, это родное государство, свои люди, братья свои, одна семья, одна страна - Казахстан.</p>
-            <a href="#" class="hidden" data-id="video4Details" title="">
-                <span>Развернуть</span>
-                <span class="hidden__hide">Свернуть</span>
-            </a>
         </div>
-    </div>
+
+        <div class="row padding-lr padding-tb">
+            <div class="col-12">
+                @@include('./../components/_author-container.html')
+            </div>
+        </div>
+
+        <div class="row article__text padding-lr">
+            <div class="col-12">
+                <p>
+                    На нефтяные цены действует сразу несколько негативных факторов. К уже привычному превышению предложения над спросом добавились ожидания предстоящего выхода на рынок дешевой иранской нефти, неутешительная статистика из Китая и рост числа действующих буровых установок в США.
+                </p>
+                <div class="full-width">
+                    <iframe width="320" height="187" src="https://www.youtube.com/embed/RmZvqr53KyM" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p>
+                    Самонаблюдение мгновенно отталкивает депрессивный эскапизм. Код, в представлении Морено, семантически выбирает интеллект.
+                </p>
+                <p id="video4Details" class="hidden__hide">Назарбаев, когда провёл на этой неделе девальвацию своей валюты, предварительно все вклады населения перевёл в доллары, чтобы люди ничего не потеряли на падении курса валюты и не говорили про своего руководителя плохо. Это же родное государство? Продолжается ослабление национальной валюты и в России. На фоне дешевеющей нефти доллар перешагнул рубеж в 68 рублей. Но это же не какое-то вражеское население, это родное государство, свои люди, братья свои, одна семья, одна страна - Казахстан.</p>
+                <a href="#" class="hidden" data-id="video4Details" title="">
+                    <span>Развернуть</span>
+                    <span class="hidden__hide">Свернуть</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <div class="row">
         <div class="col-12">
@@ -499,7 +513,6 @@
     <div class="row padding-lr buttons">
         <div class="col-12 clearfix">
             @@include('./../components/_likes-button.html')
-            @@include('./../components/_save-button.html')
         </div>
     </div>
 
@@ -525,7 +538,7 @@
 
     <div class="row row_header">
         <div class="col-12">
-            @@include('./../bricks/alasliderimage.html', {"image": 4, "saveButton": "read"})
+            @@include('./../bricks/alasliderimage.html', {"image": 4})
         </div>
     </div>
 
@@ -562,42 +575,44 @@
 
 <section class="bgColor_white">
 
-    <ul class="tabs-inline padding-lr padding-tb">
-        <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Происшествия</a></li>
-        <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Война</a></li>
-    </ul>
+    <section class="article__container">
+        <ul class="tabs-inline padding-lr padding-tb">
+            <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Происшествия</a></li>
+            <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Война</a></li>
+        </ul>
 
-    <div class="row padding-lr">
-        <div class="col-12">
-            <h3 class="article__page-title">Освобождение Пальмиры регулярной армией</h3>
-            @@include('./../components/_counter-block.html', {"like": 0, "comment": 2, "show": 408, "colorClass": "black", "saveButton": "read"})
-        </div>
-    </div>
-
-    <div class="row padding-lr padding-tb">
-        <div class="col-12">
-            @@include('./../components/_author-container.html')
-        </div>
-    </div>
-
-    <div class="row article__text padding-lr">
-        <div class="col-12">
-            <p>
-                На нефтяные цены действует сразу несколько негативных факторов. К уже привычному превышению предложения над спросом добавились ожидания предстоящего выхода на рынок дешевой иранской нефти, неутешительная статистика из Китая и рост числа действующих буровых установок в США.
-            </p>
-            <div class="full-width">
-                <iframe width="320" height="187" src="https://www.youtube.com/embed/RmZvqr53KyM" frameborder="0" allowfullscreen></iframe>
+        <div class="row padding-lr">
+            <div class="col-12">
+                <h3 class="article__page-title">Освобождение Пальмиры регулярной армией</h3>
+                @@include('./../components/_counter-block.html', {"like": 0, "comment": 2, "show": 408, "colorClass": "black"})
             </div>
-            <p>
-                Самонаблюдение мгновенно отталкивает депрессивный эскапизм. Код, в представлении Морено, семантически выбирает интеллект.
-            </p>
-            <p id="video5Details" class="hidden__hide">Назарбаев, когда провёл на этой неделе девальвацию своей валюты, предварительно все вклады населения перевёл в доллары, чтобы люди ничего не потеряли на падении курса валюты и не говорили про своего руководителя плохо. Это же родное государство? Продолжается ослабление национальной валюты и в России. На фоне дешевеющей нефти доллар перешагнул рубеж в 68 рублей. Но это же не какое-то вражеское население, это родное государство, свои люди, братья свои, одна семья, одна страна - Казахстан.</p>
-            <a href="#" class="hidden" data-id="video5Details" title="">
-                <span>Развернуть</span>
-                <span class="hidden__hide">Свернуть</span>
-            </a>
         </div>
-    </div>
+
+        <div class="row padding-lr padding-tb">
+            <div class="col-12">
+                @@include('./../components/_author-container.html')
+            </div>
+        </div>
+
+        <div class="row article__text padding-lr">
+            <div class="col-12">
+                <p>
+                    На нефтяные цены действует сразу несколько негативных факторов. К уже привычному превышению предложения над спросом добавились ожидания предстоящего выхода на рынок дешевой иранской нефти, неутешительная статистика из Китая и рост числа действующих буровых установок в США.
+                </p>
+                <div class="full-width">
+                    <iframe width="320" height="187" src="https://www.youtube.com/embed/RmZvqr53KyM" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p>
+                    Самонаблюдение мгновенно отталкивает депрессивный эскапизм. Код, в представлении Морено, семантически выбирает интеллект.
+                </p>
+                <p id="video5Details" class="hidden__hide">Назарбаев, когда провёл на этой неделе девальвацию своей валюты, предварительно все вклады населения перевёл в доллары, чтобы люди ничего не потеряли на падении курса валюты и не говорили про своего руководителя плохо. Это же родное государство? Продолжается ослабление национальной валюты и в России. На фоне дешевеющей нефти доллар перешагнул рубеж в 68 рублей. Но это же не какое-то вражеское население, это родное государство, свои люди, братья свои, одна семья, одна страна - Казахстан.</p>
+                <a href="#" class="hidden" data-id="video5Details" title="">
+                    <span>Развернуть</span>
+                    <span class="hidden__hide">Свернуть</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <div class="row">
         <div class="col-12">
@@ -608,7 +623,6 @@
     <div class="row padding-lr buttons">
         <div class="col-12 clearfix">
             @@include('./../components/_likes-button.html')
-            @@include('./../components/_save-button.html')
         </div>
     </div>
 
@@ -626,7 +640,7 @@
 
 </section>
 
-</section>
+@@include('./../components/_share.html')
 
 @@include('./../layout/_footer.html')
 </div>
