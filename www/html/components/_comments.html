@@ -5,8 +5,31 @@
     </p>
 
     <div class="comments__content">
-        Для комментирования новости <br>авторизуйтесь или войдите через<br> социальные сети:
-        @@include('./_socials.html')
+        
+        @@if (context.auth === "true"){
+        <div class="comments__comment-form comments__comment-form--start">
+            <div class="comments__avatar">
+                <img src="http://www.ridus.ru/images/avatars/141718/large_b7147dcd85.jpg" alt="avatar">
+            </div>
+            <div class="comments_comment-auth-form">
+                <textarea name="" id="" cols="30" rows="10" class="comments__textarea"></textarea>
+
+                <button class="comments__comment-button">Комментировать</button>
+            </div>
+        </div>
+        } 
+        @@if (context.auth !== "true"){
+            <div class="comments__comment-form">
+                <textarea name="" id="" cols="30" rows="10" class="comments__textarea"></textarea>
+
+                <div class="comments__checkbox">
+                    <input type="checkbox" id="edition" name="cc">
+                    <label for="edition">От редакции</label>
+                </div>
+
+                <button class="comments__comment-button">Комментировать</button>
+            </div>
+        }
 
         <ul class="comments__list">
             <li>
@@ -18,17 +41,25 @@
                         <span class="comments__name">Strelok</span>
                         <span class="comments__time">сегодня, 18:35</span>
                     </header>
+                    @@if (context.auth === "true"){
+                        <select name="select" class="comments__select">
+                            <option value="new" class="comments__select-new" selected>НОВЫЙ</option> 
+                            <option value="accept" class="comments__select-accepted">ОДОБРЕН</option>
+                            <option value="discard" class="comments__select-discard">ЗАБАНЕН</option>
+                        </select>
+                    }
                     <p>Curabitur dolor velit, consectetur quis nisi a, accumsan cursus massa. Fusce sem lacus, dignissim pretium enim a, mollis malesuada metus.</p>
-                    <footer>
-						<span class="comments__answer">
-							Ответить
-						</span>
-                        <div class="comments__button">
-                            <span class="comments__number">3</span>
-                            <a href="#" class="comments__link">+</a>
-                            <a href="#" class="comments__link">−</a>
-                        </div>
-                    </footer>
+                    
+                </div>
+                <div class="comments__footer">
+                    <button class="comments__answer">
+                        Ответить
+                    </button>
+                    <div class="comments__button">
+                        <span class="comments__number">3</span>
+                        <a href="#" class="comments__link">+</a>
+                        <a href="#" class="comments__link">−</a>
+                    </div>
                 </div>
             </li>
             <li>
@@ -40,18 +71,25 @@
                         <span class="comments__name">LeoMacho</span>
                         <span class="comments__time">сегодня, 17:40</span>
                     </header>
+                    @@if (context.auth === "true"){
+                        <select name="select" class="comments__select">
+                            <option value="new" class="comments__select-new" selected>НОВЫЙ</option> 
+                            <option value="accept" class="comments__select-accepted">ОДОБРЕН</option>
+                            <option value="discard" class="comments__select-discard">ЗАБАНЕН</option>
+                        </select>
+                    }
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum finibus purus, eu malesuada
                         turpis pulvinar eu. In vulputate lectus vitae turpis ornare ultricies. Quisque ac metus at leo rhoncus porttitor.</p>
-                    <footer>
-						<span class="comments__answer">
-							Ответить
-						</span>
-                        <div class="comments__button">
-                            <span class="comments__number">3</span>
-                            <a href="#" class="comments__link">+</a>
-                            <a href="#" class="comments__link">−</a>
-                        </div>
-                    </footer>
+                </div>
+                <div class="comments__footer">
+                    <button class="comments__answer">
+                        Ответить
+                    </button>
+                    <div class="comments__button">
+                        <span class="comments__number">3</span>
+                        <a href="#" class="comments__link">+</a>
+                        <a href="#" class="comments__link">−</a>
+                    </div>
                 </div>
             </li>
             <li class="comments__second-level">
@@ -65,17 +103,24 @@
                                 <span class="comments__name">Strelok</span>
                                 <span class="comments__time">сегодня, 18:35</span>
                             </header>
+                            @@if (context.auth === "true"){
+                                <select name="select" class="comments__select">
+                                    <option value="new" class="comments__select-new" selected>НОВЫЙ</option> 
+                                    <option value="accept" class="comments__select-accepted">ОДОБРЕН</option>
+                                    <option value="discard" class="comments__select-discard">ЗАБАНЕН</option>
+                                </select>
+                            }
                             <p>Curabitur dolor velit, consectetur quis nisi a, accumsan cursus massa. Fusce sem lacus, dignissim pretium enim a, mollis malesuada metus.</p>
-                            <footer>
-						<span class="comments__answer">
-							Ответить
-						</span>
-                                <div class="comments__button">
-                                    <span class="comments__number">3</span>
-                                    <a href="#" class="comments__link">+</a>
-                                    <a href="#" class="comments__link">−</a>
-                                </div>
-                            </footer>
+                        </div>
+                        <div class="comments__footer">
+                            <button class="comments__answer">
+                                Ответить
+                            </button>
+                            <div class="comments__button">
+                                <span class="comments__number">3</span>
+                                <a href="#" class="comments__link">+</a>
+                                <a href="#" class="comments__link">−</a>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -89,17 +134,24 @@
                         <span class="comments__name">Strelok</span>
                         <span class="comments__time">сегодня, 18:35</span>
                     </header>
+                    @@if (context.auth === "true"){
+                        <select name="select" class="comments__select">
+                            <option value="new" class="comments__select-new" selected>НОВЫЙ</option> 
+                            <option value="accept" class="comments__select-accepted">ОДОБРЕН</option>
+                            <option value="discard" class="comments__select-discard">ЗАБАНЕН</option>
+                        </select>
+                    }
                     <p>Curabitur dolor velit, consectetur quis nisi a, accumsan cursus massa. Fusce sem lacus, dignissim pretium enim a, mollis malesuada metus.</p>
-                    <footer>
-						<span class="comments__answer">
-							Ответить
-						</span>
-                        <div class="comments__button">
-                            <span class="comments__number">3</span>
-                            <a href="#" class="comments__link">+</a>
-                            <a href="#" class="comments__link">−</a>
-                        </div>
-                    </footer>
+                </div>
+                <div class="comments__footer">
+                    <button class="comments__answer">
+                        Ответить
+                    </button>
+                    <div class="comments__button">
+                        <span class="comments__number">3</span>
+                        <a href="#" class="comments__link">+</a>
+                        <a href="#" class="comments__link">−</a>
+                    </div>
                 </div>
             </li>
             <li>
@@ -111,18 +163,25 @@
                         <span class="comments__name">LeoMacho</span>
                         <span class="comments__time">сегодня, 17:40</span>
                     </header>
+                    @@if (context.auth === "true"){
+                        <select name="select" class="comments__select">
+                            <option value="new" class="comments__select-new" selected>НОВЫЙ</option> 
+                            <option value="accept" class="comments__select-accepted">ОДОБРЕН</option>
+                            <option value="discard" class="comments__select-discard">ЗАБАНЕН</option>
+                        </select>
+                    }
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum finibus purus, eu malesuada
                         turpis pulvinar eu. In vulputate lectus vitae turpis ornare ultricies. Quisque ac metus at leo rhoncus porttitor.</p>
-                    <footer>
-						<span class="comments__answer">
-							Ответить
-						</span>
-                        <div class="comments__button">
-                            <span class="comments__number">3</span>
-                            <a href="#" class="comments__link">+</a>
-                            <a href="#" class="comments__link">−</a>
-                        </div>
-                    </footer>
+                </div>
+                <div class="comments__footer">
+                    <button class="comments__answer">
+                        Ответить
+                    </button>
+                    <div class="comments__button">
+                        <span class="comments__number">3</span>
+                        <a href="#" class="comments__link">+</a>
+                        <a href="#" class="comments__link">−</a>
+                    </div>
                 </div>
             </li>
             <li class="comments__second-level">
@@ -136,17 +195,24 @@
                                 <span class="comments__name">Strelok</span>
                                 <span class="comments__time">сегодня, 18:35</span>
                             </header>
+                            @@if (context.auth === "true"){
+                                <select name="select" class="comments__select">
+                                    <option value="new" class="comments__select-new" selected>НОВЫЙ</option> 
+                                    <option value="accept" class="comments__select-accepted">ОДОБРЕН</option>
+                                    <option value="discard" class="comments__select-discard">ЗАБАНЕН</option>
+                                </select>
+                            }
                             <p>Curabitur dolor velit, consectetur quis nisi a, accumsan cursus massa. Fusce sem lacus, dignissim pretium enim a, mollis malesuada metus.</p>
-                            <footer>
-						<span class="comments__answer">
-							Ответить
-						</span>
-                                <div class="comments__button">
-                                    <span class="comments__number">3</span>
-                                    <a href="#" class="comments__link">+</a>
-                                    <a href="#" class="comments__link">−</a>
-                                </div>
-                            </footer>
+                        </div>
+                        <div class="comments__footer">
+                            <button class="comments__answer">
+                                Ответить
+                            </button>
+                            <div class="comments__button">
+                                <span class="comments__number">3</span>
+                                <a href="#" class="comments__link">+</a>
+                                <a href="#" class="comments__link">−</a>
+                            </div>
                         </div>
                     </li>
                 </ul>

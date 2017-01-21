@@ -4,6 +4,141 @@
   font-weight: 700;
   text-transform: uppercase;
 
+  &__textarea {
+    height: 88px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  &_comment-auth-form {
+    flex: 1;
+
+    .comments__comment-button {
+      width: 100%;
+    }
+  }
+  
+
+  &__auth, 
+  &__answer-modal {
+    display: none;
+    position: absolute;
+    z-index: 10000;
+    left: 0;
+    width: calc(100% - 30px);
+    min-height: calc(100% - 34px);
+    background-color: white;
+    padding: 17px 15px;
+    font-family: 'Roboto', serif;
+
+    &.visible-modal {
+      display: block;
+    }
+
+    &-form {
+      flex: 1;
+    }
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 21px;
+      font-weight: bold;
+      border-bottom: 2px solid $r-placeholder;
+      margin-bottom: 20px;
+
+      h3 {
+        margin-bottom: 15px;
+        margin-top: 0;
+      }
+
+      .filter__close {
+        margin-right: -11px;
+      }
+    }
+
+    &-question {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px 0;
+    }
+
+    .small-text {
+      display: block;
+      font-size: 16px;
+      color: #989797;
+      text-align: center;
+    }
+
+    .socials {
+      justify-content: center;
+      padding-bottom: 30px;
+      border-bottom: 1px solid $r-placeholder;
+      margin-bottom: 24px;
+      margin-top: 8px;
+    }
+
+    .socials .socialNetwork__link {
+      width: 42px;
+      height: 42px;
+      background: $r-socials;
+      margin-right: 20px;
+
+      &:before {
+        font-size: 24px;
+        line-height: 40px;
+      }
+    }
+
+    .comments__comment-button {
+      width: 100%;
+      color: black;
+      background-color: #ffd051;
+    }
+  }
+
+  &__auth-text {
+    font-size: 13px;
+    color: black;
+    margin-bottom: 22px;
+  }
+
+  &__comment-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 0 25px 0;
+    font-family: 'Roboto', serif;
+    color: #808080;
+
+    &--start {
+      align-items: flex-start;
+    }
+
+    label {
+      font-size: 14px;
+      margin-left: 6px;
+    }
+
+    input[type="checkbox"] {
+        height: 20px;
+        width: 20px;
+    }
+
+    button {
+      padding: 11px 16px 13px 18px;
+      font-size: 16px;
+      color: #808080;
+      background-color: #eeeeee;
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    align-items: center;
+  }
+
   &__expand {
     position: relative;
     display: inline-block;
@@ -42,6 +177,58 @@
     }
   }
 
+  &__select {
+    width: 108px;
+    height: 25px;
+    border: 0;
+    color: white;
+    font: normal 13px/13px 'Roboto Slab', sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 10px;
+    background-color: #657788;
+    border-radius: 0;
+    margin-top: -7px;
+    margin-bottom: 6px;
+
+    .comments__answer-modal & {
+      display: none;
+    }
+
+    &::after {
+      border-color: white;
+    }
+
+    .list {
+      width: 100%;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    [data-value=new],
+    [data-value=accept],
+    [data-value=discard] {
+      color: white;
+      padding: 0 !important;
+      padding-left: 10px !important;
+      width: 100%;
+      line-height: 25px;
+      min-height: 25px;
+    }
+
+    [data-value=new] {
+      background-color: #657788 !important;
+    }
+
+    [data-value=accept] {
+      background-color: #5cb85c !important;
+    }
+
+    [data-value=discard] {
+      background-color: #ca5c38 !important;
+    }
+  }
+
   &__number {
     display: inline-block;
     margin-right: 5px;
@@ -70,11 +257,12 @@
 
     li {
       display: flex;
+      flex-wrap: wrap;
       padding: 20px 0;
-      border-bottom: 1px dashed $r-placeholder;
+      border-bottom: 1px solid $r-lines;
 
       &:first-child {
-        border-top: 1px dashed $r-placeholder;
+        border-top: 1px solid $r-lines;
 
       }
 
@@ -94,13 +282,24 @@
   }
 
   &__body {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+
     header {
       margin-bottom: 10px;
     }
-    footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 45px;
+
+    .comments__second-level & {
+      padding-left: 0;
     }
   }
 
@@ -134,7 +333,9 @@
 
   &__answer {
     font: 600 13px 'Roboto', serif;
+    padding: 9px 33px;
     color: $r-carrot;
+    background-color: #eeeeee;
   }
 
   &.state_open {
@@ -193,5 +394,11 @@
       border-bottom-color: $r-carrot;
     }
 
+  }
+}
+
+.comments-modal-opened {
+  .page {
+    display: none;
   }
 }
