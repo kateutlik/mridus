@@ -20,6 +20,8 @@ $(function() {
             var article = setCurrentVisibleEl(articles);
         }
 
+        window.currentArticle = article;
+
         if(article) {
             var rect = article.getBoundingClientRect();
             translatePercent = Math.round(rect.bottom * 100 / rect.height);
@@ -34,6 +36,7 @@ $(function() {
         $(window).on('scroll touchmove', $.throttle(200,function(){
 
             article = articles.length > 1 ? setCurrentVisibleEl(articles) : article;
+            window.currentArticle = article;
 
             if(article) {
                 var rect = article.getBoundingClientRect();

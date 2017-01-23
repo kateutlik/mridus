@@ -2,7 +2,7 @@
 
 $(function() {
     $(document).ready(function() {
-        $('.share-handler').on('click', function(){
+        $('.share__button').on('click', function(){
             var shareEl = $('.share-container');
             var cancelBtn = shareEl.find('.share-cancel, .share-header-close');
             var body = $('body');
@@ -13,6 +13,11 @@ $(function() {
                     body.removeClass('share-open');
                     cancelBtn.off('click', handler);
                 });
+
+            if (window.currentArticle) {
+                console.log($(window.currentArticle).attr('data-href'));
+            }
+
             } else {
                 console.log('Нету вёрски');
             }

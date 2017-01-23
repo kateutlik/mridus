@@ -136,15 +136,47 @@
         color: #999;
     }
 
-    &-handler {
-        padding: 0 15px 15px;
+    // &-handler {
+    //     padding: 0 15px 15px;
 
-        a {
-            font-weight: 300;
-        }
-    }
+    //     a {
+    //         font-weight: 300;
+    //     }
+    // }
 }
 
 .share-open {
     overflow: hidden;
+}
+
+.share__button {
+    display: flex;
+align-items: center;
+  float: left;
+  height: 34px;
+  background: $r-light-gray;
+  color: $r-likes-button-link;
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Roboto Slab', serif;
+  padding: 0 7px;
+  box-sizing: border-box;
+  transition: background .2s ease, opacity .2s ease;
+
+    &::before {
+        content: '';
+        @include sprite(share);
+    }
+}
+
+.row_header .share__button {
+  z-index: 777;
+  position: fixed;
+  top: 5px;
+  right: 145px;
+}
+
+.state_open .row_header .share__button {
+  display: none;
 }
