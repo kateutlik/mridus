@@ -14,6 +14,8 @@
 <div class="page">
 
 @@include('./../layout/_header.html', {
+    "share": 1,
+    "save": 1,
     "headerClass": "header_article"
 })
 
@@ -23,15 +25,7 @@
         <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Происшествия</a></li>
         <li class="tabs-inline__item"><a href="#" class="tabs-inline__item__link" title="">Война</a></li>
     </ul>
-
-    <div class="row row_header">
-        <div class="col-12">
-            @@include('./../components/_share-button.html')
-        </div>
-        <div class="col-12">
-            @@include('./../components/_save-button.html')
-        </div>
-    </div>
+    
     <section class="article__container" data-href="first-link">
     <div class="row padding-lr">
         <div class="col-12">

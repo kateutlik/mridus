@@ -28,8 +28,8 @@
 }
 .row_header .save__button {
   z-index: 777;
-  position: fixed;
-  top: 5px;
+  position: absolute;
+  top: -17px;
   right: 50px;
 }
 .state_open .row_header .save__button {

@@ -165,8 +165,8 @@ align-items: center;
 
 .row_header .share__button {
   z-index: 777;
-  position: fixed;
-  top: 5px;
+  position: absolute;
+  top: -17px;
   right: 145px;
 }
 

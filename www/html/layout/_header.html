@@ -4,6 +4,18 @@
         <img src="../../images/logo-2x.png" class="x2" width="102" height="40" alt="РИДУС" />
     </a>
     @@include('../components/_burger-button.html')
+    <div class="row row_header">
+        @@if (context.share === 1){
+            <div class="col-12">
+                @@include('./../components/_share-button.html')
+            </div>
+        }
+        @@if (context.save === 1){
+            <div class="col-12">
+                @@include('./../components/_save-button.html')
+            </div>
+        }
+    </div>
     <div class="header__loading">
         <div class="header__progress js-article-loading"></div>
     </div>

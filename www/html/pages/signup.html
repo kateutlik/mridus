@@ -13,60 +13,7 @@
 
 @@include('./../layout/_header.html')
 
-<section class="bgColor_white padding-lr registration">
-    <ul class="tabs tabs-wrapper">
-        <li class="tabs-inline__item"><a href="#signup">Регистрация</a></li>
-        <li class="tabs-inline__item"><a href="#signin">Войти</a></li>
-    </ul>
-
-    <form class="form signup" id="signup">
-        <div class="form-control">
-            <label>Электронная почта</label>
-            <input type="text" placeholder="Ваш e-mail">
-        </div>
-        <div class="form-control">
-            <label>Имя</label>
-            <input type="text" placeholder="Ваше имя">
-        </div>
-        <div class="form-control">
-            <label>Фамилия</label>
-            <input type="text" placeholder="Ваша фамилия">
-        </div>
-        <div class="form-control">
-            <label>Пароль</label>
-            <input type="password" placeholder="">
-        </div>
-        <div class="form-control-before-btn">
-            <label>Подтвердите пароль</label>
-            <input type="password" placeholder="">
-        </div>
-        <a class="form-control-register yellowButton view_big" href="" title="">
-            Зарегистрироваться
-            <i class="corner"><!-- corner --></i>
-        </a>
-        <div>
-            <label>
-                <input type="checkbox" checked="checked" />
-                Я хочу получать рассылку свежих новостей
-            </label>
-        </div>
-    </form>
-    <form class="form signin" id="signin">
-        <div class="form-control">
-            <label>Электронная почта</label>
-            <input type="text" placeholder="Ваш e-mail">
-        </div>
-        <div class="form-control">
-            <label>Пароль</label>
-            <input type="password" placeholder="">
-        </div>
-        <a class="form-control-register yellowButton view_big" href="" title="">
-            Войти
-            <i class="corner"><!-- corner --></i>
-        </a>
-
-    </form>
-</section>
+@@include('./../components/_registration-form.html')
 
 @@include('./../layout/_footer.html')
 </div>

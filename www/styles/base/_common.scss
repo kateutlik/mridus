@@ -20,7 +20,9 @@ body {
 	overflow-x: hidden;
 	color: $r-text-dark;
 
-	&.state_open {
+	&.state_open,
+	&.state_open_registration,
+	&.state_open_saved {
 		overflow: hidden;
 	}
 
@@ -183,55 +185,6 @@ on retina will be good resolution */
 	text-transform: uppercase;
 	color: #85929f;
 	margin: 0 15px 20px;
-}
-
-.image-center {
-	background-position: center center !important;
-    background-repeat: no-repeat !important;
-}
-
-.image-left-top {
-	background-position: left top !important;
-    background-repeat: no-repeat !important;
-}
-
-.image-center-top {
-	background-position: center top !important;
-    background-repeat: no-repeat !important;
-}
-
-.image-right-top {
-	background-position: right top !important;
-    background-repeat: no-repeat !important;
-}
-
-.image-left-center {
-	background-position: left center !important;
-    background-repeat: no-repeat !important;
-}
-
-.image-right-center {
-	background-position: right center !important;
-    background-repeat: no-repeat !important;
-}
-
-.image-left-bottom {
-	background-position: left bottom !important;
-    background-repeat: no-repeat !important;
-}
-
-.image-center-bottom {
-	background-position: center bottom !important;
-    background-repeat: no-repeat !important;
-}
-
-.image-right-bottom {
-	background-position: right bottom !important;
-    background-repeat: no-repeat !important;
-}
-
-.image-horizont {
-	background-size: 100%;
 }
 
 //todo where is it used? do not suit default form styles
