@@ -32,7 +32,7 @@ $(function() {
 			return false;
 		});
 
-		$('.registartion__wrapper .filter__close').on('click', function() {
+		$('.registration__wrapper .filter__close').on('click', function() {
 			body.removeClass('state_open_registration');
 			document.body.scrollTop = scrollTop;
 		});
