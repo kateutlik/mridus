@@ -51,6 +51,8 @@
       &:after {
         content: '';
         @include sprite(save-black);
+        position: relative;
+        top: -1px;
       }
   
       &.view_saved {
@@ -68,7 +70,8 @@
 
 .col-6 .brick .countersBlock__item,
 .todayMainNewsList .countersBlock__item,
-.newsList .countersBlock__item {
+.newsList .countersBlock__item,
+.brick__article-preview .countersBlock__item {
   margin-right: 10px;
 
   &-readLater {

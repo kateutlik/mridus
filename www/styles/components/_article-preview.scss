@@ -1,0 +1,51 @@
+.brick__article-preview {
+	display: flex;
+	box-sizing: border-box;
+	padding: 12px 12px 8px 12px;
+	background: #f3f3f3;
+    width: 100%;
+}
+.brick__article-preview .brick__side {
+	width: 60px;
+	margin-right: 10px;
+	text-align: center;
+	flex-shrink: 0;
+}
+.brick__article-preview .brick__side img {
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+}
+.brick__article-preview .brick__side p {
+	font: 100 10px/12px 'Roboto', sans-serif;
+	color: #8f8f8f;
+}
+.brick__article-preview .brick__content {
+	max-height: none;
+	overflow: visible;
+}
+.brick__article-preview .brick__mainLink {
+	margin-bottom: 10px;
+	font-size: 16px;
+	line-height: 20px;
+}
+.brick__article-preview .brick__text {
+	margin-bottom: 5px;
+	font-size: 13px;
+	line-height: 17px;
+	color: #111;
+}
+.bricks_article-previews {
+	display: flex;
+	flex-direction: column;
+    padding-bottom: 15px;
+}
+.bricks_article-previews .brick {
+	display: flex;
+	height: auto;
+	margin-right: 0;
+    padding: 5px 10px;
+}
+.bricks_article-previews .countersBlock__item.readLater {
+	display: none;
+}
