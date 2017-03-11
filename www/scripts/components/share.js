@@ -18,6 +18,11 @@ $(function() {
                 console.log($(window.currentArticle).attr('data-href'));
             }
 
+            var copyClipboardItem = $('.share-permalink-item .share-text');
+            // var link = window.currentArticle && $(window.currentArticle).attr('data-href') ? $(window.currentArticle).attr('data-href') : window.location.href;
+            var link = 'short link';
+            copyClipboardItem.text(link);
+
             } else {
                 console.log('Нету вёрски');
             }

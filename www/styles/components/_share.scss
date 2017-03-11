@@ -156,6 +156,13 @@
                 content: "\f003";
            }
         }
+        &-permalink {
+            &:before {
+                font-size: 20px;
+                line-height: 36px;
+                content: "\f0c1";
+           }
+        }
     }
 
     &-text {
