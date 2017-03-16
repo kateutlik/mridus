@@ -6,3 +6,4 @@ sites/*/settings*.php
 node_modules
 .sass-cache
 dist
+.vscode
