@@ -34,9 +34,20 @@
     }
   }
 }
+
+.likes__hint {
+  color: #a6a5a5;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
 .row_header .likes__button{
   position: absolute;
   top: 0;
   right: 0;
   opacity: 0.7;
+}
+
+.row_header .likes__hint {
+  display: none;
 }
