@@ -12,16 +12,16 @@
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
   box-sizing: border-box;
 
-  &.state_scroll {
-    position: fixed;
-  }
-
   &.transparent {
     z-index: 555;
     background: transparent;
     box-sizing: border-box;
     box-shadow: none;
     position: absolute;
+  }
+
+  &.state_scroll {
+    position: fixed;
   }
 
   &.header_article .header__loading {
