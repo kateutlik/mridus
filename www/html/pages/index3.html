@@ -11,7 +11,9 @@
     @@include('./../layout/_main-nav.html')
 
     <div class="page">
-        @@include('./../layout/_header.html')
+        @@include('./../layout/_header.html', {
+            "headerClass": "transparent"
+        })
 
         <section class="bgColor_black">
             <div class="section-title sticky transparent">
@@ -157,10 +159,7 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Блок авторских мнений -->
-        <section class="bgColor_black">
+        
             <div class="bricks__wrapper bricks_article-previews">
 
                 <div class="brick">
