@@ -34,6 +34,66 @@
       color: #343434;
       text-decoration: none;
     }
+
+    .icon {
+      display: inline-block;
+      margin-right: 5px;
+
+      &.ic-photo::after {
+        content: '';
+        @include sprite(ic-photo);
+      }
+
+      &.ic-video::after {
+        content: '';
+        @include sprite(ic-video);
+      }
+
+      &.ic-wright::after {
+        content: '';
+        @include sprite(ic-wright);
+      }
+    }
+  }
+
+  &__type {
+    font-weight: normal;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #b0afae;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 29px;
+    display: block;
+  }
+
+  &__color {
+      width: 8px;
+      height: 8px;
+      display: inline-block;
+      margin-right: 5px;
+
+      &--yellow {
+        background-color: #ffd347;
+      }
+
+      &--red {
+        background-color: #7b1900;
+      }
+
+      &--blue {
+        background-color: #cedfed;
+      }
+
+      &--green {
+        background-color: #74ac4a;
+      }
+
+      &--default {
+        background-color: #c2c2c2;
+      }
   }
 
   &__all {
