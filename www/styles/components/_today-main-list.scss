@@ -21,7 +21,7 @@
       display: block;
       width: 12px;
       height: 10px;
-      background: $r-orange;
+      background-color: $r-orange;
     }
 
     &:after {
@@ -32,6 +32,19 @@
       display: block;
       border: 5px solid transparent;
       border-left: 2px solid $r-white;
+    }
+
+    &--important {
+      .todayMainNewsList__text {
+        background-color: #c6271b;
+        box-shadow: 7px 0 0 #c6271b, -7px 0 0 #c6271b;
+      }
+
+      &:before {
+        content: '';
+        background-color: transparent;
+        @include sprite(ic_hot);
+      }
     }
   }
 

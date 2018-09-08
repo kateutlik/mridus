@@ -191,6 +191,52 @@ on retina will be good resolution */
 .text-decoration-none {
 	text-decoration: none;
 }
+
+.important {
+	position: absolute;
+	top: 170px;
+	left: 0;
+	display: flex;
+	align-items: flex-start;
+	padding: 7px 13px 7px 15px;
+	background: #c6271b;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	font-style: normal;
+	text-transform: uppercase;
+	color: #fff;
+
+	.icon {
+		margin-right: 10px;
+		@include sprite(ic_hot_wh);
+	}
+
+	&::before {
+		content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 17px 7px;
+    border-color: transparent transparent transparent #c6271b;
+	}
+
+	&::after {
+		content: "";
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 0 0 7px;
+    border-color: transparent transparent transparent #c6271b;
+	}
+}
+
 //todo where is it used? do not suit default form styles
 //label {
 //  font-size: 16px;
