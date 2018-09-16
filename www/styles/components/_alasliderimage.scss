@@ -68,10 +68,16 @@
     background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
 
-    p {
+    p,
+    .alasliderimage__link {
       margin-bottom: 5px;
       font: bold 26px/28px 'Roboto Slab', serif;
       color: $r-white;
+      text-decoration: none;
+    }
+
+    .alasliderimage__link {
+      display: block;
     }
   }
 

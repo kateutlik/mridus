@@ -42,7 +42,7 @@
         @@if (context.brickLabel !== 'false'){
         <a href="#life" class="brick__label" title="">жизнь</a>
         }
-        <p>
+        <a href="#" class="alasliderimage__link">
             @@if (context.image === 1){
             Реорганизация общественного транспорта в Москве
             }
@@ -64,7 +64,7 @@
             @@if (context.image === 7){
             Регулярные войска идут на Алеппо
             }
-        </p>
+        </a>
         @@include('./../components/_counter-block.html', {"like": 0, "comment": 2, "show": 408, "colorClass": "white", "saveButton": "read"})
         <!--<a href="#" class="clickable"></a>-->
     </div>
