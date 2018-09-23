@@ -4,8 +4,8 @@ $(function(){
     function initPhotoReportsSwipers() {
         $('.view_photoreports').each(function () {
             var photoreportsSlider = new Swiper($(this), {
-                nextButton: $(this).find('.photoreports-button-prev'),
-                prevButton: $(this).find('.photoreports-button-next'),
+                nextButton: $(this).find('.photoreports-button-next'),
+                prevButton: $(this).find('.photoreports-button-prev'),
                 autoplay: 4000,
                 nested: true,
                 // observer: true,

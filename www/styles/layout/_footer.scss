@@ -79,6 +79,14 @@
 			top: 13px;
 			@include sprite(18plus);
 		}
+
+		&__21plus {
+			display: block;
+			position: absolute;
+			right: 15px;
+			top: 13px;
+			// @include sprite(21plus);
+		}
 	}
 
 	.socials .socialNetwork__item {

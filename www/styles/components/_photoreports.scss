@@ -25,11 +25,26 @@
   &-button-next {
     @include sprite(arrow-white);
   }
-  .swiper-slide {
-    display: none;
-  }
-  .swiper-slide-active {
-    display: block;
+  // .swiper-slide {
+  //   display: none;
+  // }
+  // .swiper-slide-active {
+  //   display: block;
+  // }
+  .photoNumber {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 100;
+    top: 16px;
+    left: 16px;
+    font-size: 24px;
+    padding: 0 10px;
+    background: rgba(0,0,0,0.6);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
 }
 
