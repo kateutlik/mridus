@@ -237,6 +237,14 @@
     vertical-align: top;
     font: 600 13px/32px 'Roboto', serif;
     color: $r-green;
+
+    &.view_up {
+      color: $r-green;
+    }
+
+    &.view_down {
+      color: $r-carrot;
+    }
   }
 
   &__link {

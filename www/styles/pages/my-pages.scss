@@ -23,11 +23,15 @@
       label {
         margin: 0;
       }
+
+      .myprofileSocials__inputWrapper {
+        flex: 1;
+        margin-left: 15px;
+      }
     }
     .socialNetwork__link {
       background: $r-socials;
     }
-
 
   }
 
